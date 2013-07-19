@@ -1,0 +1,851 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.1.30)  12 APR 2011 22:46
+entering extended mode
+**C:/Users/the_dark/workspace2/JaCa-Android-Library/doc/JaCa-Android*by*example
+s/jaca_android_by_examples.tex
+
+("C:/Users/the_dark/workspace2/JaCa-Android-Library/doc/JaCa-Android by example
+s/jaca_android_by_examples.tex"
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, loaded.
+("C:\Program Files\MiKTeX 2.8\tex\latex\base\report.cls"
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.8\tex\latex\base\size11.clo"
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\ltxmisc\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Users\the_dark\workspace2\JaCa-Android-Library\doc\JaCa-Android by example
+s\jaca_android_by_examples.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+
+("C:\Program Files\MiKTeX 2.8\tex\context\base\supp-pdf.tex"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count89
+\scratchdimen=\dimen105
+\scratchbox=\box26
+\nofMPsegments=\count90
+\nofMParguments=\count91
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count92
+\MPscratchDim=\dimen106
+\MPnumerator=\count93
+\everyMPtoPDFconversion=\toks16
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 113.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 113.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 113.
+ [1
+
+{C:/ProgramData/MiKTeX/2.8/pdftex/config/pdftex.map}]
+("C:\Users\the_dark\workspace2\JaCa-Android-Library\doc\JaCa-Android by example
+s\jaca_android_by_examples.toc"
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 3.
+)
+\tf@toc=\write3
+ [1
+
+]
+Chapter 1.
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 121.
+
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 121.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 121.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 124.
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 124.
+ [2
+
+] [3]
+Chapter 2.
+
+LaTeX Warning: File `images/example_gui.png' not found on input line 138.
+
+
+! Package pdftex.def Error: File `images/example_gui.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 ...dth=.9\linewidth]{images/example_gui.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 134--143
+\OT1/cmr/m/n/10.95 dle-ware. You can find the source code of this sam-ples in-s
+ide the
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4
+
+] [5]
+Overfull \hbox (25.7269pt too wide) in paragraph at lines 205--205
+[]  \OT1/cmtt/m/n/8 protected void init(JaCaActivity activity, Bundle savedInst
+anceState) {[] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--222
+[]\OT1/cmr/m/n/10.95 In the ar-ti-fact ini-tial-i-sa-tion the pro-tected meth-o
+ds
+ []
+
+[6]
+Underfull \hbox (badness 1082) in paragraph at lines 280--282
+[]\OT1/cmr/m/n/10.95 The agent has a [] plan where it lookups and fo-cuses the
+ []
+
+
+Underfull \hbox (badness 2707) in paragraph at lines 280--282
+\OT1/cmr/m/n/10.95 workspace ar-ti-fact. In this way, each time a new ar-ti-fac
+t
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 280--282
+\OT1/cmr/m/n/10.95 is cre-ated in the workspace the agent is able to re-ceive t
+he
+ []
+
+[7]
+
+LaTeX Warning: File `images/test_gui_gui.png' not found on input line 290.
+
+
+! Package pdftex.def Error: File `images/test_gui_gui.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.290 ...phics[width=6cm]{images/test_gui_gui.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[8] [9]
+Overfull \hbox (51.22726pt too wide) in paragraph at lines 357--357
+[]    \OT1/cmtt/m/n/8 linkOnSensorChangedEventToOp(Sensor.TYPE_ACCELEROMETER, "
+onSensorChanged");[] 
+ []
+
+
+Overfull \hbox (55.47733pt too wide) in paragraph at lines 357--357
+[]    \OT1/cmtt/m/n/8 linkOnSensorChangedEventToOp(Sensor.TYPE_MAGNETIC_FIELD, 
+"onSensorChanged");[] 
+ []
+
+
+Overfull \hbox (42.72714pt too wide) in paragraph at lines 357--357
+[]    \OT1/cmtt/m/n/8 linkOnSensorChangedEventToOp(Sensor.TYPE_ORIENTATION, "on
+SensorChanged");[] 
+ []
+
+
+Overfull \hbox (25.7269pt too wide) in paragraph at lines 357--357
+[]    \OT1/cmtt/m/n/8 defineObsProperty(SensorManagerArtifact.SENSOR_ACCELEROME
+TER, 0,0,0);[] 
+ []
+
+
+Overfull \hbox (17.22678pt too wide) in paragraph at lines 357--357
+[]    \OT1/cmtt/m/n/8 defineObsProperty(SensorManagerArtifact.SENSOR_ORIENTATIO
+N, 0,0,0);[] 
+ []
+
+
+Overfull \hbox (12.97672pt too wide) in paragraph at lines 357--357
+[]  \OT1/cmtt/m/n/8 @INTERNAL_OPERATION public void onSensorChanged(SensorEvent
+ event) {[] 
+ []
+
+
+Overfull \hbox (34.22702pt too wide) in paragraph at lines 357--357
+[]          \OT1/cmtt/m/n/8 .updateValues(event.values[0], event.values[1], eve
+nt.values[2]);[] 
+ []
+
+
+Overfull \hbox (34.22702pt too wide) in paragraph at lines 357--357
+[]          \OT1/cmtt/m/n/8 .updateValues(event.values[0], event.values[1], eve
+nt.values[2]);[] 
+ []
+
+[10]
+Overfull \hbox (4.4766pt too wide) in paragraph at lines 405--405
+[]\OT1/cmtt/m/n/8 /*Initialisation plan for joining the MiddlewareServices work
+space*/[] 
+ []
+
+
+Overfull \hbox (4.4766pt too wide) in paragraph at lines 405--405
+[]\OT1/cmtt/m/n/8 /************************* Main agent plan ******************
+******/[] 
+ []
+
+
+Overfull \hbox (17.22678pt too wide) in paragraph at lines 405--405
+[]\OT1/cmtt/m/n/8 +!do_job : art_id(console,LocalConsoleID) & wsp_id(jaca_servi
+ces,WspID)[] 
+ []
+
+
+Overfull \hbox (4.4766pt too wide) in paragraph at lines 405--405
+[]\OT1/cmtt/m/n/8 /********* Plans that handle reactions to sensors' events ***
+******/[] 
+ []
+
+
+LaTeX Warning: File `images/test_sensors_gui.png' not found on input line 414.
+
+
+! Package pdftex.def Error: File `images/test_sensors_gui.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.414 ...s[width=8cm]{images/test_sensors_gui.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11] [12]
+Overfull \hbox (46.9772pt too wide) in paragraph at lines 483--483
+[]                          \OT1/cmtt/m/n/8 .getLastKnownLocation(LocationManag
+er.GPS_PROVIDER);[] 
+ []
+
+[13]
+Underfull \hbox (badness 7081) in paragraph at lines 498--499
+[]\OT1/cmr/m/n/10.95 The gen-er-a-tion of ap-pro-pri-ate sig-nals each time the
+ ar-ti-
+ []
+
+
+Underfull \hbox (badness 3229) in paragraph at lines 498--499
+\OT1/cmr/m/n/10.95 fact starts/ends re-ceiv-ing gps-related events. The start/e
+nd
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 498--499
+\OT1/cmr/m/n/10.95 of the mon-i-tor-ing of such events is han-dled by the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 498--499
+[]\OT1/cmr/m/n/10.95 /[] op-er-a-tions in-her-ited from
+ []
+
+
+Overfull \hbox (4.4766pt too wide) in paragraph at lines 532--532
+[]\OT1/cmtt/m/n/8 /*Initialisation plan for joining the MiddlewareServices work
+space*/[] 
+ []
+
+
+Overfull \hbox (4.4766pt too wide) in paragraph at lines 532--532
+[]\OT1/cmtt/m/n/8 /************************* Main agent plan ******************
+******/[] 
+ []
+
+
+Overfull \hbox (21.47684pt too wide) in paragraph at lines 532--532
+[]\OT1/cmtt/m/n/8 +!do_job : wsp_id(jaca_services, WspID) & art_id(console,Loca
+lConsoleID)[] 
+ []
+
+
+Overfull \hbox (8.72665pt too wide) in paragraph at lines 532--532
+[]  \OT1/cmtt/m/n/8 <-  println("Longitude: ", Longitude)[artifact_id(LocalCons
+oleID)].[] 
+ []
+
+[14] [15]
+
+LaTeX Warning: File `images/test_gps_gui.png' not found on input line 551.
+
+
+! Package pdftex.def Error: File `images/test_gps_gui.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.551 ...phics[width=8cm]{images/test_gps_gui.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (42.72714pt too wide) in paragraph at lines 620--620
+[]    \OT1/cmtt/m/n/8 linkBroadcastReceiverToOp(filter, "batteryInfoReceived", 
+abortBroadcast);[] 
+ []
+
+
+Overfull \hbox (42.72714pt too wide) in paragraph at lines 620--620
+[]    \OT1/cmtt/m/n/8 linkBroadcastReceiverToOp(filter2, "batteryLowReceived", 
+abortBroadcast);[] 
+ []
+
+
+Overfull \hbox (38.47708pt too wide) in paragraph at lines 620--620
+[]    \OT1/cmtt/m/n/8 linkBroadcastReceiverToOp(filter3, "batteryOkReceived", a
+bortBroadcast);[] 
+ []
+
+
+Overfull \hbox (89.47781pt too wide) in paragraph at lines 620--620
+[]  \OT1/cmtt/m/n/8 @INTERNAL_OPERATION public void batteryOkReceived(Broadcast
+Receiver broadcastReceiver,[] 
+ []
+
+
+Overfull \hbox (93.72787pt too wide) in paragraph at lines 620--620
+[]  \OT1/cmtt/m/n/8 @INTERNAL_OPERATION public void batteryLowReceived(Broadcas
+tReceiver broadcastReceiver,[] 
+ []
+
+
+Overfull \hbox (97.97794pt too wide) in paragraph at lines 620--620
+[]  \OT1/cmtt/m/n/8 @INTERNAL_OPERATION public void batteryInfoReceived(Broadca
+stReceiver broadcastReceiver,[] 
+ []
+
+
+Overfull \hbox (12.97672pt too wide) in paragraph at lines 620--620
+[]      \OT1/cmtt/m/n/8 int level = intent.getIntExtra(BatteryManager.EXTRA_LEV
+EL, 100);[] 
+ []
+
+
+Overfull \hbox (63.97745pt too wide) in paragraph at lines 620--620
+[]      \OT1/cmtt/m/n/8 if(healt!=BatteryManager.BATTERY_HEALTH_GOOD && obsHeal
+t.equals(HEALT_GOOD))[] 
+ []
+
+
+Overfull \hbox (85.22775pt too wide) in paragraph at lines 620--620
+[]      \OT1/cmtt/m/n/8 else if(healt!=BatteryManager.BATTERY_HEALTH_DEAD && ob
+sHealt.equals(HEALT_DEAD))[] 
+ []
+
+[16
+
+]
+
+LaTeX Warning: Text page 17 contains only floats.
+
+[17]
+Overfull \hbox (4.4766pt too wide) in paragraph at lines 669--669
+[]\OT1/cmtt/m/n/8 /*Initialisation plan for joining the MiddlewareServices work
+space*/[] 
+ []
+
+
+Overfull \hbox (4.4766pt too wide) in paragraph at lines 669--669
+[]\OT1/cmtt/m/n/8 /************************* Main agent plan ******************
+******/[] 
+ []
+
+
+Overfull \hbox (17.22678pt too wide) in paragraph at lines 669--669
+[]\OT1/cmtt/m/n/8 +!do_job : wsp_id(jaca_services,WspID) & art_id(console,Local
+ConsoleID)[] 
+ []
+
+
+Overfull \hbox (8.72665pt too wide) in paragraph at lines 669--669
+[]\OT1/cmtt/m/n/8 /********** Plans that handle reactions to battery events ***
+*******/[] 
+ []
+
+
+Overfull \hbox (17.22678pt too wide) in paragraph at lines 669--669
+[]  \OT1/cmtt/m/n/8 <-  println("Battery level is ", Value)[artifact_id(LocalCo
+nsoleID)].[] 
+ []
+
+
+Overfull \hbox (21.47684pt too wide) in paragraph at lines 669--669
+[]  \OT1/cmtt/m/n/8 <-  println("Battery status is ", Value)[artifact_id(LocalC
+onsoleID)].[] 
+ []
+
+
+Overfull \hbox (17.22678pt too wide) in paragraph at lines 669--669
+[]  \OT1/cmtt/m/n/8 <-  println("Battery healt is ", Value)[artifact_id(LocalCo
+nsoleID)].[] 
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 681--683
+[]\OT1/cmr/m/n/10.95 Then the agent fo-cus the [], con-tained in the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 683--684
+[]\OT1/cmr/m/n/10.95 As soon as new bat-tery in-for-ma-tion are avail-able the
+ []
+
+
+Underfull \hbox (badness 1194) in paragraph at lines 683--684
+[] \OT1/cmr/m/n/10.95 gen-er-ates proper sig-nals that are han-dled by
+ []
+
+[18] [19]
+
+LaTeX Warning: File `images/test_battery_gui.png' not found on input line 689.
+
+
+! Package pdftex.def Error: File `images/test_battery_gui.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.689 ...s[width=8cm]{images/test_battery_gui.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[20
+
+]
+Overfull \hbox (4.4766pt too wide) in paragraph at lines 760--760
+[]\OT1/cmtt/m/n/8 public class ConnectivityManager extends BroadcastReceiverArt
+ifact {[] 
+ []
+
+
+Overfull \hbox (119.22824pt too wide) in paragraph at lines 760--760
+[]    \OT1/cmtt/m/n/8 wifiManager = (WifiManager) getApplicationContext().getSy
+stemService(Context.WIFI_SERVICE);[] 
+ []
+
+
+Overfull \hbox (17.22678pt too wide) in paragraph at lines 760--760
+[]\OT1/cmtt/m/n/8 @INTERNAL_OPERATION void onReceive(BroadcastReceiver broadcas
+tReceiver,[] 
+ []
+
+
+Overfull \hbox (72.47757pt too wide) in paragraph at lines 760--760
+[]    \OT1/cmtt/m/n/8 boolean obsIsAirplaneOn = getObsProperty(AIRPLANE_MODE_ST
+ATUS).equals(ON_VALUE);[] 
+ []
+
+
+Overfull \hbox (17.22678pt too wide) in paragraph at lines 760--760
+[]    \OT1/cmtt/m/n/8 boolean obsIsWifiOn = getObsProperty(WIFI_STATUS).equals(
+ON_VALUE);[] 
+ []
+
+
+Overfull \hbox (4.4766pt too wide) in paragraph at lines 760--760
+[]        \OT1/cmtt/m/n/8 getObsProperty(AIRPLANE_MODE_STATUS).updateValue(OFF_
+VALUE);[] 
+ []
+
+[21
+
+] [22]
+
+LaTeX Warning: File `images/test_connectivity_gui.png' not found on input line 
+799.
+
+
+! Package pdftex.def Error: File `images/test_connectivity_gui.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.799 ...th=6cm]{images/test_connectivity_gui.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[23]
+Overfull \hbox (4.4766pt too wide) in paragraph at lines 865--865
+[]\OT1/cmtt/m/n/8 /*Initialisation plan for joining the MiddlewareServices work
+space*/[] 
+ []
+
+
+Overfull \hbox (21.47684pt too wide) in paragraph at lines 865--865
+[]\OT1/cmtt/m/n/8 +!do_job : wsp_id(jaca_services, WspID) & art_id(console,Loca
+lConsoleID)[] 
+ []
+
+
+Overfull \hbox (8.72665pt too wide) in paragraph at lines 865--865
+[]      \OT1/cmtt/m/n/8 println("enabling airplane mode")[artifact_id(LocalCons
+oleID)];[] 
+ []
+
+
+Overfull \hbox (12.97672pt too wide) in paragraph at lines 865--865
+[]      \OT1/cmtt/m/n/8 println("disabling airplane mode")[artifact_id(LocalCon
+soleID)];[] 
+ []
+
+
+Overfull \hbox (21.47684pt too wide) in paragraph at lines 865--865
+[]  \OT1/cmtt/m/n/8 <-  println("[STATUS AIRPLANE:]", Value)[artifact_id(LocalC
+onsoleID)].[] 
+ []
+
+
+Overfull \hbox (12.97672pt too wide) in paragraph at lines 865--865
+[]  \OT1/cmtt/m/n/8 <-  println("[STATUS WIFI:]: ", Value)[artifact_id(LocalCon
+soleID)].[] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24]
+Underfull \hbox (badness 4819) in paragraph at lines 876--878
+\OT1/cmr/m/n/10.95 In this ex-am-ple we will show how it is pos-si-ble to re-al
+ise a
+ []
+
+
+Underfull \hbox (badness 1997) in paragraph at lines 876--878
+\OT1/cmss/m/n/10.95 JaCa-Android \OT1/cmr/m/n/10.95 ap-pli-ca-tion that works a
+lso in a re-mote \OT1/cmss/m/n/10.95 JaCa-Android
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 876--878
+\OT1/cmr/m/n/10.95 workspace (so a workspace re-lated to an-other \OT1/cmss/m/n
+/10.95 JaCa-Android \OT1/cmr/m/n/10.95 ap-pli-ca-
+ []
+
+
+Underfull \hbox (badness 5741) in paragraph at lines 879--880
+[]\OT1/cmr/m/n/10.95 Before launch-ing this ex-am-ple is needed to in-stall and
+ run
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 879--880
+\OT1/cmr/m/n/10.95 the [] ap-pli-ca-tion con-tained in the
+ []
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 879--880
+[] \OT1/cmr/m/n/10.95 folder on the root of the stan-dard
+ []
+
+
+Overfull \hbox (1.25519pt too wide) in paragraph at lines 896--896
+[]          \OT1/cmtt/m/n/8 The action is the "Android address" that we want to
+ expose as a remote wsp.[] 
+ []
+
+
+Overfull \hbox (9.75531pt too wide) in paragraph at lines 913--913
+[]      \OT1/cmtt/m/n/8 c4jason.CartagoEnvironment("infrastructure", service(an
+droid,"remote.myaddress"))[] 
+ []
+
+
+Underfull \hbox (badness 6608) in paragraph at lines 915--918
+\OT1/cmr/m/n/10.95 In this way, when we launch this ap-pli-ca-tion we also in-s
+tall
+ []
+
+
+Underfull \hbox (badness 3872) in paragraph at lines 915--918
+\OT1/cmr/m/n/10.95 a [] node (of type []) that, thanks to the
+ []
+
+
+Underfull \hbox (badness 1867) in paragraph at lines 915--918
+[] \OT1/cmr/m/n/10.95 pa-ram-e-ter, makes the ap-pli-
+ []
+
+
+Underfull \hbox (badness 8056) in paragraph at lines 915--918
+\OT1/cmr/m/n/10.95 ca-tion reach-able by ex-ter-nal \OT1/cmss/m/n/10.95 JaCa-An
+droid \OT1/cmr/m/n/10.95 ones at the ad-dress
+ []
+
+[25
+
+
+]
+Underfull \hbox (badness 1783) in paragraph at lines 949--951
+[]\OT1/cmr/m/n/10.95 Once the ad-dress has been set-ted the agent try to join t
+he
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 949--951
+\OT1/cmr/m/n/10.95 re-mote workspace thanks to the [] ac-tion
+ []
+
+[26]
+
+LaTeX Warning: File `images/test_remote1_gui.png' not found on input line 957.
+
+
+! Package pdftex.def Error: File `images/test_remote1_gui.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.957 ...9\linewidth]{images/test_remote1_gui.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[27] [28]
+Overfull \hbox (29.97696pt too wide) in paragraph at lines 1017--1017
+[]      \OT1/cmtt/m/n/8 makeArtifact("config", "jaca.android.tests.remotewsp.co
+mmon.Config",[] 
+ []
+
+
+Overfull \hbox (42.72714pt too wide) in paragraph at lines 1017--1017
+[]    \OT1/cmtt/m/n/8 //Address not setted yet, we start the activity for obtai
+ning the address[] 
+ []
+
+
+Overfull \hbox (119.22824pt too wide) in paragraph at lines 1017--1017
+[]      \OT1/cmtt/m/n/8 startExplicitActivityForResult("jaca.android.tests.remo
+tewsp.common.AddressActivity", 0);[] 
+ []
+
+
+Overfull \hbox (119.22824pt too wide) in paragraph at lines 1017--1017
+[]  \OT1/cmtt/m/n/8 <-  startExplicitActivityForResult("jaca.android.tests.remo
+tewsp.common.AddressActivity", 0).[] 
+ []
+
+
+Overfull \hbox (42.72714pt too wide) in paragraph at lines 1017--1017
+[]\OT1/cmtt/m/n/8 /*Signal received by the RemoteGUI: the user has inserted the
+ remote address,[] 
+ []
+
+
+Overfull \hbox (12.97672pt too wide) in paragraph at lines 1017--1017
+[]      \OT1/cmtt/m/n/8 lookupArtifact("console", RemoteConsoleID)[wsp_id(Remot
+eWspId)];[] 
+ []
+
+
+Overfull \hbox (51.22726pt too wide) in paragraph at lines 1017--1017
+[]      \OT1/cmtt/m/n/8 println("Remote calculator artifact found")[artifact_id
+(LocalConsoleID)];[] 
+ []
+
+
+Overfull \hbox (29.97696pt too wide) in paragraph at lines 1017--1017
+[]         \OT1/cmtt/m/n/8 be seen on the remote app as well")[artifact_id(Loca
+lConsoleID)];[] 
+ []
+
+
+Overfull \hbox (110.72812pt too wide) in paragraph at lines 1017--1017
+[]      \OT1/cmtt/m/n/8 println("[remote-agent:]The sum between 2 and 3 is ", X
+)[artifact_id(RemoteConsoleID)];[] 
+ []
+
+
+Overfull \hbox (42.72714pt too wide) in paragraph at lines 1017--1017
+[]      \OT1/cmtt/m/n/8 println("The sum between 2 and 3 is ", X)[artifact_id(L
+ocalConsoleID)];[] 
+ []
+
+
+Overfull \hbox (110.72812pt too wide) in paragraph at lines 1017--1017
+[]      \OT1/cmtt/m/n/8 println("[remote-agent:]The sub between 1 and 2 is ", Y
+)[artifact_id(RemoteConsoleID)];[] 
+ []
+
+
+Overfull \hbox (42.72714pt too wide) in paragraph at lines 1017--1017
+[]      \OT1/cmtt/m/n/8 println("The sub between 1 and 2 is ", Y)[artifact_id(L
+ocalConsoleID)];[] 
+ []
+
+
+Overfull \hbox (110.72812pt too wide) in paragraph at lines 1017--1017
+[]      \OT1/cmtt/m/n/8 println("[remote-agent:]The div between 6 and 3 is ", Z
+)[artifact_id(RemoteConsoleID)];[] 
+ []
+
+
+Overfull \hbox (42.72714pt too wide) in paragraph at lines 1017--1017
+[]      \OT1/cmtt/m/n/8 println("The div between 6 and 3 is ", Z)[artifact_id(L
+ocalConsoleID)].[] 
+ []
+
+[29
+
+]
+Overfull \hbox (51.22726pt too wide) in paragraph at lines 1054--1054
+[]    \OT1/cmtt/m/n/8 environment: c4jason.CartagoEnvironment("infrastructure",
+ service(lipermi))[] 
+ []
+
+[30]
+Overfull \hbox (38.47708pt too wide) in paragraph at lines 1086--1086
+[]    \OT1/cmtt/m/n/8 environment: c4jason.CartagoEnvironment("standalone", pro
+tocol(lipermi))[] 
+ []
+
+[31]
+
+LaTeX Warning: File `images/test_remote2_gui.png' not found on input line 1114.
+
+
+
+! Package pdftex.def Error: File `images/test_remote2_gui.png' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1114 ...\linewidth]{images/test_remote2_gui.png}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[32]
+Chapter 3.
+[33
+
+]
+Chapter 4.
+
+("C:\Users\the_dark\workspace2\JaCa-Android-Library\doc\JaCa-Android by example
+s\jaca_android_by_examples.bbl" [34
+
+]) [35
+
+]
+("C:\Users\the_dark\workspace2\JaCa-Android-Library\doc\JaCa-Android by example
+s\jaca_android_by_examples.aux") ) 
+Here is how much of TeX's memory you used:
+ 1148 strings out of 495285
+ 15128 string characters out of 3180385
+ 69836 words of memory out of 3000000
+ 4362 multiletter control sequences out of 15000+200000
+ 13634 words of font info for 48 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 25i,12n,21p,1063b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.8/fonts/type1/publ
+ic/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfo
+nts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/c
+mr10.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+<C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Progr
+am Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/M
+iKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.8/
+fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.8/fonts/type
+1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public
+/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfont
+s/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/c
+mssi10.pfb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/P
+rogram Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program F
+iles/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Program Files/MiKT
+eX 2.8/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on jaca_android_by_examples.pdf (36 pages, 275807 bytes).
+PDF statistics:
+ 185 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/cartago/!svn/ver/715/cartago/trunk/src/main/cartago/util/agent
+END
+ActionFailedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/cartago/!svn/ver/680/cartago/trunk/src/main/cartago/util/agent/ActionFailedException.java
+END
+ActionFeedback.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/cartago/!svn/ver/680/cartago/trunk/src/main/cartago/util/agent/ActionFeedback.java
+END
+CartagoBasicContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/cartago/!svn/ver/680/cartago/trunk/src/main/cartago/util/agent/CartagoBasicContext.java
+END
+ObsPropMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/cartago/!svn/ver/332/cartago/trunk/src/main/cartago/util/agent/ObsPropMap.java
+END
+NoPerceptionException.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/cartago/!svn/ver/174/cartago/trunk/src/main/cartago/util/agent/NoPerceptionException.java
+END
+ObsEventQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/cartago/!svn/ver/386/cartago/trunk/src/main/cartago/util/agent/ObsEventQueue.java
+END
+ActionFeedbackQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/cartago/!svn/ver/338/cartago/trunk/src/main/cartago/util/agent/ActionFeedbackQueue.java
+END
+Agent.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/cartago/!svn/ver/715/cartago/trunk/src/main/cartago/util/agent/Agent.java
+END
+ObsProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/cartago/!svn/ver/174/cartago/trunk/src/main/cartago/util/agent/ObsProperties.java
+END
+Percept.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/cartago/!svn/ver/386/cartago/trunk/src/main/cartago/util/agent/Percept.java
+END
+ArtifactObsProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/cartago/!svn/ver/322/cartago/trunk/src/main/cartago/util/agent/ArtifactObsProperty.java
+END
+ActionNotCompletedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/cartago/!svn/ver/316/cartago/trunk/src/main/cartago/util/agent/ActionNotCompletedException.java
+END

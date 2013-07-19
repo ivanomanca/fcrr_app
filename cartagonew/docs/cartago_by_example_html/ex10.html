@@ -1,0 +1,63 @@
+Example 10 - Working with Multiple Workspaces
+
+In the following example, creates two workspaces, joins both and prints messages using different console artifacts, and then uses internal actions to set the current workspace.
+
+<blockquote>
+<pre>
+MAS example10_workspaces {
+
+    environment: 
+    c4jason.CartagoEnvironment
+
+    agents: 
+    wsp_tester agentArchClass c4jason.CAgentArch;
+
+    classpath: "../../../lib/cartago.jar";"../../../lib/c4jason.jar";    
+}
+</pre>
+</blockquote>
+
+The agent source code:
+<blockquote>
+<pre>
+!test_wsp. 
+
++!test_wsp 
+  <- ?current_wsp(Id0,Name,NodeId);
+     println("current workspace ",Name," ",NodeId);  
+     println("creating new workspaces...");
+     createWorkspace("myNewWorkspace1");
+     createWorkspace("myNewWorkspace2");
+     joinWorkspace("myNewWorkspace1",WspID1);
+     ?current_wsp(_,Name1,_);
+     println("hello in ",Name1);
+     makeArtifact("myCount","c4jexamples.Counter",[],ArtId);
+     joinWorkspace("myNewWorkspace2",WspID2);
+     ?current_wsp(_,Name2,_);
+     println("hello in ",Name2);
+     println("using the artifact of another wsp...");
+     inc [artifact_id(ArtId)];
+     cartago.set_current_wsp(WspID1);
+     println("hello again in ",WspID1);
+     println("quit..");
+     quitWorkspace;
+     ?current_wsp(_,Name3,_);
+     println("back in ",Name3);
+     quitWorkspace;
+     cartago.set_current_wsp(Id0);
+     ?current_wsp(_,Name4,_);     
+     println("...and finallly in ",Name4," again.").
+</pre>
+</blockquote>
+
+<strong>Highlights:</strong>
+
+<ul>
+<li> <strong>Working with mutiple workspaces:</strong> Agents can create, join and work in multiple workspace at a time. 
+However there is always a <strong>current</strong> workspace, to which are routed actions with 
+no artifact id or workspace id  specified. Current workspace info are automatically tracked by the <code>current_wsp(WspId,Name,NodeId</code> belief.</li> 
+
+<li> <strong>Setting the current workspace:</strong> The <code>cartago.set_current_wsp(WspID)</code> internal action makes it possible to set the current workspace, specifying its <code>id</code>.</li>
+
+<li> <strong>Actions on workspaces:</strong> Actions on workspaces include <code>createWorkspace</code> - to create a new workspace in current node, provided by the <code>NodeArtifact</code>, <code>joinWorkspace</code> - to join a workspace on the node, provided by the  <code>NodeArtifact</code>, <code>quitWorkspace</code> to quit the workspace, provided by the <code>WorkspaceArtifact</code>.</li>
+</ul> 

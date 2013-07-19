@@ -1,0 +1,64 @@
+<project name="Cartago" default="makejar_src" basedir=".">
+
+	<target name="init">
+		<tstamp />
+		<property name="version" value="2.0"/>
+		
+		<property name="tmp_build" value="tmp_build" />
+		<property name="dist" value="dist" />
+		<property name="lib" value="lib" />
+		<property name="src" value="src/main" />
+	</target>
+		
+
+	<target name="makejar" depends="init"> <!-- jar without src-->
+		<mkdir dir="${tmp_build}"/>
+		<javac srcdir="${src}" destdir="${tmp_build}" >
+			<classpath>
+				<pathelement location="${lib}/lipermi-0.4.jar" />
+			</classpath>
+		</javac>
+		<jar jarfile="${dist}/cartago-android.jar" >
+			<fileset dir="${tmp_build}" 
+							excludes="
+							**/cartago/tools/GUIArtifact* ,
+												**/cartago/tools/CommonEventListener* ,
+												**/cartago/tools/inspector/* ,
+												**/cartago/tools/inspector ,
+												**/cartago/infrastructure/rmi/* ,
+												**/cartago/infrastructure/rmi"/>
+		</jar>
+		<delete dir="${tmp_build}" />
+	</target>
+	
+	
+	<target name="makejar_src" depends="init"> <!-- jar with src-->
+		<mkdir dir="${tmp_build}"/>
+		<javac debug="true" srcdir="${src}" destdir="${tmp_build}" >
+			<classpath>
+				<pathelement location="${lib}/lipermi-0.4.jar" />
+			</classpath>
+		</javac>
+		
+		<jar jarfile="${dist}/cartago-android.jar" >
+			<fileset dir="${src}" 
+				excludes="
+					**/cartago/tools/GUIArtifact* ,
+					**/cartago/tools/CommonEventListener* ,
+					**/cartago/tools/inspector/* ,
+					**/cartago/tools/inspector ,
+					**/cartago/infrastructure/rmi/* ,
+					**/cartago/infrastructure/rmi"/>
+			
+			<fileset dir="${tmp_build}" 
+				excludes="
+				**/cartago/tools/GUIArtifact* ,
+									**/cartago/tools/CommonEventListener* ,
+									**/cartago/tools/inspector/* ,
+									**/cartago/tools/inspector ,
+									**/cartago/infrastructure/rmi/* ,
+									**/cartago/infrastructure/rmi"/>
+		</jar>
+		<delete dir="${tmp_build}" />
+	</target>
+</project>

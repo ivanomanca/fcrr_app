@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/manual/syntax
+END
+LiteralImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/manual/syntax/LiteralImpl.java
+END
+Literal.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/manual/syntax/Literal.java
+END
+RelExpr.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/manual/syntax/RelExpr.java
+END
+DefaultTerm.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/manual/syntax/DefaultTerm.java
+END
+Term.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/manual/syntax/Term.java
+END
+ListTerm.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/manual/syntax/ListTerm.java
+END
+UsageProtBody.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/manual/syntax/UsageProtBody.java
+END
+SourceInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/manual/syntax/SourceInfo.java
+END
+UnnamedVar.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/manual/syntax/UnnamedVar.java
+END
+ArithExpr.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/manual/syntax/ArithExpr.java
+END
+StringTerm.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/manual/syntax/StringTerm.java
+END
+InternalActionLiteral.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/manual/syntax/InternalActionLiteral.java
+END
+LogExpr.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/manual/syntax/LogExpr.java
+END
+PredicateIndicator.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/manual/syntax/PredicateIndicator.java
+END
+NumberTerm.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/manual/syntax/NumberTerm.java
+END
+Structure.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/manual/syntax/Structure.java
+END
+VarTerm.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/manual/syntax/VarTerm.java
+END
+BinaryStructure.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/manual/syntax/BinaryStructure.java
+END
+Atom.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/manual/syntax/Atom.java
+END

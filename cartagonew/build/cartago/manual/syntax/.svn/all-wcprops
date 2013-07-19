@@ -1,0 +1,389 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax
+END
+LogExpr.class
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/LogExpr.class
+END
+StringTerm.class
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/StringTerm.class
+END
+ArithExpr.class
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/ArithExpr.class
+END
+UsageProtBody$BodyType$1.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/UsageProtBody$BodyType$1.class
+END
+UsageProtBody$BodyType$3.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/UsageProtBody$BodyType$3.class
+END
+LogExpr$1.class
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/LogExpr$1.class
+END
+UsageProtBody$BodyType$5.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/UsageProtBody$BodyType$5.class
+END
+UsageProtBody$BodyType$7.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/UsageProtBody$BodyType$7.class
+END
+UsageProtBody$BodyType$9.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/UsageProtBody$BodyType$9.class
+END
+Term.class
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/Term.class
+END
+Literal$TrueLiteral.class
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/Literal$TrueLiteral.class
+END
+LogExpr$LogicalOp$2.class
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/LogExpr$LogicalOp$2.class
+END
+UsageProtBody$BodyType$10.class
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/UsageProtBody$BodyType$10.class
+END
+ArithExpr$1.class
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/ArithExpr$1.class
+END
+RelExpr.class
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/RelExpr.class
+END
+LiteralImpl.class
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/LiteralImpl.class
+END
+LogExpr$LogicalOp$4.class
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/LogExpr$LogicalOp$4.class
+END
+Structure.class
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/Structure.class
+END
+UsageProtBody$1.class
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/UsageProtBody$1.class
+END
+ListTerm$1.class
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/ListTerm$1.class
+END
+ListTerm$3.class
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/ListTerm$3.class
+END
+ArithExpr$ArithmeticOp$1.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/ArithExpr$ArithmeticOp$1.class
+END
+ArithExpr$ArithmeticOp$3.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/ArithExpr$ArithmeticOp$3.class
+END
+ArithExpr$ArithmeticOp$5.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/ArithExpr$ArithmeticOp$5.class
+END
+ArithExpr$ArithmeticOp$7.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/ArithExpr$ArithmeticOp$7.class
+END
+UnnamedVar.class
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/UnnamedVar.class
+END
+RelExpr$RelationalOp$1.class
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/RelExpr$RelationalOp$1.class
+END
+RelExpr$RelationalOp$3.class
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/RelExpr$RelationalOp$3.class
+END
+RelExpr$RelationalOp$5.class
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/RelExpr$RelationalOp$5.class
+END
+RelExpr$RelationalOp$7.class
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/RelExpr$RelationalOp$7.class
+END
+Atom.class
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/Atom.class
+END
+RelExpr$RelationalOp$9.class
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/RelExpr$RelationalOp$9.class
+END
+NumberTerm.class
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/NumberTerm.class
+END
+UsageProtBody$BodyType.class
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/UsageProtBody$BodyType.class
+END
+PredicateIndicator.class
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/PredicateIndicator.class
+END
+InternalActionLiteral.class
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/InternalActionLiteral.class
+END
+LogExpr$LogicalOp.class
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/LogExpr$LogicalOp.class
+END
+UsageProtBody$BodyType$2.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/UsageProtBody$BodyType$2.class
+END
+UsageProtBody$BodyType$4.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/UsageProtBody$BodyType$4.class
+END
+UsageProtBody$BodyType$6.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/UsageProtBody$BodyType$6.class
+END
+SourceInfo.class
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/SourceInfo.class
+END
+UsageProtBody$BodyType$8.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/UsageProtBody$BodyType$8.class
+END
+UsageProtBody.class
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/UsageProtBody.class
+END
+ListTerm.class
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/ListTerm.class
+END
+LogExpr$LogicalOp$1.class
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/LogExpr$LogicalOp$1.class
+END
+ArithExpr$ArithmeticOp.class
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/ArithExpr$ArithmeticOp.class
+END
+LogExpr$LogicalOp$3.class
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/LogExpr$LogicalOp$3.class
+END
+Literal.class
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/Literal.class
+END
+BinaryStructure.class
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/BinaryStructure.class
+END
+VarTerm.class
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/VarTerm.class
+END
+ListTerm$2.class
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/ListTerm$2.class
+END
+RelExpr$1.class
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/RelExpr$1.class
+END
+ArithExpr$ArithmeticOp$2.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/ArithExpr$ArithmeticOp$2.class
+END
+ArithExpr$ArithmeticOp$4.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/ArithExpr$ArithmeticOp$4.class
+END
+RelExpr$RelationalOp.class
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/RelExpr$RelationalOp.class
+END
+ArithExpr$ArithmeticOp$6.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/ArithExpr$ArithmeticOp$6.class
+END
+Literal$FalseLiteral.class
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/Literal$FalseLiteral.class
+END
+ArithExpr$ArithmeticOp$8.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/ArithExpr$ArithmeticOp$8.class
+END
+RelExpr$RelationalOp$2.class
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/RelExpr$RelationalOp$2.class
+END
+DefaultTerm.class
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/DefaultTerm.class
+END
+RelExpr$RelationalOp$4.class
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/RelExpr$RelationalOp$4.class
+END
+RelExpr$RelationalOp$6.class
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/RelExpr$RelationalOp$6.class
+END
+RelExpr$RelationalOp$8.class
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/RelExpr$RelationalOp$8.class
+END
+ListTerm$ListTermIterator.class
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/syntax/ListTerm$ListTermIterator.class
+END

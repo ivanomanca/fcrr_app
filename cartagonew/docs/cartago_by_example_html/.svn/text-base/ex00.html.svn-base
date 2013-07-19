@@ -1,0 +1,30 @@
+<p style="text-align: justify;">This first example is the classic hello world. It is composed by a single agent executing a<code> println</code> action to print on the console the message. The Jason MAS configuration file <code>hello-world</code> is the following:</p>
+
+<blockquote style="text-align: justify;"><pre>
+MAS hello_world {
+  environment: 
+  c4jason.CartagoEnvironment
+    
+  agents:  
+  hello_agent agentArchClass c4jason.CAgentArch;
+
+  classpath: "../../../../lib/cartago.jar";
+             "../../../../lib/c4jason.jar";    
+}
+</pre></blockquote>
+<p style="text-align: justify;">The declarations <code>environment: c4jason.CartagoEnvironment</code> and  <code>agentArchClass c4jason.CAgentArch</code> are fixed, and specify that the MAS will exploit CArtAgO environments and that agents need to have a proper predefined architecture to work within such environment. The <code>classpath</code> declaration is needed to include CArtAgO library (<code>cartago.jar</code>) and the specific Jason bridge (<code>c4jason.jar</code>) in the classpath. The program spawns a single agent (<code>hello_agent</code>) whose task is to print on standard output the classic hello message. For that purpose it exploits the <code>println</code> operation provided by the <code>console</code> artifact.</p>
+<p style="text-align: justify;">Source code of the <code>hello_agent</code> (in <code>hello_agent.asl</code>):</p>
+
+<blockquote style="text-align: justify;"><pre>
+!hello.
+
++!hello : true
+  <- .my_name(Name);
+     println("Hello, world! by ",Name).
+</pre></blockquote>
+<p style="text-align: justify;"><strong>Highlights:</strong></p>
+
+<ul style="text-align: justify;">
+	<li> By default an agent, when booting, joins the <code>default</code> workspace on current node - this can be avoided or controlled by specifying further parameters to the <code>environment: c4jason.CartagoEnvironment</code> declaration (see later).</li>
+	<li> <code>println</code> is an operation provided by the <code>console</code> artifact, which is available by default in the<code> default</code> workspace: so the agent external action <code>println</code> is mapped onto the operation of this artifact. This is the case of operation execution without specifying the specific target artifact.</li>
+</ul>

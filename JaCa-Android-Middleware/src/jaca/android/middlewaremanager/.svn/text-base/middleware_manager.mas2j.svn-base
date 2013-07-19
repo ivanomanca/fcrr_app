@@ -1,0 +1,23 @@
+MAS middleware_manager{
+	
+	infrastructure: Centralised
+	/*
+	 * IMPORTANT: the service address MUST be the same string specified in the manifest.
+	 *    <service android:name="jaca.android.JaCaService" android:exported="true" >
+	 *     <intent-filter>
+	 *       <action android:name="jaca.android.jacaservice" />
+	 *       	<category android:name="android.intent.category.DEFAULT" />
+	 *        </intent-filter>
+	 *    </service>
+	 *
+	 * Indeed that string represent both the address of the remote Android 
+	 * workspace as well as the action Android use for find the corresponding service when
+	 * we do the joinRemoteWorkspace from the Android version of CartagoInfrastructureLayer 
+	*/
+    environment: c4jason.CartagoEnvironment("infrastructure",service(android,"jaca.android.jacaservice"))
+
+    agents:  
+   		middleware_manager agentArchClass c4jason.CAgentArch;
+
+    aslSourcePath: "jaca/android/middlewaremanager";
+}

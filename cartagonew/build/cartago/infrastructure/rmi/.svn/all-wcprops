@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/infrastructure/rmi
+END
+ICartagoLoggerRemote.class
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/infrastructure/rmi/ICartagoLoggerRemote.class
+END
+KeepRemoteBodyAliveManagerAgent.class
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/infrastructure/rmi/KeepRemoteBodyAliveManagerAgent.class
+END
+CartagoCallbackRemote_Stub.class
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/infrastructure/rmi/CartagoCallbackRemote_Stub.class
+END
+CartagoNodeRemote_Stub.class
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/infrastructure/rmi/CartagoNodeRemote_Stub.class
+END
+CartagoLoggerRemote.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/infrastructure/rmi/CartagoLoggerRemote.class
+END
+AgentBodyRemote_Stub.class
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/infrastructure/rmi/AgentBodyRemote_Stub.class
+END
+CartagoCallbackProxy.class
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/infrastructure/rmi/CartagoCallbackProxy.class
+END
+ICartagoControllerRemote.class
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/infrastructure/rmi/ICartagoControllerRemote.class
+END
+IAgentBodyRemote.class
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/infrastructure/rmi/IAgentBodyRemote.class
+END
+CartagoInfrastructureLayer.class
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/infrastructure/rmi/CartagoInfrastructureLayer.class
+END
+AgentBodyProxy.class
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/infrastructure/rmi/AgentBodyProxy.class
+END
+ICartagoNodeRemote.class
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/infrastructure/rmi/ICartagoNodeRemote.class
+END
+CartagoControllerProxy.class
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/infrastructure/rmi/CartagoControllerProxy.class
+END
+CartagoCallbackRemote_Skel.class
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/infrastructure/rmi/CartagoCallbackRemote_Skel.class
+END
+ICartagoCallbackRemote.class
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/infrastructure/rmi/ICartagoCallbackRemote.class
+END
+CartagoControllerRemote.class
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/infrastructure/rmi/CartagoControllerRemote.class
+END
+AbstractCartagoCallback.class
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/infrastructure/rmi/AbstractCartagoCallback.class
+END
+CartagoNodeRemote_Skel.class
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/infrastructure/rmi/CartagoNodeRemote_Skel.class
+END
+AgentBodyRemote.class
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/infrastructure/rmi/AgentBodyRemote.class
+END
+GarbageBodyCollectorAgent.class
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/infrastructure/rmi/GarbageBodyCollectorAgent.class
+END
+CartagoNodeRemote.class
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/infrastructure/rmi/CartagoNodeRemote.class
+END
+AgentBodyRemote_Skel.class
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/infrastructure/rmi/AgentBodyRemote_Skel.class
+END
+CartagoCallbackRemote.class
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/infrastructure/rmi/CartagoCallbackRemote.class
+END
+CartagoLoggerProxy.class
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/infrastructure/rmi/CartagoLoggerProxy.class
+END

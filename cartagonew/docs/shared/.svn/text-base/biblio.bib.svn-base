@@ -1,0 +1,176 @@
+@Article{Sutter:2005:SCR,
+  author =       "Herb Sutter and James Larus",
+  title =        "Software and the concurrency revolution",
+  journal =      "ACM Queue: Tomorrow's Computing Today",
+  volume =       "3",
+  number =       "7",
+  pages =        "54--62",
+  month =        sep,
+  year =         "2005",
+  CODEN =        "AQCUAE",
+  ISSN =         "1542-7730",
+  bibsource =    "http://portal.acm.org/",
+}
+
+@article{artifacts-jaamas17,
+	Author = {Omicini, Andrea and Ricci, Alessandro and Viroli, Mirko},
+	Doi = {10.1007/s10458-008-9053-x},
+	Editor = {McBurney, Peter and Omicini, Andrea},
+	Issn = {1387-2532},
+	Issn-Online = {1573-7454},
+	Journal = {Autonomous Agents and Multi-Agent Systems},
+	Month = dec,
+	Note = {Special Issue on Foundations, Advanced Topics and Industrial Perspectives of Multi-Agent Systems},
+	Number = 3,
+	Publisher = {Springer},
+	Title = {Artifacts in the {A\&A} Meta-Model for Multi-Agent Systems},
+	Url = {http://www.springerlink.com/content/l2051h377k2plk07/},
+	Volume = 17,
+	Year = 2008}
+	
+@article{fer01tissec,
+ author = {David F. Ferraiolo and Ravi Sandhu and Serban Gavrila and D. Richard Kuhn and Ramaswamy Chandramouli},
+ title = {Proposed {NIST} Standard for Role-Based Access Control},
+ journal = {ACM Transactions on Information and System Security (TISSEC)},
+ volume = {4},
+ number = {3},
+ year = {2001},
+ issn = {1094-9224},
+ pages = {224--274},
+ doi = {http://doi.acm.org/10.1145/501978.501980},
+ publisher = {ACM Press},
+ }
+
+
+@Article{Sutter:2005:DDJ,
+  author =       "Herb Sutter",
+  title =        "The free lunch is over: a fundamental turn toward concurrency in software",
+  journal =      "Dr. Dobb’s Journal",
+  volume =       "30",
+  number =       "3",
+  bibsource =    " http://www.gotw.ca/publications/concurrency-ddj.htm",
+}
+
+@INPROCEEDINGS{aamas08:integr,
+  author = {A. Ricci and M. Piunti and L. D. Acay and R. Bordini and J. Hubner
+	and M. Dastani},
+  title = {{Integrating Artifact-Based Environments with Heterogeneous Agent-Programming
+	Platforms}},
+  booktitle = {{Proc. of AAMAS'08}},
+  year = {2008},
+  owner = {Michele Piunti},
+  timestamp = {2008.01.30}
+}
+
+@incollection{artifacts-promasIII,
+	Author = {Ricci, Alessandro and Viroli, Mirko and Omicini, Andrea},
+	Booktitle = {Programming Multi-Agent Systems},
+	Doi = {10.1007/11678823_13},
+	Editor = {Bordini, Rafael P. and Dastani, Mehdi and Dix, J{\"u}rgen and El Fallah Seghrouchni, Amal},
+	Isbn = {3-540-32616-2},
+	Issn = {0302-9743},
+	Month = mar,
+	Note = {3rd International Workshop (PROMAS 2005), AAMAS 2005, Utrecht, The Netherlands, 26~} # jul # {~2005. Revised and Invited Papers},
+	Pages = {206--221},
+	Publisher = {Springer},
+	Series = {LNAI},
+	Title = {Programming {MAS} with Artifacts},
+	Url = {http://www.springerlink.com/openurl.asp?genre=article&issn=0302-9743&volume=3862&spage=206},
+	Volume = 3862,
+	Year = 2006}
+	
+@INCOLLECTION{cartago-e4masIII,
+  author = {Ricci, A. and Viroli, M. and Omicini, A.},
+  title = {{{\sf CArtAgO}}: A Framework for Prototyping Artifact-Based Environments
+	in {MAS}},
+  booktitle = {Environments for MultiAgent Systems III},
+  publisher = {Springer},
+  year = {2007},
+  editor = {Weyns, Danny and Parunak, H. Van Dyke and Michel, Fabien},
+  month = {feb},
+  pages = {67--86},
+  series = {LNAI},
+  volume = {4389},
+  doi = {10.1007/978-3-540-71103-2_4},
+  isbn = {978-3-540-71102-5},
+  issn = {0302-9743},
+  open-url = {http://www.springerlink.com/openurl.asp?genre=article&issn=0302-9743&volume=4389&spage=67},
+  url = {http://www.springerlink.com/content/d1047836893j14q6/}
+}
+
+
+@INPROCEEDINGS{artifacts-promas07,
+  author = {Ricci, Alessandro and Viroli, Mirko and Omicini, Andrea},
+  title = {The {\AandA} Programming Model \& Technology for Developing Agent
+	Environments in {MAS}},
+  booktitle = {5th International Workshop ``Programming Multi-Agent Systems'' (PROMAS
+	2007)},
+  year = {2007},
+  volume = {4908},
+  series = {LNAI},
+  pages = {91--109},
+  publisher = {Springer}
+}
+	
+@inproceedings{cartago-atai06,
+	Address = {Vienna, Austria},
+	Author = {Ricci, Alessandro and Viroli, Mirko and Omicini, Andrea},
+	Booktitle = {Cybernetics and Systems 2006},
+	Editor = {Trappl, Robert},
+	Isbn = {3-85206-172-5},
+	Month = {18--21~} # apr,
+	Note = {18th European Meeting on Cybernetics and Systems Research (EMCSR 2006), 5th International Symposium ``From Agent Theory to Theory Implementation'' (AT2AI-5). Proceedings},
+	Pages = {569--574},
+	Publisher = {Austrian Society for Cybernetic Studies},
+	Title = {{\it Construenda est} {{\sf CArtAgO}}: Toward an Infrastructure for Artifacts in {MAS}},
+	Volume = 2,
+	Year = 2006}
+	
+@article{agensfaber-entcs150,
+	Author = {Omicini, Andrea and Ricci, Alessandro and Viroli, Mirko},
+	Doi = {10.1016/j.entcs.2006.03.003},
+	Doi-Url = {http://dx.doi.org/10.1016/j.entcs.2006.03.003},
+	Editor = {Boella, Guido and van der Torre, Leendert},
+	Issn = {1571-0661},
+	Journal = {Electronic Notes in Theoretical Computer Sciences},
+	Month = {29~} # may,
+	Note = {1st International Workshop ``Coordination and Organization'' (CoOrg 2005), COORDINATION 2005, Namur, Belgium, 22~} # apr # {~2005. Proceedings},
+	Number = 3,
+	Pages = {21--36},
+	Publisher = {Elsevier Science B.V.},
+	Title = {{\sl {A}gens {F}aber}: Toward A Theory of Artefacts for {MAS}},
+	Volume = 150,
+	Year = 2006}		
+
+
+
+@inproceedings{respect-coord97,
+   author =    {Denti, Enrico AND Natali, Antonio AND Omicini, Andrea},
+   title =     {Programmable Coordination Media},
+   editor =    {Garlan, David AND Le M{\'e}tayer, Daniel},
+   booktitle = {Coordination Languages and Models -- Proceedings of the 2nd
+                International Conference (COORDINATION'97)},
+   year =      1997,
+   month =     "1--3~" # sep,
+   publisher = {Springer-Verlag},
+   address =   {Berlin (D)},
+   series =    {LNCS},
+   volume =    1282,
+   pages =     {274--288},
+   issn =      {0302-9743},
+   isbn =      {3-540-63383-9},
+}
+
+@book{coordbook2001,
+   editor =    {Omicini, Andrea AND Zambonelli, Franco AND Klusch, Matthias AND
+                Tolksdorf, Robert},
+   title =     {Coordination of Internet Agents: Models, Technologies, and
+                Applications},
+   booktitle = {Coordination of Internet Agents: Models, Technologies, and
+                Applications},
+   month =     mar,
+   year =      2001,
+   publisher = {Springer-Verlag},
+   pages =     {XXVII--523},
+   isbn =      {3-540-41613-7},
+}

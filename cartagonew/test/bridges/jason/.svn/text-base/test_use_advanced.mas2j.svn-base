@@ -1,0 +1,11 @@
+MAS test_use_adv {
+
+    environment: c4jason.CartagoEnvironment("standalone")
+
+    agents:  
+   	test_coordinator_adv agentArchClass c4jason.CAgentArch;
+	userA test_user_adv.asl agentArchClass c4jason.CAgentArch;
+	userB test_user_adv.asl agentArchClass c4jason.CAgentArch;
+	
+    classpath: "../../lib/cartago.jar";"../../lib/c4jason.jar";    
+}

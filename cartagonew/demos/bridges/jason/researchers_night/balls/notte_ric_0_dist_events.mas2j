@@ -1,0 +1,12 @@
+MAS notte_ric {
+
+   environment: c4jason.CartagoEnvironment("infrastructure","protocol(rmi)","service(rmi,'localhost:20000')")
+
+   agents:
+   
+   configurator config_agent_0_dist  agentArchClass c4jason.CAgentArch; 
+       
+   classpath: "../../../../../lib/cartago.jar";"../../../../../lib/c4jason.jar";    
+
+   aslSourcePath: "src"; 
+}

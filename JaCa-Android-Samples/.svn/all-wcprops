@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/jaca-android/!svn/ver/112/jaca-android/trunk/JaCa-Android-Samples
+END
+default.properties
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/jaca-android/!svn/ver/112/jaca-android/trunk/JaCa-Android-Samples/default.properties
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/jaca-android/!svn/ver/108/jaca-android/trunk/JaCa-Android-Samples/AndroidManifest.xml
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/jaca-android/!svn/ver/112/jaca-android/trunk/JaCa-Android-Samples/.project
+END
+proguard.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/jaca-android/!svn/ver/105/jaca-android/trunk/JaCa-Android-Samples/proguard.cfg
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/jaca-android/!svn/ver/112/jaca-android/trunk/JaCa-Android-Samples/.classpath
+END

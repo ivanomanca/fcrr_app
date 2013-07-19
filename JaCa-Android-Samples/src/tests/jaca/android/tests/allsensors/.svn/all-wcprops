@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/jaca-android/!svn/ver/112/jaca-android/trunk/JaCa-Android-Samples/src/tests/jaca/android/tests/allsensors
+END
+agent.asl
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/jaca-android/!svn/ver/112/jaca-android/trunk/JaCa-Android-Samples/src/tests/jaca/android/tests/allsensors/agent.asl
+END
+project.mas2j
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/jaca-android/!svn/ver/105/jaca-android/trunk/JaCa-Android-Samples/src/tests/jaca/android/tests/allsensors/project.mas2j
+END
+MainActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/jaca-android/!svn/ver/105/jaca-android/trunk/JaCa-Android-Samples/src/tests/jaca/android/tests/allsensors/MainActivity.java
+END
+SensorsActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/jaca-android/!svn/ver/105/jaca-android/trunk/JaCa-Android-Samples/src/tests/jaca/android/tests/allsensors/SensorsActivity.java
+END
+SensorsGUIArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svnroot/jaca-android/!svn/ver/105/jaca-android/trunk/JaCa-Android-Samples/src/tests/jaca/android/tests/allsensors/SensorsGUIArtifact.java
+END

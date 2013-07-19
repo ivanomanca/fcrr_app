@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/util/agent
+END
+ActionFeedbackQueue.class
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/util/agent/ActionFeedbackQueue.class
+END
+CartagoBasicContext$1.class
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/util/agent/CartagoBasicContext$1.class
+END
+ObsEventQueue.class
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/util/agent/ObsEventQueue.class
+END
+ObsPropMap.class
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/util/agent/ObsPropMap.class
+END
+NoPerceptionException.class
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/util/agent/NoPerceptionException.class
+END
+CartagoBasicContext.class
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/util/agent/CartagoBasicContext.class
+END
+ActionFeedback.class
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/util/agent/ActionFeedback.class
+END
+ActionNotCompletedException.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/util/agent/ActionNotCompletedException.class
+END
+ObsProperties.class
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/util/agent/ObsProperties.class
+END
+CartagoBasicContext$CartagoListener.class
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/util/agent/CartagoBasicContext$CartagoListener.class
+END
+Percept.class
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/util/agent/Percept.class
+END
+ArtifactObsProperty.class
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/util/agent/ArtifactObsProperty.class
+END
+Agent.class
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/util/agent/Agent.class
+END

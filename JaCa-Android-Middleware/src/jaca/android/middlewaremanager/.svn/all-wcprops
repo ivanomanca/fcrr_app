@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/jaca-android/!svn/ver/107/jaca-android/trunk/JaCa-Android-Middleware/src/jaca/android/middlewaremanager
+END
+MiddlewareNotificationManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svnroot/jaca-android/!svn/ver/104/jaca-android/trunk/JaCa-Android-Middleware/src/jaca/android/middlewaremanager/MiddlewareNotificationManager.java
+END
+MiddlewarePreferenceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svnroot/jaca-android/!svn/ver/104/jaca-android/trunk/JaCa-Android-Middleware/src/jaca/android/middlewaremanager/MiddlewarePreferenceManager.java
+END
+JaCaMiddlewareService.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svnroot/jaca-android/!svn/ver/107/jaca-android/trunk/JaCa-Android-Middleware/src/jaca/android/middlewaremanager/JaCaMiddlewareService.java
+END
+MiddlewareManagerActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svnroot/jaca-android/!svn/ver/107/jaca-android/trunk/JaCa-Android-Middleware/src/jaca/android/middlewaremanager/MiddlewareManagerActivity.java
+END
+middleware_manager.mas2j
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/jaca-android/!svn/ver/104/jaca-android/trunk/JaCa-Android-Middleware/src/jaca/android/middlewaremanager/middleware_manager.mas2j
+END
+middleware_manager.asl
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/jaca-android/!svn/ver/107/jaca-android/trunk/JaCa-Android-Middleware/src/jaca/android/middlewaremanager/middleware_manager.asl
+END
+MiddlewarePreferenceManagerArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svnroot/jaca-android/!svn/ver/104/jaca-android/trunk/JaCa-Android-Middleware/src/jaca/android/middlewaremanager/MiddlewarePreferenceManagerArtifact.java
+END
+MiddlewareManagerGUIArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svnroot/jaca-android/!svn/ver/104/jaca-android/trunk/JaCa-Android-Middleware/src/jaca/android/middlewaremanager/MiddlewareManagerGUIArtifact.java
+END
+JaCaAndroidBootManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/jaca-android/!svn/ver/104/jaca-android/trunk/JaCa-Android-Middleware/src/jaca/android/middlewaremanager/JaCaAndroidBootManager.java
+END

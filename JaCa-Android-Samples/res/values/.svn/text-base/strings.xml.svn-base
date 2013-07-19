@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, JaCa-Android!</string>
+    <string name="app_name">JaCa-Android Samples</string>
+
+	<!-- Examples mas2j  -->
+	<string name="example_sms_sample">Example sms (basic version)</string>
+	<string name="examples_sms_simple_mas2j">/jaca/android/examples/sms/simple/project.mas2j</string>
+	<string name="send">Send</string>
+
+	<string name="example_sms_context">Example sms context-aware</string>
+	<string name="examples_sms_context_mas2j">/jaca/android/examples/sms/contextsensitive/project.mas2j</string>
+
+	<string name="test_jacalocale">JaCa-Locale</string>
+	<string name="test_jacalocale_mas2j">/jaca/android/examples/jacalocale/project.mas2j</string>
+	<string name="test_jacalocale_title">JaCa-Locale</string>
+	
+	<!-- Tests mas2j  -->
+	<string name="console">Console</string>
+	
+	<string name="test_gui_artifact">GUI Artifact</string>
+	<string name="print">Print</string>
+	<string name="test_gui_mas2j">/jaca/android/tests/gui/project.mas2j</string>
+	
+	<string name="test_call_artifact">CallManager</string>
+	<string name="test_call_mas2j">/jaca/android/tests/call/project.mas2j</string>
+	
+	<string name="test_contacts_artifact">ContactsManager</string>
+	<string name="test_contacts_mas2j">/jaca/android/tests/contacts/project.mas2j</string>
+	
+	<string name="test_gps_artifact">GPSManager</string>
+	<string name="test_gps_mas2j">/jaca/android/tests/gps/project.mas2j</string>
+	
+	<string name="test_notification_artifact">NotificationManager</string>
+	<string name="test_notification_mas2j">/jaca/android/tests/notification/project.mas2j</string>
+	
+	<string name="test_sms_artifact">SMSManager</string>
+	<string name="test_sms_mas2j">/jaca/android/tests/sms/project.mas2j</string>
+
+	<string name="test_remotewsp_android">Remote Wsp (Android)</string>
+	<string name="test_remotewsp_android_mas2j">/jaca/android/tests/remotewsp/android/project.mas2j</string>
+	
+	<string name="test_remotewsp_lipermi">Remote Wsp (Network with LipeRmi)</string>
+	<string name="test_remotewsp_lipermi_mas2j">/jaca/android/tests/remotewsp/lipermi/project.mas2j</string>
+	<string name="btnOk">Ok</string>
+	<string name="btnCancel">Cancel</string>
+	<string name="lblAddress">Type here (address:port)</string>
+	<string name="ckbRemember">Remember</string>
+
+	<string name="test_service_artifact">Service Artifact</string>
+	<string name="test_service_mas2j">/jaca/android/tests/service/project.mas2j</string>
+	
+	<string name="test_phonesettings_artifact">PhoneSettingsManager</string>
+	<string name="test_phonesettings_mas2j">/jaca/android/tests/phonesettings/project.mas2j</string>
+	
+	<string name="test_networksettings_artifact">ConnectivityManager</string>
+	<string name="test_networksettings_mas2j">/jaca/android/tests/connectivity/project.mas2j</string>
+
+	<string name="test_battery_artifact">BatteryManager</string>
+	<string name="test_battery_mas2j">/jaca/android/tests/battery/project.mas2j</string>
+
+	<string name="test_performance_reactivity">[Performance] Reactivity</string>
+	<string name="test_performance_reactivity_mas2j">/jaca/android/tests/performance/reactivity/project.mas2j</string>
+
+	<string name="test_performance_heavycalc">[Performance] Heavy Computation</string>
+	<string name="test_performance_heavycalc_mas2j">/jaca/android/tests/performance/heavycalc/project.mas2j</string>
+	<string name="test_heavycalc_title">Heavy computation test</string>
+
+	<string name="test_performance_memory_hello">[Performance] Hello world Memory</string>
+	<string name="test_performance_memory_hello_mas2j">/jaca/android/tests/performance/memory/helloworld/project.mas2j</string>
+	<string name="test_memory_hello_title">Hello world memory occupation</string>
+	
+	<string name="test_performance_memory_acclistener">[Performance] AccListener Memory</string>
+	<string name="test_performance_memory_acclistener_mas2j">/jaca/android/tests/performance/memory/acclistener/project.mas2j</string>
+	<string name="test_memory_acclistener_title">Accelerometer listener memory occupation</string>
+	
+	<string name="test_allsensors">AllSensorsManager</string>
+	<string name="test_allsensors_mas2j">/jaca/android/tests/allsensors/project.mas2j</string>
+	<string name="geomag_values">Geomag:</string>
+	<string name="acc_values">Accelerometer:</string>
+	<string name="orientation_values">Orientation:</string>
+
+</resources>

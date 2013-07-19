@@ -1,0 +1,18 @@
+\contentsline {chapter}{\numberline {1}Introduction}{2}
+\contentsline {chapter}{\numberline {2}Tests}{4}
+\contentsline {section}{\numberline {2.1}Example 01 - Working with GUI}{5}
+\contentsline {subsection}{\numberline {2.1.1}The \textsf {GUIArtifact}}{5}
+\contentsline {subsection}{\numberline {2.1.2}The sample}{6}
+\contentsline {section}{\numberline {2.2}Example 01 - Working with Sensors}{9}
+\contentsline {section}{\numberline {2.3}Example 02 - Working with the GPS}{13}
+\contentsline {section}{\numberline {2.4}Example 03 - Reading the battery status}{16}
+\contentsline {section}{\numberline {2.5}Example 04 - Working with the device connectivity}{21}
+\contentsline {section}{\numberline {2.6}Example 05 - Working in remote \textsf {JaCa-Android}{} workspaces}{25}
+\contentsline {section}{\numberline {2.7}Example 06 - Working with standard \unhbox \voidb@x \hbox {\sf {JaCa}}{} remote workspace}{29}
+\contentsline {chapter}{\numberline {3}Examples}{32}
+\contentsline {section}{\numberline {3.1}Context-aware SMS notifier}{32}
+\contentsline {section}{\numberline {3.2}JaCa-Locale}{32}
+\contentsline {chapter}{\numberline {4}Performance tests}{33}
+\contentsline {section}{\numberline {4.1}Reactivity test}{33}
+\contentsline {section}{\numberline {4.2}Memory occupation test}{33}
+\contentsline {section}{\numberline {4.3}Heavy computation test}{33}

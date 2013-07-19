@@ -1,0 +1,17 @@
+/*
+    Jason Project
+
+    -- created on September 15, 2010
+*/
+
+MAS smartM3_101 {
+
+   environment: c4jason.CartagoEnvironment
+
+   agents:
+      //	kp agentArchClass c4jason.CAgentArch;
+       welcome agentArchClass c4jason.CAgentArch;
+
+   classpath: "../../../../../lib/cartago.jar";"../../../../../lib/c4jason.jar"; "lib"; "../../../../../../lib/lipermi-0.4.jar";
+   aslSourcePath: "src"; 
+}

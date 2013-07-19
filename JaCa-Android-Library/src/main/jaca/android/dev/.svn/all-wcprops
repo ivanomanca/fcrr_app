@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/jaca-android/!svn/ver/128/jaca-android/trunk/JaCa-Android-Library/src/main/jaca/android/dev
+END
+JaCaTabActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/jaca/android/dev/JaCaTabActivity.java
+END
+GUIArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/jaca/android/dev/GUIArtifact.java
+END
+IJaCaActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/jaca/android/dev/IJaCaActivity.java
+END
+LocationManagerArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/jaca-android/!svn/ver/128/jaca-android/trunk/JaCa-Android-Library/src/main/jaca/android/dev/LocationManagerArtifact.java
+END
+EventOpInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/jaca/android/dev/EventOpInfo.java
+END
+JaCaArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/jaca/android/dev/JaCaArtifact.java
+END
+TelephonyManagerArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/jaca/android/dev/TelephonyManagerArtifact.java
+END
+SensorManagerArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/jaca/android/dev/SensorManagerArtifact.java
+END
+JaCaActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/jaca/android/dev/JaCaActivity.java
+END
+PreferenceChangeEventsFetcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/jaca/android/dev/PreferenceChangeEventsFetcher.java
+END
+BroadcastReceiverArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/jaca/android/dev/BroadcastReceiverArtifact.java
+END
+JaCaListActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/jaca-android/!svn/ver/170/jaca-android/trunk/JaCa-Android-Library/src/main/jaca/android/dev/JaCaListActivity.java
+END
+ListActivityArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/jaca/android/dev/ListActivityArtifact.java
+END
+JaCaPreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/jaca/android/dev/JaCaPreferenceActivity.java
+END
+ActivityEventsFetcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/jaca/android/dev/ActivityEventsFetcher.java
+END
+BaseEventFetcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/jaca/android/dev/BaseEventFetcher.java
+END
+SensorEventsFetcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/jaca/android/dev/SensorEventsFetcher.java
+END
+PreferenceGUIArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/jaca/android/dev/PreferenceGUIArtifact.java
+END

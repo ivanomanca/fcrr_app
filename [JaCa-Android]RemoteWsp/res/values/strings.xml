@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Test Remote Workspace</string>
+    <string name="test_remote_workspace_mas2j">/test/remote/project.mas2j</string>
+    <string name="console">Console</string>
+</resources>
+ 

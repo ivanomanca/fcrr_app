@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/jaca-android/!svn/ver/109/jaca-android/trunk/JaCa-Android-Samples/src/examples/jaca/android/examples/sms/contextsensitive
+END
+agent.asl
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/jaca-android/!svn/ver/108/jaca-android/trunk/JaCa-Android-Samples/src/examples/jaca/android/examples/sms/contextsensitive/agent.asl
+END
+project.mas2j
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svnroot/jaca-android/!svn/ver/108/jaca-android/trunk/JaCa-Android-Samples/src/examples/jaca/android/examples/sms/contextsensitive/project.mas2j
+END
+SmsViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svnroot/jaca-android/!svn/ver/105/jaca-android/trunk/JaCa-Android-Samples/src/examples/jaca/android/examples/sms/contextsensitive/SmsViewer.java
+END
+ViewerArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svnroot/jaca-android/!svn/ver/109/jaca-android/trunk/JaCa-Android-Samples/src/examples/jaca/android/examples/sms/contextsensitive/ViewerArtifact.java
+END

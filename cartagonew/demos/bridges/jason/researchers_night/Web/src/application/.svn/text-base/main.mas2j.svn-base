@@ -1,0 +1,12 @@
+/*
+    Product Search Example for JaCa-Web    
+*/
+
+MAS project {
+   
+   environment: 	c4jason.CartagoEnvironment("local")
+
+   agents:			user_assistant agentArchClass c4jason.CAgentArch;       
+             
+   aslSourcePath: 	"google_maps/application";
+}

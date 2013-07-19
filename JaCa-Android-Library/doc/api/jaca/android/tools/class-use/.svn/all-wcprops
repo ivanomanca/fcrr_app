@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/jaca-android/!svn/ver/103/jaca-android/trunk/JaCa-Android-Library/doc/api/jaca/android/tools/class-use
+END
+ConnectivityManager.html
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/jaca-android/!svn/ver/103/jaca-android/trunk/JaCa-Android-Library/doc/api/jaca/android/tools/class-use/ConnectivityManager.html
+END
+AllSensorsManager.html
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/jaca-android/!svn/ver/103/jaca-android/trunk/JaCa-Android-Library/doc/api/jaca/android/tools/class-use/AllSensorsManager.html
+END
+SMSManager.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/jaca-android/!svn/ver/103/jaca-android/trunk/JaCa-Android-Library/doc/api/jaca/android/tools/class-use/SMSManager.html
+END
+CalendarManager.html
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/jaca-android/!svn/ver/103/jaca-android/trunk/JaCa-Android-Library/doc/api/jaca/android/tools/class-use/CalendarManager.html
+END
+CallManager.html
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/jaca-android/!svn/ver/103/jaca-android/trunk/JaCa-Android-Library/doc/api/jaca/android/tools/class-use/CallManager.html
+END
+ServiceArtifact.html
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/jaca-android/!svn/ver/103/jaca-android/trunk/JaCa-Android-Library/doc/api/jaca/android/tools/class-use/ServiceArtifact.html
+END
+ObjectWrapperArtifact.html
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svnroot/jaca-android/!svn/ver/103/jaca-android/trunk/JaCa-Android-Library/doc/api/jaca/android/tools/class-use/ObjectWrapperArtifact.html
+END
+AccelerometerSensorManager.html
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svnroot/jaca-android/!svn/ver/103/jaca-android/trunk/JaCa-Android-Library/doc/api/jaca/android/tools/class-use/AccelerometerSensorManager.html
+END
+OrientationSensorManager.html
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/jaca-android/!svn/ver/103/jaca-android/trunk/JaCa-Android-Library/doc/api/jaca/android/tools/class-use/OrientationSensorManager.html
+END
+GPSManager.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/jaca-android/!svn/ver/103/jaca-android/trunk/JaCa-Android-Library/doc/api/jaca/android/tools/class-use/GPSManager.html
+END
+NotificationManager.html
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/jaca-android/!svn/ver/103/jaca-android/trunk/JaCa-Android-Library/doc/api/jaca/android/tools/class-use/NotificationManager.html
+END
+MySensorsArtifact.html
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/jaca-android/!svn/ver/103/jaca-android/trunk/JaCa-Android-Library/doc/api/jaca/android/tools/class-use/MySensorsArtifact.html
+END
+BatteryArtifact.html
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/jaca-android/!svn/ver/103/jaca-android/trunk/JaCa-Android-Library/doc/api/jaca/android/tools/class-use/BatteryArtifact.html
+END
+GeomagneticSensorManager.html
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/jaca-android/!svn/ver/103/jaca-android/trunk/JaCa-Android-Library/doc/api/jaca/android/tools/class-use/GeomagneticSensorManager.html
+END
+PhoneSettingsManager.html
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/jaca-android/!svn/ver/103/jaca-android/trunk/JaCa-Android-Library/doc/api/jaca/android/tools/class-use/PhoneSettingsManager.html
+END
+ContactsManager.html
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/jaca-android/!svn/ver/103/jaca-android/trunk/JaCa-Android-Library/doc/api/jaca/android/tools/class-use/ContactsManager.html
+END

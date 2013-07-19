@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/tools
+END
+Barrier.class
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/Barrier.class
+END
+Console.class
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/Console.class
+END
+Console.man
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/Console.man
+END
+TupleSet.class
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/TupleSet.class
+END
+FetchSwingEvents.class
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/FetchSwingEvents.class
+END
+TupleSpace.class
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/TupleSpace.class
+END
+TupleSpace.man
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/TupleSpace.man
+END
+TupleTemplate.class
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/TupleTemplate.class
+END
+Latch.class
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/Latch.class
+END
+EventOpInfo.class
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/EventOpInfo.class
+END
+FetchSwingEvents$1.class
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/FetchSwingEvents$1.class
+END
+GUIArtifact.class
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/GUIArtifact.class
+END
+Clock.class
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/Clock.class
+END
+SocketChannel.class
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/SocketChannel.class
+END
+SocketChannel$ReadCmd.class
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/SocketChannel$ReadCmd.class
+END

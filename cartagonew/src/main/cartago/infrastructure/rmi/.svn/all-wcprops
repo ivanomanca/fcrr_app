@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/cartago/!svn/ver/708/cartago/trunk/src/main/cartago/infrastructure/rmi
+END
+GarbageBodyCollectorAgent.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/cartago/!svn/ver/386/cartago/trunk/src/main/cartago/infrastructure/rmi/GarbageBodyCollectorAgent.java
+END
+AgentBodyRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/386/cartago/trunk/src/main/cartago/infrastructure/rmi/AgentBodyRemote.java
+END
+AbstractCartagoCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/cartago/!svn/ver/373/cartago/trunk/src/main/cartago/infrastructure/rmi/AbstractCartagoCallback.java
+END
+CartagoControllerRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/cartago/!svn/ver/455/cartago/trunk/src/main/cartago/infrastructure/rmi/CartagoControllerRemote.java
+END
+ICartagoCallbackRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/cartago/!svn/ver/373/cartago/trunk/src/main/cartago/infrastructure/rmi/ICartagoCallbackRemote.java
+END
+CartagoControllerProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/cartago/!svn/ver/455/cartago/trunk/src/main/cartago/infrastructure/rmi/CartagoControllerProxy.java
+END
+ICartagoNodeRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/cartago/!svn/ver/455/cartago/trunk/src/main/cartago/infrastructure/rmi/ICartagoNodeRemote.java
+END
+AgentBodyProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/cartago/!svn/ver/386/cartago/trunk/src/main/cartago/infrastructure/rmi/AgentBodyProxy.java
+END
+CartagoInfrastructureLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/cartago/!svn/ver/708/cartago/trunk/src/main/cartago/infrastructure/rmi/CartagoInfrastructureLayer.java
+END
+IAgentBodyRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/cartago/!svn/ver/386/cartago/trunk/src/main/cartago/infrastructure/rmi/IAgentBodyRemote.java
+END
+ICartagoControllerRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/cartago/!svn/ver/455/cartago/trunk/src/main/cartago/infrastructure/rmi/ICartagoControllerRemote.java
+END
+CartagoCallbackProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/cartago/!svn/ver/373/cartago/trunk/src/main/cartago/infrastructure/rmi/CartagoCallbackProxy.java
+END
+CartagoLoggerRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/cartago/!svn/ver/455/cartago/trunk/src/main/cartago/infrastructure/rmi/CartagoLoggerRemote.java
+END
+KeepRemoteBodyAliveManagerAgent.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/cartago/!svn/ver/386/cartago/trunk/src/main/cartago/infrastructure/rmi/KeepRemoteBodyAliveManagerAgent.java
+END
+ICartagoLoggerRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/cartago/!svn/ver/455/cartago/trunk/src/main/cartago/infrastructure/rmi/ICartagoLoggerRemote.java
+END
+CartagoLoggerProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/cartago/!svn/ver/455/cartago/trunk/src/main/cartago/infrastructure/rmi/CartagoLoggerProxy.java
+END
+CartagoCallbackRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/cartago/!svn/ver/373/cartago/trunk/src/main/cartago/infrastructure/rmi/CartagoCallbackRemote.java
+END
+CartagoNodeRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/579/cartago/trunk/src/main/cartago/infrastructure/rmi/CartagoNodeRemote.java
+END

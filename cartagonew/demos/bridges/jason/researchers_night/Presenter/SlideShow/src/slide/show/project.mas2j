@@ -1,0 +1,12 @@
+MAS slide_show {
+	
+	infrastructure: Centralised
+
+    environment: c4jason.CartagoEnvironment("standalone", protocol(lipermi))
+
+    agents:  
+   		slideShowAgent agentArchClass c4jason.CAgentArch;
+
+    aslSourcePath: 
+    	"slide/show";
+}

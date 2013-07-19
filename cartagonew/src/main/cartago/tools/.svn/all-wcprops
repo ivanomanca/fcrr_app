@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/cartago/!svn/ver/708/cartago/trunk/src/main/cartago/tools
+END
+SocketChannel.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/cartago/!svn/ver/174/cartago/trunk/src/main/cartago/tools/SocketChannel.java
+END
+TupleSpace.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/cartago/!svn/ver/566/cartago/trunk/src/main/cartago/tools/TupleSpace.java
+END
+Clock.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/cartago/!svn/ver/306/cartago/trunk/src/main/cartago/tools/Clock.java
+END
+GUIArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/cartago/!svn/ver/680/cartago/trunk/src/main/cartago/tools/GUIArtifact.java
+END
+Console.man
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/cartago/!svn/ver/174/cartago/trunk/src/main/cartago/tools/Console.man
+END
+TupleSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/cartago/!svn/ver/174/cartago/trunk/src/main/cartago/tools/TupleSet.java
+END
+EventOpInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/cartago/!svn/ver/174/cartago/trunk/src/main/cartago/tools/EventOpInfo.java
+END
+Console.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/cartago/!svn/ver/680/cartago/trunk/src/main/cartago/tools/Console.java
+END
+Barrier.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/cartago/!svn/ver/174/cartago/trunk/src/main/cartago/tools/Barrier.java
+END
+CommunicatorArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/cartago/!svn/ver/680/cartago/trunk/src/main/cartago/tools/CommunicatorArtifact.java
+END
+TupleSpace.man
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/cartago/!svn/ver/235/cartago/trunk/src/main/cartago/tools/TupleSpace.man
+END
+Latch.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/cartago/!svn/ver/174/cartago/trunk/src/main/cartago/tools/Latch.java
+END
+CommonEventListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/cartago/!svn/ver/680/cartago/trunk/src/main/cartago/tools/CommonEventListener.java
+END
+TupleTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/cartago/!svn/ver/207/cartago/trunk/src/main/cartago/tools/TupleTemplate.java
+END

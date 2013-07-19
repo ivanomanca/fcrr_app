@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/security
+END
+NullSecurityManager.class
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/security/NullSecurityManager.class
+END
+Role.class
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/security/Role.class
+END
+AlwaysForbidUsePolicy.class
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/security/AlwaysForbidUsePolicy.class
+END
+AgentIdCredential.class
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/security/AgentIdCredential.class
+END
+DefaultSecurityManager.class
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/security/DefaultSecurityManager.class
+END
+AgentCredential.class
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/security/AgentCredential.class
+END
+IArtifactUsePolicy.class
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/security/IArtifactUsePolicy.class
+END
+AlwaysAllowUsePolicy.class
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/security/AlwaysAllowUsePolicy.class
+END
+SecurityException.class
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/security/SecurityException.class
+END
+IWorkspaceSecurityManager.class
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/security/IWorkspaceSecurityManager.class
+END
+UseOnlyYourOwnArtifactsPolicy.class
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/security/UseOnlyYourOwnArtifactsPolicy.class
+END
+PwdCredential.class
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/security/PwdCredential.class
+END

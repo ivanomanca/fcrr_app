@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="ball_scene_mas2j">/ball/scene/project.mas2j</string>
+	
+    <string name="ball_scene_commander">Ball scene commander</string>
+	<string name="btnBallOn">Balls On</string>
+	<string name="btnBallOff">Balls Off</string>
+	
+	<string name="txtButtonCommander">Console</string>
+	<string name="btnUp">Up</string>
+	<string name="btnDown">Down</string>
+	<string name="btnLeft">Left</string>
+	<string name="btnRight">Right</string>
+	
+	<string name="ckbSensor">Enable sensor controller</string>
+	
+	<string name="reset_address">Reset Address</string>
+	<string name="btnOk">Ok</string>
+	<string name="btnCancel">Cancel</string>
+	<string name="lblAddress">Type here (address:port)</string>
+	<string name="ckbRemember">Remember</string>
+</resources>

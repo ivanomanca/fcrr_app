@@ -1,0 +1,60 @@
+<p style="text-align: justify;">This is the CArtAgO by example - <strong>Jason version</strong>. Here Jason is used as reference agent programming language, to program agents.</p>
+<p style="text-align: justify;">All the examples can be found in the <code>examples/bridges/jason/basic</code> folder.</p>
+<p style="text-align: justify;">Before going with the examples, it follows a sum up of some main key point about CArtAgO (more can be found in the annotated reference):</p>
+
+<ul style="text-align: justify;">
+	<li> <strong>Workspaces:</strong> A CArtAgO environment is given by one or multiple workspaces,
+possibly spread on multiple network nodes. Multiple workspaces can be running on the same node.
+By default each node has a <code>default</code> workspace. In order to work inside a
+workspace an agent must join it. By default, when booted, an agent is automatically joined to the
+<code>default workspace</code>. Then, the same agent can join and work simultaneously in multiple workspaces.</li>
+	<li> <strong>Agents' action repertoire:</strong> By working inside a CArtAgO environment, the repertoire of an agent's actions is determined by the set of artifacts available/usable in the workspace, in particular by the operations provided by such artifacts. There is one-to-one mapping between actions and operations: if there is an artifact providing an operation <code>myOp</code>, then each agent of the workspace - modulo security constraints - can perform an external action called <code>myOp</code>. Accordingly, by performing an external action, the action completes with success or failure if the corresponding operation completes with success or fails. Since the set of artifacts can be changed dynamically by agents (creating new artifacts, disposing existing ones), the repertoire of actions is dynamic too.</li>
+	<li> <strong>Default artifacts:</strong> By default, each workspace contains a basic set of predefined artifacts that provide core functionalities to the agents. In particular:
+<ul>
+	<li> <code>workspace</code> artifact (<code>cartago.WorkspaceArtifact</code>): - provides functionalities to create, dispose, lookup, link, focus artifacts of the workspace. Also it provides operations to set roles and policies related to the RBAC security model.</li>
+	<li> <code>node</code> artifact (<code>cartago.NodeArtifact</code>) - provides functionalities to create new workspaces, to join local and remote workspaces.</li>
+	<li> <code>blackboard</code> artifact (type <code>cartago.tools.TupleSpace</code>) - provides a tuple space that agents can exploit
+to communicate and coordinate.</li>
+	<li> <code>console</code> artifact (<code>cartago.tools.Console</code>) - provides functionalities to print messages on
+standard output.</li>
+</ul>
+</li>
+</ul>
+<p style="text-align: justify;">Specific points related to the Jason$+$CArtAgO integration (<strong>whose semantics, however, should be preserved also in the other integrations</strong>, when possible):</p>
+
+<ul style="text-align: justify;">
+	<li> <strong>Mapping observable properties and events into beliefs</strong>: by focussing an artifact, observable properties are mapped into agent's belief base. So each time an observable property is updated, the corresponding belief is updated too. Percepts related to observable events adopt the same syntax of belief-update events (so <code>+event(Params)</code>), however they are not automatically mapped into the belief base.</li>
+	<li> <strong>Java data-binding</strong>: Java object model is used in CArtAgO as data model to represent and manipulate data structures. That means that operations' parameters, observable properties' and signals' arguments are either Java's primitive data types or objects. To work with CArtAgO, Jason's data type has been extended to work also with objects - referenced by atoms with a specific functor -- and a translation between primitive data types is applied. In the following will be described the current translation rules.
+<ul>
+	<li> From CArtAgO to Jason:
+<ul>
+	<li>boolean are mapped into boolean</li>
+	<li>int, long, float, double are mapped into doubles (NumberTerm)</li>
+	<li>String are mapped into String</li>
+	<li>null value is mapped into an unbound variable</li>
+	<li>arrays are mapped into lists</li>
+	<li>objects in general are mapped by atoms <code>cobj_XXX</code> that work as object reference</li>
+</ul>
+</li>
+	<li> From Jason to CArtAgO:
+<ul>
+	<li>boolean are mapped into boolean</li>
+	<li>a numeric term is mapped into the smallest type of number which is sufficient to contain the data</li>
+	<li>String are mapped into String objects</li>
+	<li>structures are mapped into String objects</li>
+	<li>unbound variables are mapped into output parameters (represented by the class <code>OpFeedbackParam</code>)</li>
+	<li>lists are mapped into arrays</li>
+	<li>atoms <code>cobj_XXX</code> referring to objects are mapped into the referenced objects</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p style="text-align: justify;">Jason agents do not share objects: each agent has its own object pool.
+
+</p>
+<p style="text-align: justify;">List of examples:</p>
+
+<ul style="text-align: justify;">
+	<li>Example 00: Hello World example</li>
+</ul>

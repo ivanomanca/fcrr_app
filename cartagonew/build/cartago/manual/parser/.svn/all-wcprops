@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/parser
+END
+ArtifactManualParser.class
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/parser/ArtifactManualParser.class
+END
+SimpleCharStream.class
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/parser/SimpleCharStream.class
+END
+ArtifactManualParserConstants.class
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/parser/ArtifactManualParserConstants.class
+END
+Token.class
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/parser/Token.class
+END
+TokenMgrError.class
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/parser/TokenMgrError.class
+END
+ArtifactManualParserTokenManager.class
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/parser/ArtifactManualParserTokenManager.class
+END
+ParseException.class
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/manual/parser/ParseException.class
+END

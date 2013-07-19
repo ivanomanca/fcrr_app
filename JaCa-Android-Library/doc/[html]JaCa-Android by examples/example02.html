@@ -1,0 +1,99 @@
+<p style="text-align: justify;">In this example we will show how to work with the GPS in <strong>JaCa-Android</strong>. You can find the source code of this sample in the folder <strong>/jaca/android/tests/gps</strong> placed inside the main <strong>tests</strong> folder. 
+</p>
+<p style="text-align: justify;">
+The agent used in this sample joins the <strong>MiddlewareServices</strong> workspace for working with the <strong>GPSManager</strong> artifact, an artifact provided by the middleware that encapsulates the access to the device's GPS.  The <strong>GPSManager</strong> artifact is an artifact extending the <strong>LocationManagerArtifact</strong>, a <strong>JaCa-Android</strong> artifact that provides basic functionalities for managing the device's geographical location. The artifact has a set of observable properties (<strong>latitude</strong>, <strong>longitude</strong>, <strong>altitude</strong>, <strong>bearing</strong>, etc.) that make directly accessible to agents the information coming from the GPS.  These observable properties are dynamically updated by the artifact, by means of the usual linking mechanism between Android events -- GPS-related events in this case -- and artifact operations as described previously. 
+</p>
+
+<p style="text-align: justify;">Below is reported a source code snippet of the <strong>GPSManager</strong> artifact.
+<p style="text-align: center;">
+<pre  class="srccode">
+public class GPSManager extends LocationManagerArtifact {
+
+  protected void init(int minTime, int minDistance) {
+    super.init(minTime, minDistance);
+    linkOnLocationChangedEventToOp(LocationManager.GPS_PROVIDER, 
+      "onLocationChange");
+    Location location = getLocationManager()
+                          .getLastKnownLocation(LocationManager.GPS_PROVIDER);
+    if (location!=null) {
+      defineObsProperty(LATITUDE, location.getLatitude());
+      defineObsProperty(LONGITUDE, location.getLongitude());
+      defineObsProperty(ALTITUDE, location.getAltitude());
+      ...
+    } else {
+      defineObsProperty(LATITUDE, 0);
+      defineObsProperty(LONGITUDE, 0);
+      ...
+    }
+  }
+		
+  protected void dispose() {
+    super.dispose();
+    removeLocationUpdates(LocationManager.GPS_PROVIDER);
+  }
+	
+  @INTERNAL_OPERATION void onLocationChange(Location arg0) {
+    signal(ON_LOCATION_CHANGE, arg0.getProvider());
+    getObsProperty(LATITUDE).updateValue(arg0.getLatitude());
+    getObsProperty(LONGITUDE).updateValue(arg0.getLongitude());
+    ...
+  }
+}
+</pre>
+</p>
+<p style="text-align: justify;"><strong>GPSManager</strong> highlights:</p>
+
+
+<ul>
+<li><p style="text-align: justify;">In the initialisation phase: <i>(i)</i> the definition of the artifact observable properties (for the full list see the artifact's source code), <i>(ii)</i> the linking between the gps-related events and the artifact operations responsible of the handling of such events.</p></li>
+
+<li><p style="text-align: justify;">The observable properties are updated as soon as new gps information are retrieved from the device's GPS. This is done inside the <strong>onLocationChange</strong> internal operation that, thanks to the link done in the <strong>init</strong>, is called each time new sensors values are available.</p></li>
+
+<li><p style="text-align: justify;">The generation of appropriate signals each time the artifact starts/ends receiving gps-related events. The start/end of the monitoring of such events is handled by the <strong>startMonitoring</strong>/<strong>stopMonitoring</strong> operations inherited from the <strong>LocationManagerArtifact</strong>.</p></li>
+</ul>
+<br/>
+Below is reported the source code of the agent using the <strong>GPSManager</strong> artifact.
+<p style="text-align: center;">
+<pre  class="srccode">
+!start.
+
++!start
+  <-  !init;
+      !do_job.
+
+/*Initialisation plan for joining the MiddlewareServices workspace*/
++!init 
+  <-  ...
+	
+/************************* Main agent plan ************************/		
++!do_job : wsp_id(jaca_services, WspID) & art_id(console,LocalConsoleID)
+  <-  focusWhenAvailable("gps-manager")[wsp_id(WspID)];
+      startMonitoring[wsp_id(WspID)];
+      println("Ready.")[artifact_id(LocalConsoleID)].
+		
++latitude(Latitude) : art_id(console,LocalConsoleID)
+  <-  println("Latitude: ", Latitude)[artifact_id(LocalConsoleID)].
+  
++longitude(Longitude) : art_id(console,LocalConsoleID)
+  <-  println("Longitude: ", Longitude)[artifact_id(LocalConsoleID)].
+	
++altitude(Altitude) : art_id(console,LocalConsoleID)
+  <-  println("altitude: ", Altitude)[artifact_id(LocalConsoleID)].
+
+...
+</pre>
+</p>
+
+Agent highlights:
+
+<ul>
+<li><p style="text-align: justify;">For first the agent joins the <strong>MiddlewareServices</strong> workspace using the usual <strong>init</strong> plan.</p></li>
+
+<li><p style="text-align: justify;">Then the agent focuses the <strong>GPSManager</strong>, contained in the <strong>MiddlewareServices</strong> workspace, and then invokes the <strong>startMonitoring</strong> operation on such artifact for starting receiving the information coming from the device's GPS.</p></li>
+
+<li><p style="text-align: justify;">Updates to the <strong>GPSManager</strong> observable properties are managed by a set of reactive plans in which the agent simply prints in the console the new information coming from the <strong>GPSManager</strong>.</p></li>
+</ul>
+
+<p style="text-align: center;">
+<img src="http://jaca-android.sourceforge.net/wp-content/uploads/2011/04/test_gps_gui.png" alt="" title="test_gui_gui" width="320" height="480" class="aligncenter size-full wp-image-534" />
+<p style="text-align: center;">A screenshot of the running example.</p>

@@ -1,0 +1,60 @@
+<p style="text-align: justify;">In the following we describe some main features of <strong>JaCa-Android</strong> making a sequence of simple tests, example and performance tests focussing on the different functionalities provided by the middleware.</p>
+
+<p style="text-align: justify;">This document is meant to be read by people already familiar with the <strong>JaCa</strong> programming model -- the programming model upon which <strong>JaCa-Android</strong> is based. If you are an inexperienced reader please consider to acquire a good background knowledge on both <strong>CArtAgO</strong> and <strong>Jason</strong> and in the <strong>JaCa</strong> programming model (raw speaking the synergistic integration of these two agent-based technologies). The quickest way for getting started with the <strong>JaCa</strong> programming model is the <strong>CArtAgO</strong> by example tutorial that can be found on the <strong>CArtAgO</strong> <a href="http://cartago.sourceforge.net/?page_id=47">website</a>. For more exhaustive informations the following references can be considered:
+
+<ul>
+	<li> The <strong>Jason</strong> book [1], the reference <strong>Jason</strong> paper [2] and the <strong>Jason</strong> <a href="http://jason.sourceforge.net">website</a>.</li>
+	<li> Some papers about <strong>CArtAgO</strong> [3,4,5] <a href="http://www.cartago.sourceforge.net">website</a>.</li>
+</ul>
+</p>
+<p style="text-align: justify;">
+All the examples that we describe in this document are packed together in a simple Android application (the <strong>JaCa-Android</strong> sample suite) that can be used for testing the examples in your device. The <strong>.apk</strong> containing the examples (named <strong>JaCa-Android-Samples.apk</strong>) can be found inside the <strong>Apk</strong> folder placed in the root of the standard <strong>JaCa-Android</strong> distribution. The folder <strong>JaCa-Android-Samples</strong> contains instead the test suite sources. This folder is also a <strong>JaCa-Android</strong> Eclipse project that can be directly imported into your workspace.
+</p>
+<p style="text-align: justify;">
+For running the samples in your device is required that you first install and configure the <strong>JaCa-Android</strong> middleware, instructions for doing this can be found in the <a href="http://jaca-android.sourceforge.net/?page_id=257">getting started guide</a>.
+</p>
+List of samples:<br/>
+<p style="text-align: justify;">
+<ul>
+<li> Tests</li>
+<ul>
+<li><a href="">Example 00: Working with GUIs (Hello World example)</a></li>
+<li><a href="">Example 01: Working with Sensors</a></li>
+<li><a href="">Example 01: Working with the GPS</a></li>
+<li><a href="">Example 01: Reading the battery status</a></li>
+<li><a href="">Example 01: Working with the device connectivity </a></li>
+<li><a href="">Example 01: Working in remote JaCa-Android workspaces</a></li>
+<li><a href="">Example 01: Working with standard JaCa remote workspaces</a></li>
+</ul>
+</li>
+</ul>
+</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">
+<ul>
+<li> Examples</li>
+<ul>
+<li><a href="">Context-aware SMS receiver</a></li>
+<li><a href="">JaCa-Locale</a></li>
+</ul>
+</ul>
+</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">
+<ul>
+<li>Performance Tests</li>
+<ul>
+<li><a href="">Reactivity test</a></li>
+<li><a href="">Heavy computation test</a></li>
+<li><a href="">Memort occupation test</a></li>
+</ul>
+</ul>
+<br/>
+<h2>References</h2>
+<p style="text-align: justify;">
+[1] R. Bordini and J. Hubner. BDI agent programming in AgentSpeak using Jason. In F. Toni and P. Torroni, editors, CLIMA VI, volume 3900 of LNAI, pages 143{164. Springer, Mar. 2006.
+[2] R. Bordini, J. Hubner, and M. Wooldridge. Programming Multi-Agent Systems in AgentSpeak Using Jason. John Wiley &amp; Sons, Ltd, 2007.
+[3] A. Ricci, M. Piunti, M. Viroli, and A. Omicini. Environment programming in CArtAgO. In R. H. Bordini, M. Dastani, J. Dix, and A. El Fallah-Seghrouchni, editors, Multi-Agent Programming: Languages, Platforms and Applications, Vol. 2, pages 259-288. Springer, 2009. 
+[4] A. Ricci, M. Punti, and M. Viroli. Environment programming in multiagent systems - an artifact-based perspective. Autonomous Agents and Multi-Agent Systems, 2010. 
+[5] A. Ricci, M. Viroli, and A. Omicini. CArtAgO: A framework for prototyping artifact-based environments in MAS. In D. Weyns, H. V. D. Parunak, and F. Michel, editors, Environments for MultiAgent Systems III, volume 4389 of LNAI, pages 67-86. Springer, Feb. 2007. 3rd International Workshop (E4MAS 2006), Hakodate, Japan, 8 May 2006. Selected Revised and Invited Papers. 
+</p>

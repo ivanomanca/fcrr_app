@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:padding="10px" >
+
+    <TextView android:id="@+id/lblAddress" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:text="@string/lblAddress" />
+
+    <EditText android:id="@+id/txtAddress" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:layout_below="@id/lblAddress" />
+  	
+  	<CheckBox
+  			android:id="@+id/ckbRemember"
+  			android:layout_height="wrap_content"
+  			android:layout_width="wrap_content"
+  			android:layout_below="@id/txtAddress"
+  			android:layout_alignParentLeft="true"
+  			android:text="@string/ckbRemember" />
+  
+    <Button android:id="@+id/btnOk" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_below="@id/txtAddress"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10px"
+            android:text="@string/btnOk" />
+
+    <Button android:id="@+id/btnCancel"
+    		android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btnOk"
+            android:layout_alignTop="@id/btnOk"
+            android:text="@string/btnCancel" />
+</RelativeLayout>

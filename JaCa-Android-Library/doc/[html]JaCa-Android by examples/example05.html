@@ -1,0 +1,134 @@
+<p style="text-align: justify;">In this example we will show how it is possible to realise a <strong>JaCa-Android</strong> application that works also in a remote <strong>JaCa-Android</strong> workspace (so a workspace related to another <strong>JaCa-Android</strong> application). You can find the source code of this example in the folder <strong>/jaca/android/tests/remotewsp/android</strong> placed inside the main <strong>tests</strong> folder.
+</p>
+<p style="text-align: justify;">Before launching this example is needed to install and run the <strong>[JaCa-Android]RemoteWsp.apk</strong> application contained in the <strong>utils-projects/remote-android</strong> folder on the root of the standard <strong>JaCa-Android</strong> distribution. This apk contains a simple <strong>JaCa-Android</strong> application (the application is composed by a <strong>Calculator</strong> artifact and a test agent that uses the artifact for performing basic computations) configured for being reachable by external <strong>JaCa-Android</strong> applications.
+</p>
+<p style="text-align: justify;">
+A <strong>JaCa-Android</strong> application reachable from others ones can be realised in the following way. For first is necessary to configure the <strong>JaCaService</strong> in the Android manifest as reported below:
+<p style="text-align: center;">
+<pre  class="srccode">
+&lt;service android:name="jaca.android.JaCaService" android:exported="true" &gt;
+  &lt;intent-filter&gt;
+    &lt;!-- 
+        The action is the "Android address" that we want to expose as a remote wsp. 
+        In the mas2j MUST be provided the same address when installing the 
+        infrastructure: service(android,"remote.myaddress")
+    --&gt;
+    &lt;action android:name="remote.myaddress" /&gt;
+    &lt;category android:name="android.intent.category.DEFAULT" /&gt;
+  &lt;/intent-filter&gt;
+&lt;/service&gt;
+</pre>
+</p>
+<br/>
+<p style="text-align: justify;">Then in the <strong>mas2j</strong> configuration file we need to create an environment of type <strong>CartagoEnvironment</strong> as reported below:</p>
+
+<p style="text-align: center;">
+<pre  class="srccode">
+MAS remote_wsp {
+	
+    infrastructure: Centralised
+
+    environment: 
+      c4jason.CartagoEnvironment("infrastructure", service(android,"remote.myaddress"))
+
+    agents: agent agentArchClass c4jason.CAgentArch;
+
+    aslSourcePath: "test/remote";
+}
+</pre></p>
+<br/>
+
+<p style="text-align: justify;">In this way, when we launch this application we also install a <strong>CArtAgO</strong> node (of type <strong>infrastructure</strong>) that, thanks to the <strong>service(android,"remote.myaddress")</strong> parameter, makes the application reachable by external <strong>JaCa-Android</strong> ones at the address <strong>remote.myaddress</strong>. The <strong>CArtAgO</strong> infrastructure will use the configuration just described for allowing other applications to communicate with the remote one using the infrastructure protocol specified (so in this case means using the <strong>CArtAgO</strong> infrastructure protocol that relies on Android IPC). For further details please refer to the <strong>CArtAgO</strong> <a href="http://cartago.sourceforge.net/?page_id=139">website</a></strong>. Please note that the address specified in the <strong>mas2j</strong> <strong>must</strong> be the same as the one specified in the <strong>JaCaService</strong> inside the Android manifest file.</p>
+
+<p style="text-align: justify;">Our test application is composed by a simple agent that join the default workspace of the <strong>[JaCa-Android]RemoteWsp.apk</strong> application and then starts to use the <strong>Calculator</strong> artifact contained in it printing the obtained result in the local console and in the remote one. For making our test application able to reach the remote workspaces its <strong>mas2j</strong> file must be configured as reported below:</p>
+
+
+<p style="text-align: center;">
+<pre  class="srccode">
+MAS test {
+	
+   infrastructure: Centralised
+
+   environment: c4jason.CartagoEnvironment("standalone", protocol(android))
+
+    agents:  
+   		agent agentArchClass c4jason.CAgentArch;
+
+    aslSourcePath: "jaca/android/tests/remotewsp/android";
+}
+
+</pre>
+</p>
+<br/>
+<p style="text-align: justify;">The configuration for the <strong>CartagoEnvironment</strong> specifies that this application will not be reachable from the outside (<strong>standalone</strong> parameter) but that it will be able to join remote workspaces through the Android infrastructure protocol (<strong>protocol(android)</strong> parameter). Below is reported the source code of the agent used in this test.</p>
+
+
+<p style="text-align: center;">
+<pre  class="srccode">
+!init.
+
++!init 
+  <-  lookupArtifact("console",LocalConsoleID);
+      focusWhenAvailable("remote-gui");
+      lookupArtifact("remote-gui",GUIArtID);
+      makeArtifact("config", "jaca.android.tests.remotewsp.common.Config", 
+        ["android.config"], ConfID);
+      linkArtifacts(GUIArtID, "out-1", ConfID);
+      +art_id(console, LocalConsoleID);
+      !join_remote_wsp.
+	
++!join_remote_wsp : art_id(console, LocalConsoleID)
+  <-  getAddress(Address);
+    //Address not setted yet, we start the activity for obtaining the address
+    if (Address == "") {
+      startExplicitActivityForResult("jaca.android.tests.remotewsp.common.AddressActivity", 0);
+    //Address setted, we try to join the remote wsp
+    } else {
+      joinRemoteWorkspace("default", Address, RemoteWspId); 
+      +remote_wsp(RemoteWspId);
+      println("Join remote done!")[artifact_id(LocalConsoleID)];
+      !work_in_remote_wsp;
+    }.
+
+//Failure in joining the remote wsp: we ask again for the address
+-!join_remote_wsp : true
+  <-  startExplicitActivityForResult("jaca.android.tests.remotewsp.common.AddressActivity", 0).
+
+/*Signal received by the RemoteGUI: the user has inserted the remote address,
+ we can re-instantiate the join_remote_wsp plan */
++address_setted  :  true
+  <-  !join_remote_wsp.
+	
++!work_in_remote_wsp : art_id(console, LocalConsoleID)
+	<-  lookupArtifact("myCalc", CalcId)[wsp_id(RemoteWspId)];
+      lookupArtifact("console", RemoteConsoleID)[wsp_id(RemoteWspId)];
+      println("Remote calculator artifact found")[artifact_id(LocalConsoleID)];
+      println("Using the calculator, the next prints can 
+         be seen on the remote app as well")[artifact_id(LocalConsoleID)];
+      sum(2,3,X);
+      println("[remote-agent:]The sum between 2 and 3 is ", X)[artifact_id(RemoteConsoleID)];
+      println("The sum between 2 and 3 is ", X)[artifact_id(LocalConsoleID)];
+      sub(1,2,Y);
+      println("[remote-agent:]The sub between 1 and 2 is ", Y)[artifact_id(RemoteConsoleID)];
+      println("The sub between 1 and 2 is ", Y)[artifact_id(LocalConsoleID)];
+      division(6,3,Z);
+      println("[remote-agent:]The div between 6 and 3 is ", Z)[artifact_id(RemoteConsoleID)];
+      println("The div between 6 and 3 is ", Z)[artifact_id(LocalConsoleID)].
+</pre>
+</p>
+
+
+<p style="text-align: justify;">Agent highlights:</p>
+
+<ul>
+
+<li><p style="text-align: justify;">The test provides some facilitations that allow the user to insert the address (<strong>remote.myaddress</strong> in our case) to join from a GUI (thanks to the <strong>AddressActivity</strong>) and to memorise the address provided (thanks to the <strong>Config</strong> artifact). For sake of simplicity we are not reporting here details about the implementation of these facilitations.</p></li>
+
+<li><p style="text-align: justify;">Once the address has been setted the agent try to join the remote workspace thanks to the <strong>joinRemoteWorkspace</strong> action (<strong>joinRemoteWorkspace("default", Address, RemoteWspId)</strong>). In case of error during the connection a proper <strong>Jason</strong> recovery plan is instantiated (<strong>-!join_remote_wsp</strong>) and the <strong>AddressActivity</strong> is displayed again for letting the user insert a new address for the remote join.</p></li>
+
+<li><p style="text-align: justify;">Once the <strong>joinRemoteWorkspace</strong> succeeds the <strong>work_in_remote_wsp</strong> plan is instantiated. Within this plan the agent works with the remote <strong>Calculator</strong> artifact and prints the result of its computation in both the local and the remote console.</p></li>
+</ul>
+<br/>
+<p style="text-align: center;">
+<img src="http://jaca-android.sourceforge.net/wp-content/uploads/2011/04/test_remote1_gui.png" alt="" class="aligncenter size-full wp-image-534" width="500" height="400"/>
+<p style="text-align: center;">A screenshot of the running example.</p>

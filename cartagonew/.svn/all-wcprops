@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svnroot/cartago/!svn/ver/717/cartago/trunk
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/cartago/!svn/ver/685/cartago/trunk/build.xml
+END
+build-android.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/cartago/!svn/ver/631/cartago/trunk/build-android.xml
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/cartago/!svn/ver/174/cartago/trunk/.project
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/cartago/!svn/ver/580/cartago/trunk/.classpath
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/jaca-android/!svn/ver/148/jaca-android/trunk/LaggerCalendar/src/jaca/laggercalendar/artifacts
+END
+TimeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/jaca-android/!svn/ver/145/jaca-android/trunk/LaggerCalendar/src/jaca/laggercalendar/artifacts/TimeService.java
+END
+AddressBookService.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/jaca-android/!svn/ver/148/jaca-android/trunk/LaggerCalendar/src/jaca/laggercalendar/artifacts/AddressBookService.java
+END
+CalendarService.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/jaca-android/!svn/ver/148/jaca-android/trunk/LaggerCalendar/src/jaca/laggercalendar/artifacts/CalendarService.java
+END
+EventManagerArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/jaca-android/!svn/ver/148/jaca-android/trunk/LaggerCalendar/src/jaca/laggercalendar/artifacts/EventManagerArtifact.java
+END
+EventEditorGUI.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/jaca-android/!svn/ver/147/jaca-android/trunk/LaggerCalendar/src/jaca/laggercalendar/artifacts/EventEditorGUI.java
+END
+NotificationManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/jaca-android/!svn/ver/147/jaca-android/trunk/LaggerCalendar/src/jaca/laggercalendar/artifacts/NotificationManager.java
+END
+DirectionsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/jaca-android/!svn/ver/148/jaca-android/trunk/LaggerCalendar/src/jaca/laggercalendar/artifacts/DirectionsService.java
+END

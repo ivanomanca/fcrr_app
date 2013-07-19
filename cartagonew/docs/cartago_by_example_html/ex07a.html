@@ -1,0 +1,110 @@
+<p style="text-align: justify;">An important example of artifacts encapsulating I/O functionalities is given by GUI artifacts, i.e. artifacts functioning as GUI components, enabling the interaction between human users and agents. Such artifacts allow to use Swing to define the structure of a GUI; then, they allow for defining - on the one side - operations corresponding to user actions on the GUI, so handling specific GUI events. Such operations generates signals or change some observable events to trigger agents observing the GUI; on the other side, they provide operations that can be possibly used by agents to change the GUI.</p>
+<p style="text-align: justify;">In the following example, a <code>gui_tester</code> agent creates and uses a GUI artifact to interact with the user.</p>
+
+<blockquote style="text-align: justify;">
+<pre>MAS example07a_gui {
+
+environment:
+c4jason.CartagoEnvironment
+
+agents:
+gui_tester agentArchClass c4jason.CAgentArch;
+
+classpath: "../../../lib/cartago.jar";"../../../lib/c4jason.jar";
+}</pre>
+</blockquote>
+<p style="text-align: justify;">To make it easier GUI artifact development, a <code>cartago.tools.GUIArtifact</code> base artifact is provided among the CArtAgO utility tools. The implementation of  <code>cartago.tools.GUIArtifact</code> - which can be checked in CArtAgO source code - exploits <code>await</code> and blocking commands. The base artifact provides basic functionalities to link GUI events to the artifact operations.</p>
+<p style="text-align: justify;">In the following, <code>MySimpleGUI</code> GUI artifact creates a simple GUI with a text field and a button. Some GUI events - pressing the button, key stroke in the text field, closing the window - are linked to some artifact's internal operations,
+which in turn generate observable events to agents.</p>
+
+<blockquote style="text-align: justify;">
+<pre>public class MySimpleGUI extends GUIArtifact {
+
+private MyFrame frame;
+
+public void setup() {
+frame = new MyFrame();
+
+linkActionEventToOp(frame.okButton,"ok");
+linkKeyStrokeToOp(frame.text,"ENTER","updateText");
+linkWindowClosingEventToOp(frame, "closed");
+
+defineObsProperty("value",getValue());
+frame.setVisible(true);
+}
+
+@INTERNAL_OPERATION void ok(ActionEvent ev){
+signal("ok");
+}
+
+@INTERNAL_OPERATION void closed(WindowEvent ev){
+signal("closed");
+}
+
+@INTERNAL_OPERATION void updateText(ActionEvent ev){
+getObsProperty("value").updateValue(getValue());
+}
+
+@OPERATION void setValue(int value){
+frame.setText(""+value);
+getObsProperty("value").updateValue(getValue());
+}
+
+private int getValue(){
+return Integer.parseInt(frame.getText());
+}
+
+class MyFrame extends JFrame {    
+
+private JButton okButton;
+private JTextField text;
+
+public MyFrame(){
+setTitle("Simple GUI ");
+setSize(200,100);
+JPanel panel = new JPanel();
+setContentPane(panel);
+okButton = new JButton("ok");
+okButton.setSize(80,50);
+text = new JTextField(10);
+text.setText("0");
+text.setEditable(true);
+panel.add(text);
+panel.add(okButton);
+}
+
+public String getText(){
+return text.getText();
+}
+
+public void setText(String s){
+text.setText(s);
+}
+}
+}</pre>
+</blockquote>
+<p style="text-align: justify;"><strong>Highlights:</strong></p>
+
+<ul style="text-align: justify;">
+	<li> <strong>Designing GUI artifacts:</strong> - a GUI artifact is defined by extending <code>GUIArtifact</code>, wrapping the definition and creation of the structure of the GUI - using the Swing API - and then linking/mapping Swing events into artifact's internal operations by using <code>linkXXXtoYYY</code> primitives.</li>
+</ul>
+<p style="text-align: justify;">The agent creates an instance of the artifact and reacts to user actions on the GUI:</p>
+
+<blockquote style="text-align: justify;">
+<pre>!test_gui.
+
++!test_gui
+&lt;-  makeArtifact("gui","c4jexamples.MySimpleGUI",[],Id);
+focus(Id).
+
++value(V)
+&lt;- println("Value updated: ",V).
+
++ok : value(V)
+&lt;-  setValue(V+1).
+
++closed
+&lt;-  .my_name(Me);
+.kill_agent(Me).</pre>
+</blockquote>
+<p style="text-align: justify;">In particular, the agent reacts to the pressing of the button by setting a new value in the GUI; it prints a message on the console as soon as a new value is observed; it shutdown as soon as the window is closed.</p>

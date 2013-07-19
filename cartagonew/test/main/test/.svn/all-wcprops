@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/cartago/!svn/ver/689/cartago/trunk/test/main/test
+END
+HelloWorld.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/cartago/!svn/ver/579/cartago/trunk/test/main/test/HelloWorld.java
+END
+TestController.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/cartago/!svn/ver/579/cartago/trunk/test/main/test/TestController.java
+END
+AgentB.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/cartago/!svn/ver/579/cartago/trunk/test/main/test/AgentB.java
+END
+AgentA.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/cartago/!svn/ver/579/cartago/trunk/test/main/test/AgentA.java
+END
+Counter.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/cartago/!svn/ver/689/cartago/trunk/test/main/test/Counter.java
+END
+HelloRemoteWorld.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/cartago/!svn/ver/579/cartago/trunk/test/main/test/HelloRemoteWorld.java
+END
+HelloAgent.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/cartago/!svn/ver/689/cartago/trunk/test/main/test/HelloAgent.java
+END
+TestLogger.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/cartago/!svn/ver/579/cartago/trunk/test/main/test/TestLogger.java
+END

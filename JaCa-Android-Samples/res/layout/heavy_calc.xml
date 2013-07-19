@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/test_heavycalc_title"
+    android:gravity="center"
+    />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="10px"
+    >
+<Button 
+	android:text="Calc sum in Android" 
+	android:id="@+id/btnSumAndroid" 
+	android:layout_width="wrap_content"
+	android:layout_alignParentLeft="true"
+	android:layout_height="wrap_content"/>
+
+<Button 
+	android:text="Calc sum JaCa-Android" 
+	android:id="@+id/btnSumJaCa" 
+	android:layout_width="wrap_content"
+	android:layout_alignParentRight="true"
+	android:layout_height="wrap_content"/>
+
+</LinearLayout>
+</LinearLayout>

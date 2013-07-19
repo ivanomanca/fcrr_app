@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason
+END
+philo.asl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/philo.asl
+END
+example09-workspaces.mas2j
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/example09-workspaces.mas2j
+END
+observer.asl
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/observer.asl
+END
+consumer.asl
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/consumer.asl
+END
+hello_agent.asl
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/hello_agent.asl
+END
+example01-useobs.mas2j
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/example01-useobs.mas2j
+END
+example05-gui.mas2j
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/example05-gui.mas2j
+END
+clock_user.asl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/clock_user.asl
+END
+action_failure_tester.asl
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/action_failure_tester.asl
+END
+tester.asl
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/tester.asl
+END
+waiter.asl
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/waiter.asl
+END
+gui_tester.asl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/gui_tester.asl
+END
+example02-prodcons.mas2j
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/example02-prodcons.mas2j
+END
+example10-remote.mas2j
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/example10-remote.mas2j
+END
+wsp_tester.asl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/wsp_tester.asl
+END
+user.asl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/user.asl
+END
+example04-clock.mas2j
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/example04-clock.mas2j
+END
+example06-action-failure.mas2j
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/example06-action-failure.mas2j
+END
+linkability_tester.asl
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/linkability_tester.asl
+END
+example08-java-data-binding.mas2j
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/example08-java-data-binding.mas2j
+END
+example03-philo.mas2j
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/example03-philo.mas2j
+END
+example07-linkability.mas2j
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/example07-linkability.mas2j
+END
+example00-hello-world.mas2j
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/example00-hello-world.mas2j
+END
+java_data_binding_tester.asl
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/java_data_binding_tester.asl
+END
+producer.asl
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/producer.asl
+END
+voyager.asl
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/voyager.asl
+END

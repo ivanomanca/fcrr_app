@@ -1,0 +1,133 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<h2>Example 03 - Reading the battery status</strong>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In this example we will show how to retrieve information related to the device battery in <strong>JaCa-Android</strong>. You can find the source code of this sample in the folder <strong>/jaca/android/tests/battery</strong> placed inside the main <strong>tests</strong> folder. The agent used in this sample joins the <strong>MiddlewareServices</strong> workspace for working with the <strong>BatteryArtifact</strong> artifact, an artifact provided by the middleware that allows to retrieve information about the device's battery. 
+
+
+public class BatteryArtifact extends BroadcastReceiverArtifact {
+	
+  ...
+	
+  protected void init(boolean abortBroadcast) {
+    super.init();
+    defineObsProperty(HEALT, HEALT_GOOD);
+    defineObsProperty(STATUS, "ok");
+    defineObsProperty(LEVEL, 100);
+    IntentFilter filter = new IntentFilter();
+    filter.addAction(BATTERY_CHANGED);
+    IntentFilter filter2 = new IntentFilter();
+    filter.addAction(BATTERY_LOW);
+    IntentFilter filter3 = new IntentFilter();
+    filter3.addAction(BATTERY_OK);
+    linkBroadcastReceiverToOp(filter, "batteryInfoReceived", abortBroadcast);
+    linkBroadcastReceiverToOp(filter2, "batteryLowReceived", abortBroadcast);
+    linkBroadcastReceiverToOp(filter3, "batteryOkReceived", abortBroadcast);
+  </strong>
+	
+  @INTERNAL_OPERATION public void batteryOkReceived(BroadcastReceiver broadcastReceiver, 
+     Context context, Intent intent) {
+    getObsProperty(STATUS).updateValue(STATUS_OK);
+  </strong>
+
+  @INTERNAL_OPERATION public void batteryLowReceived(BroadcastReceiver broadcastReceiver, 
+      Context context, Intent intent) {
+    getObsProperty(STATUS).updateValue(STATUS_LOW);
+  </strong>
+	
+  @INTERNAL_OPERATION public void batteryInfoReceived(BroadcastReceiver broadcastReceiver, 
+    Context context, Intent intent) {
+    if (intent.getAction().equals(BATTERY_CHANGED)) {
+      int level = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, 100);
+      getObsProperty(LEVEL).updateValue(level);
+      int healt = intent.getIntExtra(BatteryManager.EXTRA_HEALTH, 
+         BatteryManager.BATTERY_HEALTH_GOOD);
+      String obsHealt = getObsProperty(HEALT).stringValue();
+
+      if(healt!=BatteryManager.BATTERY_HEALTH_GOOD && obsHealt.equals(HEALT_GOOD))
+        getObsProperty(HEALT).updateValue(HEALT_DEAD);
+      else if(healt!=BatteryManager.BATTERY_HEALTH_DEAD && obsHealt.equals(HEALT_DEAD))
+        getObsProperty(HEALT).updateValue(HEALT_GOOD);
+    </strong> 
+  </strong>
+	
+  protected void dispose(){
+    super.dispose();
+    unlinkBroadcastReceiverToOp(OP_BATTERY_INFO_RECEIVED);
+    ...
+  </strong>
+</strong>
+\end{verbatim</strong></strong>
+\end{minipage</strong>
+\end{tabular</strong>
+\caption{Source code snippet of the <strong>BatteryArtifact</strong>.</strong>
+    \labeltab{BatteryArtifact</strong>
+\end{table</strong>
+
+The <strong>BatteryArtifact</strong> is an artifact extending the \keyword{BroadcastReceiverArtifact</strong>, a <strong>JaCa-Android</strong> artifact that provides basic functionalities for registering an artifact as the target of Android broadcasts, in this case broadcasts concerning battery information updates. Roughly speaking the \keyword{BroadcastReceiverArtifact</strong> can be considered as the <strong>JaCa-Android</strong> version of the classical Android \keyword{BroadcastReceiver</strong>.
+
+
+In BatteryArtifact</strong> is reported a source code snippet of the <strong>BatteryArtifact</strong> artifact.
+%
+<strong>BatteryArtifact</strong> highlights:
+<ul>
+%
+<li> In the artifact initialisation we create the observable properties related to the battery level, status and health (namely the <strong>battery_level</strong>, the <strong>battery_status</strong> and the <strong>battery_health</strong>) and then we register the artifact to be notified by the broadcasts of interest for continuously retrieving updates related to the battery status.
+%
+<li> In the artifact disposal we call the <strong>unlinkBroadcastReceiverToOp</strong> method (inherited by the <strong>BroadcastReceiverArtifact</strong>) for unregister the artifact, during its disposal, as one of the target to be notified by battery broadcasts.
+</ul>
+
+\begin{table</strong>[!ht]
+\begin{tabular</strong> {p{10cm</strong></strong>
+\begin{minipage</strong>{10cm</strong>
+{\scriptsize \begin{verbatim</strong>
+!start.
+
++!start
+  <-  !init;
+      !do_job.
+
+/*Initialisation plan for joining the MiddlewareServices workspace*/
++!init 
+  <-  ...
+		
+/************************* Main agent plan ************************/		
++!do_job : wsp_id(jaca_services,WspID) & art_id(console,LocalConsoleID)
+  <-  focusWhenAvailable("battery-artifact")[wsp_id(WspID)];
+      println("Ready.")[artifact_id(LocalConsoleID)].
+
+/********** Plans that handle reactions to battery events **********/
++battery_level(Value) : art_id(console,LocalConsoleID)
+  <-  println("Battery level is ", Value)[artifact_id(LocalConsoleID)].
+
++battery_status(Value) : art_id(console,LocalConsoleID)
+  <-  println("Battery status is ", Value)[artifact_id(LocalConsoleID)].
+
++battery_healt(Value) : art_id(console,LocalConsoleID)
+  <-  println("Battery healt is ", Value)[artifact_id(LocalConsoleID)].
+	
+\end{verbatim</strong></strong>
+\end{minipage</strong>
+\end{tabular</strong>
+\caption{Source code snippet of the <strong>Jason</strong> agent used in this test.</strong>
+    \labeltab{test3agent</strong>
+\end{table</strong>
+
+In test3agent</strong> is reported the source code of the agent using the <strong>BatteryArtifact</strong></strong> artifact. Agent highlights:
+<ul>
+%
+<li> For first the agent joins the <strong>MiddlewareServices</strong> workspace using the usual <strong>init</strong> plan.
+%
+<li> Then the agent focus the <strong>BatteryArtifact</strong>, contained in the <strong>MiddlewareServices</strong></strong>, for receiving the information related to the battery.
+%
+<li> As soon as new battery information are available the <strong>BatteryArtifact</strong> generates proper signals that are handled by the agent with a set of reactive plans that prints in the console the new battery information.
+</ul>
+
+\clearpage
+\begin{figure</strong>[h!]
+\begin{center</strong>
+\includegraphics[width=8cm]{images/test_battery_gui.png</strong>
+\end{center</strong>
+\caption{A screenshot of the described sample.</strong>
+\end{figure</strong>
+\clearpage

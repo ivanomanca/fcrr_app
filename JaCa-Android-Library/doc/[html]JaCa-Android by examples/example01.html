@@ -1,0 +1,107 @@
+<p style="text-align: justify;">In this second example we will show how to work with the device's Sensors in <strong>JaCa-Android</strong>. You can find the source code of this sample in the folder <strong>/jaca/android/tests/allsensors</strong> placed inside the main <strong>tests</strong> folder. 
+</p>
+<p style="text-align: justify;">
+The agent used in this sample joins the <strong>MiddlewareServices</strong> workspace for working with the <strong>AllSensorManager</strong> artifact, an artifact provided by the middleware that encapsulates the access to three of the most used Android sensors (the accelerometer sensor, the geomagnetic sensor, and the orientation sensor) and then dynamically updates the current sensors values in the application GUI (represented by a proper extension of the <strong>GUIArtifact</strong>, not reported here for simplicity). 
+</p>
+<p style="text-align: justify;">
+It is worth nothing that, from a programming point of view, the <strong>AllSensorManager</strong> is just a simple specialisation of the <strong>SensorManagerArtifact</strong> which is the basic artifact used for having access to sensors information---it is exactly the same relation described for the \<strong>GUIArtifact</strong></strong> and its specialisations. The artifact stores the information related to the sensors values inside a proper set of observable properties. These observable properties are then dynamically updated by the artifact, by linking events that come from the device's sensors to proper artifact's internal operations with a linking mechanism analogous to the one described for the <strong>GUIArtifact</strong>. 
+</p> 
+<p style="text-align: justify;">
+Besides the artifact used in this sample <strong>JaCa-Android</strong> provides a set of other artifacts for manipulating the device's sensors, for further details see the source code or the api of the middleware. Below is reported a source code snippet of the <strong>AllSensorsManager</strong>. 
+</p>
+<p style="text-align: center;">
+<pre  class="srccode">
+public class AllSensorsManager extends SensorManagerArtifact{
+
+  @OPERATION public void init(Integer delay) throws Exception{
+    super.init(delay, Sensor.TYPE_ACCELEROMETER,
+      Sensor.TYPE_MAGNETIC_FIELD, Sensor.TYPE_ORIENTATION);
+    linkOnSensorChangedEventToOp(Sensor.TYPE_ACCELEROMETER, "onSensorChanged");
+    linkOnSensorChangedEventToOp(Sensor.TYPE_MAGNETIC_FIELD, "onSensorChanged");
+    linkOnSensorChangedEventToOp(Sensor.TYPE_ORIENTATION, "onSensorChanged");
+    defineObsProperty(SensorManagerArtifact.SENSOR_ACCELEROMETER, 0,0,0);
+    defineObsProperty(SensorManagerArtifact.SENSOR_GEOMAG, 0,0,0);
+    defineObsProperty(SensorManagerArtifact.SENSOR_ORIENTATION, 0,0,0);
+  }
+
+  @Override	
+  @INTERNAL_OPERATION public void onSensorChanged(SensorEvent event) {
+    switch(event.sensor.getType()){
+      case Sensor.TYPE_ACCELEROMETER:
+        getObsProperty(SensorManagerArtifact.SENSOR_ACCELEROMETER)
+          .updateValues(event.values[0], event.values[1], event.values[2]);
+        sensorReady = true;
+      break;
+	
+      case Sensor.TYPE_MAGNETIC_FIELD:
+        getObsProperty(SensorManagerArtifact.SENSOR_GEOMAG)
+          .updateValues(event.values[0], event.values[1], event.values[2]);
+        sensorReady = true;
+        ...
+      break;
+    }   
+		
+    //Orientation management
+    if (... && sensorReady) {
+      ...
+      getObsProperty(SensorManagerArtifact.SENSOR_ORIENTATION).
+        updateValues(azimuth, pitch, roll);
+    }
+  }
+}
+</pre>
+</p>
+<p style="text-align: justify;">
+<strong>AllSensorManager</strong> highlights:</p>
+
+<ul>
+
+<li><p style="text-align: justify;">In the initialisation phase we: <i>(i)</i call the <strong>init</i> of the <strong>SensorManagerArtifact</strong> (the superclass) for making our <strong>AllSensorManager</strong> artifact able to retrieve data from the desired sensors, <i>(ii)</i> we register the <strong>onSensorChanged</strong> internal operation (thanks to the <strong>linkOnSensorChangedEventToOp</strong>) as the operation to be called when new sensors value are available, and <i>(iii)</i> we define the set of observable properties that will expose to agents the current sensors value.</p>
+
+<li><p style="text-align: justify;">Inside the <strong>onSensorChanged</strong> internal operation we update the observable properties containing the current sensors value (for simplicity some part of the source code was omitted).</p>
+</ul>
+
+<br/>
+<p style="text-align: jsutify;">Below is reported the source code of the agent using the <strong>AllSensorManager</strong></strong> artifact.
+<p style="text-align: center;">
+<pre  class="srccode">
+!start.
+
++!start
+  <-  !init;
+      !do_job.
+
+/*Initialisation plan for joining the MiddlewareServices workspace*/
++!init 
+  <-  ...
+		
+/************************* Main agent plan ************************/		
++!do_job : art_id(console,LocalConsoleID) & wsp_id(jaca_services,WspID)
+  <-  focusWhenAvailable("all-sensors-manager");
+      startMonitoring[wsp_id(WspID)];
+      println("Ready.")[artifact_id(LocalConsoleID)].
+
+/********* Plans that handle reactions to sensors' events *********/
++sensor_accelerometer(X,Y,Z) : art_id(gui,GUIID)
+  <-  updateAccSensorsInfo(X, Y, Z)[artifact_id(GUIID)].
+
++sensor_orientation(X,Y,Z) : art_id(gui,GUIID)
+  <-  updateOrientationSensorsInfo(X, Y, Z)[artifact_id(GUIID)].	
+
++sensor_geomag(X,Y,Z) : art_id(gui,GUIID)
+  <-  updateGeomagSensorsInfo(X, Y, Z)[artifact_id(GUIID)].
+</pre>
+</p>
+
+
+Agent highlights: 
+
+<ul>
+<li><p style="text-align: jsutify;">The agent use the <strong>init</strong> plan for joining the <strong>MiddlewareServices</strong> workspace for having access to the <strong>AllSensorManager</strong> artifact.</p></li>
+<li><p style="text-align: jsutify;">Once joined the <strong>MiddlewareServices</strong> workspace the agents starts its job (plan <strong>do_job</strong>) waiting for the <strong>AllSensorManager</strong> to be available (<strong>focusWhenAvailable("all-sensors-manager")</strong>).</p></li>
+<li><p style="text-align: jsutify;">Once focused the <strong>AllSensorManager</strong> artifact the behaviour of the agent is entirely managed by a set of reactive plans related to updates of the artifact's observable properties. As soon as a new sensors values are available the <strong>AllSensorManager</strong> retrieves this values and then updates its observable properties accordingly (through the <strong>onSensorChanged</strong> internal operation). The agent reacts to these observable properties changes updating the GUI with the new values (<strong>updateAccSensorsInfo</strong>, <strong>updateGeomagSensorsInfo</strong> and <strong>updateOrientationSensorsInfo</strong> operations provided by the artifact representing the application GUI).</p></li>
+</ul>
+<br/>
+<p style="text-align: center;">
+<img src="http://jaca-android.sourceforge.net/wp-content/uploads/2011/04/test_sensors_gui.png" alt="" title="test_gui_gui" width="320" height="480" class="aligncenter size-full wp-image-534" />
+<p style="text-align: center;">A screenshot of the running example.</p>

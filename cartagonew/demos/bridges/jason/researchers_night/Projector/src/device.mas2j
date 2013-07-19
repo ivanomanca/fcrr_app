@@ -1,0 +1,13 @@
+MAS device_ric {
+
+   environment: c4jason.CartagoEnvironment("infrastructure", protocol(lipermi), service(lipermi,20102))
+
+   agents:
+   
+   device  agentArchClass c4jason.CAgentArch; 
+ 
+       
+   classpath: "../../../../../../lib/cartago.jar";"../../../../../../lib/c4jason.jar";"../../../../../../lib/lipermi-0.4.jar";
+
+   aslSourcePath: "src"; 
+}

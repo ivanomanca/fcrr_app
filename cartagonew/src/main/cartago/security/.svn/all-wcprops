@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/cartago/!svn/ver/455/cartago/trunk/src/main/cartago/security
+END
+SecurityException.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/cartago/!svn/ver/174/cartago/trunk/src/main/cartago/security/SecurityException.java
+END
+AlwaysAllowUsePolicy.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/cartago/!svn/ver/306/cartago/trunk/src/main/cartago/security/AlwaysAllowUsePolicy.java
+END
+IArtifactUsePolicy.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/cartago/!svn/ver/306/cartago/trunk/src/main/cartago/security/IArtifactUsePolicy.java
+END
+DefaultSecurityManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/cartago/!svn/ver/306/cartago/trunk/src/main/cartago/security/DefaultSecurityManager.java
+END
+AgentCredential.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/cartago/!svn/ver/455/cartago/trunk/src/main/cartago/security/AgentCredential.java
+END
+AgentIdCredential.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/cartago/!svn/ver/455/cartago/trunk/src/main/cartago/security/AgentIdCredential.java
+END
+Role.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/cartago/!svn/ver/306/cartago/trunk/src/main/cartago/security/Role.java
+END
+AlwaysForbidUsePolicy.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/cartago/!svn/ver/306/cartago/trunk/src/main/cartago/security/AlwaysForbidUsePolicy.java
+END
+NullSecurityManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/cartago/!svn/ver/359/cartago/trunk/src/main/cartago/security/NullSecurityManager.java
+END
+PwdCredential.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/cartago/!svn/ver/455/cartago/trunk/src/main/cartago/security/PwdCredential.java
+END
+UseOnlyYourOwnArtifactsPolicy.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/cartago/!svn/ver/306/cartago/trunk/src/main/cartago/security/UseOnlyYourOwnArtifactsPolicy.java
+END
+IWorkspaceSecurityManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/306/cartago/trunk/src/main/cartago/security/IWorkspaceSecurityManager.java
+END

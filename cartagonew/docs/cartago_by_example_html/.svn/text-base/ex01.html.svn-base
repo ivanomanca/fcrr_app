@@ -1,0 +1,126 @@
+<p style="text-align: justify;">This example shows the basics about artifact creation and use, including observation. Two agents create, use and observe a shared artifact.</p>
+
+<blockquote style="text-align: justify;">
+<pre>MAS example01_useobs {
+
+  environment:
+  c4jason.CartagoEnvironment
+
+  agents:
+  user user agentArchClass c4jason.CAgentArch #1;
+  observer observer agentArchClass c4jason.CAgentArch #1;
+
+  classpath: "../../../lib/cartago.jar";"../../../lib/c4jason.jar";
+}</pre>
+</blockquote>
+<p style="text-align: justify;">The <code>user</code> agent creates a <code>c0</code> artifact of type <code>c4jexamples.Counter</code> and then uses it twice, executing the <code>inc</code> action (operation) two times:</p>
+
+<blockquote style="text-align: justify;">
+<pre>!create_and_use.
+
++!create_and_use : true
+  &lt;- !setupTool(Id);
+     inc;
+     inc [artifact_id(Id)].
+
++!setupTool(C): true
+  &lt;- makeArtifact("c0","c4jexamples.Counter",[],C).</pre>
+</blockquote>
+<p style="text-align: justify;"><strong>Hightlights:</strong></p>
+
+<ul style="text-align: justify;">
+	<li> <strong>Artifact creation:</strong> To create the artifact, the agent exploits the<code> makeArtifact</code> action, provided by the <code>workspace</code> artifact. An empty list of parameters is specified, and the artifact id is retrieved, bound to the <code>C</code> variable.</li>
+	<li> <strong>Operation invocation with no target artifact specified:</strong> operation invocation -i.e. action execution - can be done either specifying or not which is the specific target artifact providing the operation. No artifact is specified in the first <code>inc</code>: the artifact is automatically selected from the workspace. If there are no artifacts providing such action, the action fails. If more than one artifact is found, first artifacts created by the agent itself are considered. If more than one artifact is found, one is selected non deterministically. Then, the rest of the artifacts are considered, and one is selected non deterministically.</li>
+	<li> <strong>Operation invocation with the target artifact specified:</strong> The second time the <code>inc</code> is executed, the target artifact is specified. This can be done by adding the annotation <code>[artifact_id(Id)]</code>, where<code> Id</code> must be bound to the artifact identifier. Alternatively, the annotation  <code>[artifact_name(Name)] </code>can be used, where <code>Name</code> must be bound to the logic name of the artifact.</li>
+	<li> <strong>Operation invocation with the target workspace specified:</strong> As a further variant, the workspace identifier can be specified, instead of the target artifact, by means of the <code>wsp_id</code> annotation. Ex: <code>inc [wsp_id(WspID)]</code>.</li>
+</ul>
+<p style="text-align: justify;">The <code>Counter</code> artifact is characterised by a single <code>inc</code> operation and a <code>count</code> observable property, updated by the operation. The operation also generates a <code>tick</code> signal.</p>
+
+<blockquote style="text-align: justify;">
+<pre>package c4jexamples;
+
+import cartago.*;
+
+public class Counter extends Artifact {
+
+  void init(){
+    defineObsProperty("count",0);
+  }
+
+  @OPERATION void inc(){
+    ObsProperty prop = getObsProperty("count");
+    prop.updateValue(prop.intValue()+1);
+    signal("tick");
+  }
+}</pre>
+</blockquote>
+<p style="text-align: justify;"><strong>Highlights</strong></p>
+
+<ul style="text-align: justify;">
+	<li> <strong>Artifact definition:</strong>: an artifact template can be implemented by defining a class - whose name corresponds to the artifact template name - extending the <code>Artifact</code> base class.</li>
+	<li> <strong>Artifact initialization</strong>: the <code>init</code> method in artifact classes represents artifact constructor, useful to initialize the artifact as soon as it is created. The actual parameter of the <code>init</code> method - in this case there are no parameters - can be specified when executing the <code>makeArtifact</code> action.</li>
+	<li> <strong>Operations:</strong> Operations are implemented by methods annotated with <code>@OPERATION</code> and with<code> void</code> return parameter. Methods parameter corresponds to operations parameters.</li>
+	<li> <strong>Observable properties:</strong> New observable properties can be defined by the <code>defineObsProp</code> primitive. In their most general form, an observable properties is represented by a tuple, with a functor and one or multiple arguments, of any type. In this case the <code>count</code> property has a single argument value, of integer type. To retrieve the reference to an observable property the <code>getObsProperty</code> primitive is provided, specifying the property name. Then <code>updateValue</code> methods can be used to change the value of the property.</li>
+	<li> <strong>Signals:</strong> like observable properties, also signals can be tuple structures, with a functor and one or multiple arguments, of any type. In this case the <code>tick</code> signal generated by the operation has no argument. The primitive <code>signal</code> is provided to generate signals. It comes in two flavours:
+<ul>
+	<li> <code>signal(String signalName, Object... params) :</code> generates a signal which is perceivable by all the agents that are observing the artifact (because they did a focus).</li>
+	<li> <code>signal(AgentId id, String signalName, Object... params):</code> generates a signal which is perceivable only by the specified agent. The agent must be observing the artifact, anyway.</li>
+</ul>
+</li>
+	<li> <strong>Atomicity and transactionality:</strong> Operations are executed <strong>transactionally</strong> with respect to the observable state of the artifact.  So no interferences can occur when multiple agents concurrently use an artifact, since the operations are executed <strong>atomically</strong>. Changes to the observable properties of an artifact are made observable only when:
+<ul>
+	<li> the operation completes, successfully</li>
+	<li> a signal is generated</li>
+	<li> the operation is suspended (by means of an <code>await</code>, described in next examples)</li>
+</ul>
+If an operation fails, changes to the observable state of the artifact are rolled back.</li>
+</ul>
+<p style="text-align: justify;">Finally, an <code>observer</code> agent observes the counter and prints on standard output a message each time it perceives
+a change in <code>count</code> observable property or  a <code>tick</code> signal:</p>
+
+<blockquote style="text-align: justify;">
+<pre>!observe.
+
++!observe : true
+  &lt;- ?myTool(C);  // discover the tool
+     focus(C).
+
++count(V)
+  &lt;- println("observed new value: ",V).
+
++tick [artifact_name(Id,"c0")]
+  &lt;- println("perceived a tick").
+
++?myTool(CounterId): true
+  &lt;- lookupArtifact("c0",CounterId).
+
+-?myTool(CounterId): true
+  &lt;- .wait(10);
+     ?myTool(CounterId).</pre>
+</blockquote>
+<p style="text-align: justify;"><strong>Highlights</strong></p>
+
+<ul style="text-align: justify;">
+	<li> <strong>Artifact lookup:</strong> agents can discover the identifier of an artifact by means of the <code>lookupArtifact </code>action provided by the <code>workspace</code> artifact, specifying either the logic name of the artifact to discover or its type (in this last case, if multiple artifacts are found, one is chosen non deterministically). In the example, if the observer agent executes a <code>lookupArtifact</code> before the artifact has been created (by the other agent), then the  <code>lookupArtifact</code> fails and the repairing plan <code>-?myTool(...)</code> is executed. Variants:</li>
+	<li> <strong>Focus action:</strong> agents can select which parts (artifacts) of the environment to observe by means of the <code>focus</code> action, provided by the <code>workspace</code> artifact, specifying the identifier of the artifact to focus.
+<ul>
+	<li> <code>focus(ArtifactId id, IEventFilter filter)</code> specifies a filter to select the percepts to receive.</li>
+	<li> <code>focusWhenAvailable(String artName)</code> focuses the specified artifact as soon as it is available in the workspace.</li>
+</ul>
+</li>
+	<li> <strong>Observable properties - Beliefs mapping</strong> by focussing an artifact, artifact observable properties are mapped
+into the agent's belief base. So changes to the observable properties are detected as changes to the belief base. In the example: <code>+count(V)</code> triggering event. Beliefs related to observable properties are decorated with annotations that can be used to select the relevant/applicable plan, in particular:
+<ul>
+	<li> <code>source(percept)</code>, <code>percept_type(obs_prop)</code>: define the percept type</li>
+	<li> <code>artifact_id(Id)</code>, <code>artifact_name(id,name)</code>, <code>artifact_type(id,type)</code>,
+<code>workspace(id,wspname)</code>: provide information about the source artifact and workspace. It is important to remark that, being beliefs, the value of observable properties can be accessed by means of test goals (e.g. <code>?count(X)</code>, when specifying context conditions, and so on).</li>
+	<li> <strong>Percept mixing:</strong> due to the belief base model adopted in Jason, beliefs (and so observable properties) with the same functor and argument are collapsed together, mixing the annotations.</li>
+</ul>
+</li>
+	<li> <strong>Signals percept:</strong> by focussing an artifact, signals generated by an artifact are detected as changes in the belief base - in the example: <code>+tick</code> - even if in this case the belief base is not changed. As in the case of observable properties, annotations that can be used to select the relevant/applicable plan, in particular:
+<ul>
+	<li> <code>source(ArtifactId)</code>, <code>percept_type(obs_ev)</code> - define the percept type</li>
+	<li> <code>artifact_id(Id)</code>), <code>artifact_name(id,name)</code>, <code>artifact_type(id,type)</code>,<code> workspace(id,wspname)</code> - provide information about the source artifact and workspace.</li>
+</ul>
+</li>
+</ul>

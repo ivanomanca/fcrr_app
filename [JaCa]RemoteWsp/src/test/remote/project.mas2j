@@ -1,0 +1,10 @@
+MAS test{
+	
+	infrastructure: Centralised
+
+    environment: c4jason.CartagoEnvironment("infrastructure", service(lipermi), protocol(lipermi))
+
+    agents: agent agentArchClass c4jason.CAgentArch;
+    
+    classpath : "../../../lib/*.jar";
+}

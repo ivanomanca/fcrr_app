@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/c4jexamples
+END
+Clock.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/c4jexamples/Clock.java
+END
+MySimpleGUI.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/c4jexamples/MySimpleGUI.java
+END
+BoundedBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/c4jexamples/BoundedBuffer.java
+END
+Counter.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/c4jexamples/Counter.java
+END
+LinkingArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/c4jexamples/LinkingArtifact.java
+END
+LinkableArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/c4jexamples/LinkableArtifact.java
+END
+FlatCountObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/c4jexamples/FlatCountObject.java
+END
+ArtifactWithFailure.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/examples/bridges/jason/c4jexamples/ArtifactWithFailure.java
+END

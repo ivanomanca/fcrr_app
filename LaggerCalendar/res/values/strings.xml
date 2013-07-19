@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="laggercalendar_mas2j">/jaca/laggercalendar/project.mas2j</string>
+    <string name="console">Console</string>
+    <string name="app_name">Lagger Calendar</string>
+    <string name="menu_add">Add Event</string>
+    <string name="contacts_promt">Choose a contact</string>
+</resources>

@@ -1,0 +1,202 @@
+%
+% CArtAgO guide
+%
+\documentclass[11pt]{report}
+ \newif\ifpdf
+ \ifx\pdfoutput\undefined
+ \pdffalse % we are not running PDFLaTeX
+ \else
+ \pdfoutput=1 % we are running PDFLaTeX
+ \pdftrue
+ \fi
+%%%%%%%%%%%%%%%
+ \ifpdf
+ \usepackage[pdftex]{graphicx}
+ \else
+ \usepackage{graphicx}
+ \fi
+%%%%%%%%%%%%%%%
+ \ifpdf
+ \DeclareGraphicsExtensions{.pdf, .jpg, .tif}
+ \else
+ \DeclareGraphicsExtensions{.eps, .jpg}
+ \fi
+%%%%%%%%%%%%%%%
+
+\newcommand\xc[1]{\chaptername~\ref{chap:#1}}
+\newcommand\labelchap[1]{\label{chap:#1}}
+\newcommand\xa[1]{\appendixname~\ref{app:#1}}
+\newcommand\labelsec[1]{\label{sec:#1}}
+\newcommand\xs[1]{\sectionname~\ref{sec:#1}}
+\newcommand\xsp[1]{\sectionname~\ref{sec:#1} \onpagename~\pageref{sec:#1}}
+\newcommand\labelssec[1]{\label{ssec:#1}}
+\newcommand\xss[1]{\subsectionname~\ref{ssec:#1}}
+\newcommand\xssp[1]{\subsectionname~\ref{ssec:#1} \onpagename~\pageref{ssec:#1}}
+\newcommand\labelsssec[1]{\label{sssec:#1}}
+\newcommand\xsss[1]{\subsectionname~\ref{sssec:#1}}
+\newcommand\xsssp[1]{\subsectionname~\ref{sssec:#1} \onpagename~\pageref{sssec:#1}}
+\newcommand\labelfig[1]{\label{fig:#1}}
+\newcommand\xf[1]{\figurename~\ref{fig:#1}}
+\newcommand\xff[2]{\figurenames~\ref{fig:#1}~and~\ref{fig:#2}}
+\newcommand\xfp[1]{\figurename~\ref{fig:#1} \onpagename~\pageref{fig:#1}}
+\newcommand\labeltab[1]{\label{tb:#1}}
+\newcommand\xt[1]{\tablename~\ref{tb:#1}}
+\newcommand\xtt[2]{\tablenames~\ref{tb:#1}~and~\ref{ab:#2}}
+\newcommand\xtp[1]{\tablename~\ref{tb:#1} \onpagename~\pageref{tb:#1}}
+\newcommand\labelenum[1]{\label{enum:#1}}
+\newcommand\xen[1]{(\ref{enum:#1})}
+\newcommand\xenp[1]{(\ref{enum:#1}) \onpagename~\pageref{enum:#1}}
+%\newcommand{\chaptername}{Chapter}
+%\newcommand{\figurename}{Figure}
+%\newcommand{\tablename}{Table}
+\newcommand{\sectionname}{Section}
+
+%******************************************************************************%
+\newcommand\note[1]{NOTE:\emph{#1}}
+\newcommand\tbc[1]{TO BE COMPLETED: \emph{#1}}
+\newcommand\outd[1]{OUTDATED: \emph{#1}}
+\newcommand\tbd[1]{TO BE COMPLETED: \emph{#1}}
+\newcommand\code[1]{{\small{\mbox{\texttt{{#1}}}}}}
+\newcommand\sym[1]{{\small{\mbox{\textit{{#1}}}}}}
+\newcommand\ttit[1]{\texttt{\textit{#1}}}
+
+\newcommand\version[1]{\mbox{Document revision: #1}}
+\newcommand\approvedby[1]{\mbox{Approved by: #1}}
+\newcommand\receivedby[1]{\mbox{Received by: #1}}
+\newcommand\creationdate[1]{\mbox{Creation date: #1}}
+\newcommand\repauthor[1]{\mbox{Main author: #1}}
+\newcommand\lastchangesdate[1]{\mbox{Last Changes date: #1}}
+\newcommand\noa[2]{\noindent\emph{Note of the author (#1): }#2\\\\}
+\newcommand\logo{
+    \begin{figure}[tp]
+        \begin{center}
+            \inputgraphics[width=4cm]{../shared/logo}
+        \end{center}
+\end{figure}}
+
+%******************************************************************************%
+\newcommand{\cartagoversion}{2.0}
+\newcommand{\jaca}{\mbox{\sf{JaCa}}}
+\newcommand{\jason}{\mbox{\sf{\emph{{Jason}}}}}
+\newcommand{\AandA}{\mbox{\sf{{A\&A~}}}}
+\newcommand{\cartago}{\mbox{\sf{CArtAgO}}}
+%******************************************************************************%
+
+
+\title{{\huge{\bf{{\cartago} Getting Started}}\\~\\\mbox{version: \cartagoversion}\\\mbox{~}\\}
+{\small{
+   \repauthor{aricci}  \\  
+    \creationdate{20100801}\\
+    \lastchangesdate{20100801}\\
+    % \receivedby{aricci}\\
+    % \approvedby{aricci}\\
+    }}
+}
+
+\author{DEIS, Universit\`{a} di Bologna, Italy}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+\sloppy
+
+\chapter{Getting Started}
+
+\section{{\cartago} Distribution}
+
+{\cartago} 2.0 distribution contains the source code and the binaries of the {\cartago} framework infrastructure, including also bridges to agent programming platforms available by default -- currently, for version 2.0, only the {\jason} bridge is available.
+
+
+The distribution includes the following folders:
+%
+\begin{itemize}
+\item \code{src}
+\begin{itemize}
+\item \code{main} -- this folder contains the source code of {\cartago}
+\item \code{bridges} -- this folder contains the source code of available bridges to use {\cartago} with Agent Programming Languages
+\end{itemize}
+\item \code{lib} -- this folder contains the Java libraries (JAR) containing the binaries for {\cartago} and available bridges
+\item \code{examples}
+\begin{itemize}
+\item \code{main} -- this folder contains examples related to {\cartago}, with agents developed using the simple Java API
+\item \code{bridges} -- this folder contains examples using agents written using existing agent programming languages 
+\end{itemize}
+\item \code{doc}
+\begin{itemize}
+\item \code{getting\_started.pdf} -- this document
+\item \code{tech-rep-jaamas-2010.pdf} -- a technical report describing the environment programming idea and {\cartago} model
+\item \code{cartago\_by\_example.pdf} -- this is a tutorial describing the main features of {\cartago} using {\jason} as APL
+\item \code{main-api} -- this folder contains the Java doc of {\cartago} main sources
+\item \code{c4jason-api} -- this folder contains the Java doc of the source code of the bridge {\jason}+{\cartago}
+\end{itemize}
+\end{itemize}
+
+\section{Using {\cartago}}
+
+\subsection{Using {\cartago} from {\jason}}
+
+To use {\cartago} into {\jason} applications, just include in the MAS configuration file:
+\begin{itemize} 
+\item \code{cartago.jar} and \code{c4jason.jar} libraries in the declared class path; 
+\item the declaration of {\code{c4jason.Environment}} as environment;
+\item the declaration of \code{c4jason.CAgentArch} as agent architecture, for each agent that needs to work within {\cartago} environment.
+\end{itemize}
+%
+\noindent For example, consider the first example included in \code{examples/bridges/jason}, \code{example00-hello-world.mas2j}:
+ %
+{\small{
+\begin{verbatim}
+MAS example00_hello_world {
+   
+  environment: 
+  c4jason.CartagoEnvironment
+    
+  agents:  
+  hello_agent agentArchClass c4jason.CAgentArch;
+
+  classpath: "../../../lib/cartago.jar";"../../../lib/c4jason.jar";    
+}
+\end{verbatim}}}
+
+%
+\noindent By default, a {\cartago} node is installed and the specified agents are automatically joined to the default workspace.
+
+\subsection{Using {\cartago} in {Java}}
+
+To use {\cartago} with simple Java agents,  just include {\code{cartago.jar}} in the classpath.
+%
+Then, \code{CartagoService} class provides the basic API to start a node and open a working session inside.
+%
+By starting a session (method \code{startSession}), an object implementing the \code{ICartagoSession} interface is returned,
+to act inside the workspace.
+%
+For instance, consider the first example included in \code{examples/main/examples}, \code{Ex00a\_HelloWorld}:
+%
+{\small{
+\begin{verbatim}
+package examples;
+
+import cartago.*;
+import cartago.security.*;
+
+public class Ex00a_HelloWorld {
+	
+  public static void main(String[] args) throws Exception {		
+    CartagoService.startNode();
+    ICartagoSession session = CartagoService.startSession("default", 
+                   new AgentIdCredential("agent-0"), null);
+    session.doAction(new Op("println","Hello, world!"), null, -1);
+  }
+}
+\end{verbatim}}}
+
+
+\section{{\cartago} sources on SVN}
+
+The up-to-date version of {\cartago} sources is available on SVN repository on Source Forge.
+% 
+The address of the repository is: \code{http://cartago.svn.sourceforge.net/svnroot/cartago}
+
+\end{document}

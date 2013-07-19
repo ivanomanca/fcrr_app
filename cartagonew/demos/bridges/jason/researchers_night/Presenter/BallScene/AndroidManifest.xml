@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="ball.scene"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/ball_scene_commander">
+
+		<service android:name="jaca.android.JaCaService" android:exported="true" />
+
+		<activity android:name="ball.scene.BallSceneControllerActivity"
+			android:label="@string/ball_scene_commander"
+			android:screenOrientation="portrait" >
+ 			
+ 			<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="researchers_night.presenter.category.PRESENTATION" />
+            </intent-filter>
+ 		</activity>
+ 		<activity android:name="ball.scene.config.AddressActivity"
+ 			android:theme="@style/MyDialog"
+ 			android:screenOrientation="portrait" />
+
+    </application>
+    <uses-sdk android:minSdkVersion="4" />
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+</manifest> 

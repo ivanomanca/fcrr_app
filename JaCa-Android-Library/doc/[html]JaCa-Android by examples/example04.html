@@ -1,0 +1,147 @@
+<p style="text-align: justify;">In this example we will show how to manage the different kind of connectivity available on the device in <strong>JaCa-Android</strong>. You can find the source code of this example in the folder <strong>/jaca/android/tests/connectivity</strong> placed inside the main <strong>tests</strong> folder. The agent used in this sample joins the <strong>MiddlewareServices</strong></strong> workspace for working with the <strong>ConnectivityManager</strong> artifact, an artifact provided by the middleware that allows to manage the different kind of connectivity available on the device. Even if this artifact is meant to be able to manage all the different kind of connectivity available, currently, besides the management of the device airplane mode, only the WiFi is supported. This artifact, like the <strong>BatteryArtifact</strong>, extends the <strong>BroadcastReceiverArtifact</strong> for receiving the Android's broadcast (i.e. changes in the connectivity status in this case). Below is reported a source code snippet of the <strong>ConnectivityManager</strong> artifact.</p>
+<p style="text-align: center;">
+<pre  class="srccode">
+public class ConnectivityManager extends BroadcastReceiverArtifact {
+	
+  protected void init() {
+    super.init();
+    boolean isAirplaneEnabled = ...
+
+    wifiManager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+		
+    if(isAirplaneEnabled)
+      defineObsProperty(AIRPLANE_MODE_STATUS, ON_VALUE);
+    else
+      defineObsProperty(AIRPLANE_MODE_STATUS, OFF_VALUE);
+		
+    if(wifiManager.isWifiEnabled())
+      defineObsProperty(WIFI_STATUS, ON_VALUE);
+    else
+      defineObsProperty(WIFI_STATUS, OFF_VALUE);
+		
+    IntentFilter filter = new IntentFilter();
+    filter.addAction("android.intent.action.SERVICE_STATE");
+    filter.addAction(WifiManager.WIFI_STATE_CHANGED_ACTION);
+    linkBroadcastReceiverToOp(filter, "onReceive");
+  }
+	
+  @INTERNAL_OPERATION void onReceive(BroadcastReceiver broadcastReceiver, 
+	    Context context, Intent intent) {
+    boolean isAirplaneEnabled = ...
+    boolean obsIsAirplaneOn = getObsProperty(AIRPLANE_MODE_STATUS).equals(ON_VALUE);
+    boolean obsIsWifiOn = getObsProperty(WIFI_STATUS).equals(ON_VALUE);
+		
+    if(obsIsAirplaneOn!=isAirplaneEnabled){
+      if(isAirplaneEnabled)
+        getObsProperty(AIRPLANE_MODE_STATUS).updateValue(ON_VALUE);
+      else
+        getObsProperty(AIRPLANE_MODE_STATUS).updateValue(OFF_VALUE);
+    }
+    if(obsIsWifiOn!=wifiManager.isWifiEnabled()){
+      if(obsIsWifiOn)
+        getObsProperty(WIFI_STATUS).updateValue(ON_VALUE);
+      else
+        getObsProperty(WIFI_STATUS).updateValue(OFF_VALUE);
+    }
+  }
+	
+  @OPERATION public void enableWiFi(){...}
+
+  @OPERATION public void disableWiFi(){...}
+
+  @OPERATION void enableAirplaneMode(){...}
+	
+  @OPERATION void disableAirplaneMode(){...}
+  ...
+}
+</pre>
+</p>
+<strong>ConnectivityManager</strong> highlights:
+<ul>
+
+<li><p style="text-align: justify;">In the artifact initialisation we create the observable properties related to the device's connectivity status and then we register the artifact to be notified by the broadcasts of interest for continuously retrieving updates related to such status.</p></li>
+
+<li><p style="text-align: justify;">Thanks to the usual linking mechanism between android events and artifacts' internal operations each time a new Android broadcast is sent the <strong>onReceive</strong> operation is invoked. Inside this operation the artifact's observable properties are updated with the last broadcasted information.</p></li>
+
+<li><p style="text-align: justify;">The artifact provides also a set of operations for: <i>(i)</i> enabling/disabling the WiFi connectivity, and<i> (ii)</i> enabling/disabling the airplane-mode (this is the Android term used for indicating a device with at least cellular network turned off) on the device.</p></li>
+
+</ul>
+<br/>
+<p style="text-align: justify;">Below is reported the source code of the agent used in this example.</p>
+
+
+<p style="text-align: center;">
+<pre  class="srccode">
+!start.
+
++!start
+  <-  !init;
+      !do_job.
+
+/*Initialisation plan for joining the MiddlewareServices workspace*/
++!init 
+  <-  ...
+		
+/******************** Main agent plan ********************/		
++!do_job : wsp_id(jaca_services, WspID) & art_id(console,LocalConsoleID)
+  <-  focusWhenAvailable("connectivity-manager")[wsp_id(WspID)];
+      println("[TESTING WIFI]")[artifact_id(LocalConsoleID)];
+      !test_wifi;
+      .wait(10000);
+      println("[TESTING AIRPLANE]")[artifact_id(LocalConsoleID)];
+      !test_airplane;
+      .wait(10000);
+      println("[DISABLE ALL]")[artifact_id(LocalConsoleID)];
+      !disable_all.
+		
++!test_wifi : true
+  <-  ?art_id(console,LocalConsoleID);
+      println("enabling wifi")[artifact_id(LocalConsoleID)];
+      enableWiFi;
+      println("wifi enabled")[artifact_id(LocalConsoleID)];
+      .wait(15000);
+      println("disabling wifi")[artifact_id(LocalConsoleID)];
+      disableWiFi;
+      println("wifi disabled")[artifact_id(LocalConsoleID)].
+	   
+
++!test_airplane : true
+  <-  ?art_id(console,LocalConsoleID);
+      println("enabling airplane mode")[artifact_id(LocalConsoleID)];
+      enableAirplaneMode;
+      println("airplane enabled")[artifact_id(LocalConsoleID)];
+      .wait(10000);
+      println("disabling airplane mode")[artifact_id(LocalConsoleID)];
+      disableAirplaneMode;
+      println("airplane disabled")[artifact_id(LocalConsoleID)].
+
++!disable_all : true
+  <-  ?art_id(console,LocalConsoleID);
+      println("disabling all")[artifact_id(LocalConsoleID)];
+      enableAirplaneSpecific("cell,bluetooth,wifi");
+      println("all disabled")[artifact_id(LocalConsoleID)].
+	
++airplane_mode_status(Value) : art_id(console,LocalConsoleID)
+  <-  println("[STATUS AIRPLANE:]", Value)[artifact_id(LocalConsoleID)].
+	
++wifi_status(Value) :art_id(console,LocalConsoleID)
+  <-  println("[STATUS WIFI:]: ", Value)[artifact_id(LocalConsoleID)].
+</pre>
+</p>
+
+
+Agent highlights:
+
+<ul>
+<li><p style="text-align: justify;">For first the agent joins the <strong>MiddlewareServices</strong> workspace using the usual <strong>init</strong> plan.</p></li>
+
+<li><p style="text-align: justify;">Then the agent focuses the <strong>ConnectivityManager</strong>, contained in the <strong>MiddlewareServices</strong>, for receiving the information related to the device connectivity status.</p></li>
+
+<li><p style="text-align: justify;">As soon as new information are available the <strong>ConnectivityManager</strong> generates proper signals that are handled by the agent with a set of reactive plans that print in the console the new connectivity information.</p></li>
+
+<li><p style="text-align: justify;">Inside the <strong>do_job</strong> plan we test the different functionalities provided by the <strong>ConnectivityManager</strong> artifact enabling and then disabling the WiFi connection and the airplane mode.</p></li>
+</ul>
+
+<p style="text-align: center;">
+<img src="http://jaca-android.sourceforge.net/wp-content/uploads/2011/04/test_connectivity_gui.png" alt="" title="test_gui_gui" width="320" height="480" class="aligncenter size-full wp-image-534" />
+<p style="text-align: center;">A screenshot of the running example.</p>

@@ -1,0 +1,234 @@
+<project name="CArtAgO" default="dist-all-with-doc" basedir=".">
+<!--<project name="CArtAgO" default="make-jason-bridge" basedir=".">-->
+
+  <target name="init">
+    <tstamp/>
+  	<property name="version" value="2.0.2"/>
+  	<property name="java-version" value="1.6"/>
+    <property name="trunk" value="." />
+    <property name="build" value="${trunk}/build" />
+    <property name="build-bridges" value="${trunk}/build-bridges" />
+    <property name="lib" value="${trunk}/lib" />
+    <property name="dist" value="${trunk}/dist/cartago-${version}" />
+    <property name="doc" value="${trunk}/docs" />
+    <!--<property name="make" value="${trunk}/make" />-->
+    <property name="src-main" value="${trunk}/src/main" />
+    <property name="src-bridges" value="${trunk}/src/bridges" />
+    <property name="examples" value="${trunk}/examples" />
+    <property name="tests" value="${trunk}/tests" />
+    <property name="papers" value="${trunk}/papers" />
+  </target>
+
+
+ <target name="makedoc" depends="init">
+  	<delete dir="${dist}/doc/main-api" />
+	<mkdir dir="${dist}/doc/main-api" />
+	<javadoc packagenames="cartago"
+	           sourcepath="${src-main}"
+	           destdir="${dist}/doc/main-api"
+	           author="true"
+	           version="true"
+	           use="true"
+	           windowtitle="CArtAgO API">
+	    <doctitle><![CDATA[<h1>CArtAgO API Documentation</h1>]]></doctitle>
+	    <bottom><![CDATA[<i>>DEIS - University of Bologna</i>]]></bottom>
+	  </javadoc>	
+
+	<delete dir="${dist}/doc/c4jason-api" />
+	<mkdir dir="${dist}/doc/c4jason-api" />
+
+  	<javadoc packagenames="c4jason,cartago"
+	           sourcepath="${src-bridges}/jason"
+	           destdir="${dist}/doc/c4jason-api"
+	           author="true"
+	           version="true"
+	           use="true"
+	           windowtitle="C4Jason">
+	    <doctitle><![CDATA[<h1>C4Jason Bridge Documentation</h1>]]></doctitle>
+	    <bottom><![CDATA[<i>>DEIS - University of Bologna</i>]]></bottom>
+	  </javadoc>	
+ </target>
+
+<target name="build" depends="init" >
+	
+	<mkdir dir="${build}"/>
+	<delete>
+	 <fileset dir="${build}">
+	    <include name="**"/>
+	 </fileset>
+	</delete>
+	
+	<javac srcdir="${src-main}"
+		   debug = "true"
+	         destdir="${build}"
+	         classpath="${build};${lib}/lipermi-0.4.jar"
+	         source="${java-version}"/>
+	
+	<copy todir="${build}/cartago/tools">
+		   <fileset dir="${src-main}/cartago/tools">
+			   <include name="*.man"/>
+		   </fileset>
+	</copy>
+	
+	
+	<!--<javac srcdir="${src-examples}"
+	         destdir="${build}"
+	         classpath="${build}"
+	         source="${java-version}"/>
+	<javac srcdir="${src-test}"
+	         destdir="${build}"
+	         classpath="${build}"
+	         source="${java-version}"/>-->
+</target>
+		
+  <target name="make-main" depends="build" >
+	
+	<delete dir="${dist}" />
+      <mkdir dir="${dist}" />
+				
+	   <copy todir="${dist}">
+		   <fileset dir="${trunk}">
+			   <include name="*.txt"/>
+		   </fileset>
+	   </copy>
+
+	<delete dir="${dist}/src/main" />
+    <mkdir dir="${dist}/src/main" />
+    <copy todir="${dist}/src/main">
+	        <fileset dir="${src-main}">
+	        	<include name="**"/>
+   	   </fileset>
+    </copy>
+
+
+	  <delete dir="${dist}/examples" />
+      <mkdir dir="${dist}/examples" />
+      <copy todir="${dist}/examples">
+	        <fileset dir="${examples}">
+	        	<include name="**"/>
+     	   </fileset>
+      </copy>
+   	
+  	<!--
+	  <delete dir="${dist}/tests" />
+      <mkdir dir="${dist}/tests" />
+      <copy todir="${dist}/tests">
+	        <fileset dir="${tests}">
+	        	<include name="**"/>
+     	   </fileset>
+      </copy>
+	-->
+  	
+  	<!--
+	<delete dir="${dist}/papers" />
+    <mkdir dir="${dist}/papers" />
+    <copy todir="${dist}/papers">
+	        <fileset dir="${papers}">
+	        	<include name="**"/>
+   	   </fileset>
+    </copy>
+	-->
+  	
+	
+  	<mkdir dir="${dist}/lib" />
+	
+		<rmic classname="cartago.infrastructure.rmi.AgentBodyRemote" base="${build}"></rmic>
+		<rmic classname="cartago.infrastructure.rmi.CartagoNodeRemote" base="${build}"></rmic>
+	    <rmic classname="cartago.infrastructure.rmi.CartagoCallbackRemote" base="${build}"></rmic>
+	
+		<rmic classname="cartago.infrastructure.rmi.AgentBodyRemote" base="${build}"></rmic>
+		<rmic classname="cartago.infrastructure.rmi.CartagoNodeRemote" base="${build}"></rmic>
+    	<rmic classname="cartago.infrastructure.rmi.CartagoCallbackRemote" base="${build}"></rmic>
+		
+	    <rmic classname="cartago.infrastructure.rmi.CartagoControllerRemote" base="${build}"></rmic>
+		<!-- -->
+		
+		   <copy todir="${build}/cartago">
+				<fileset dir="${src-main}/cartago">
+	                <include name="*.man"/>
+	           </fileset>
+	       </copy>
+	
+		   <copy todir="${build}/cartago/util">
+				<fileset dir="${src-main}/cartago/util">
+	                <include name="*.man"/>
+	           </fileset>
+	       </copy>
+		
+	   <jar jarfile="${dist}/lib/cartago.jar"
+	 	    basedir="${build}"
+		    includes="cartago/**"/>
+	
+  		<jar jarfile="${lib}/cartago.jar"
+	 	    basedir="${build}"
+		    includes="cartago/**"/>
+
+  		<mkdir dir="${dist}/doc" />
+	       
+	       <copy todir="${dist}/doc">
+			<fileset dir="${doc}/getting_started">
+                <include name="getting_started.pdf"/>
+           </fileset>
+			<fileset dir="${doc}/cartago_by_examples">
+                <include name="cartago_by_examples.pdf"/>
+           </fileset>
+			<fileset dir="${doc}/tech-rep">
+                <include name="env-prog-cartago-tech-rep.pdf"/>
+           </fileset>
+	       </copy>
+
+	</target>
+		
+	<target name="make-jason-bridge" depends="init" >
+			
+		<mkdir dir="${build-bridges}/jason"/>
+		<delete>
+		 <fileset dir="${build-bridges}/jason">
+		    <include name="**"/>
+		 </fileset>
+		</delete>
+
+	  	<mkdir dir="${dist}/src/bridges/jason" />
+	    <copy todir="${dist}/src/bridges/jason">
+		        <fileset dir="${src-bridges}/jason">
+		        	<include name="**"/>
+	   	   </fileset>
+	    </copy>
+
+		<javac srcdir="${src-bridges}/jason "
+			   debug = "true"
+		         destdir="${build-bridges}/jason"
+		         classpath="${build};${build-bridges}/jason;${lib}/jason.jar;${lib}/lipermi-0.4.jar"
+		         source="${java-version}"/>
+
+		<jar jarfile="${lib}/c4jason.jar" basedir="${build-bridges}/jason"
+			includes="c4jason/*,cartago/*" />
+
+		<jar jarfile="${dist}/lib/c4jason.jar" basedir="${build-bridges}/jason"
+			includes="c4jason/*,cartago/*" />
+
+		
+		<!--
+		<delete dir="${doc}/api" />
+		<mkdir dir="${doc}/api" />
+			<javadoc packagenames="c4jason,obj" sourcepath="${src}" destdir="${doc}/api"
+			author="true" version="true" use="true" windowtitle="CARTAGO BRIDGE FOR JASON">
+			<doctitle><![CDATA[<h1>CArtAgO BRIDGE FOR JASON Documentation</h1>]]></doctitle>
+			<bottom><![CDATA[<i>aliCE Group at DEIS - UniBO /  Cesena</i>]]></bottom>
+			<classpath>
+				<pathelement location="${lib}/jason.jar" />
+				<pathelement location="${lib}/cartago-${cartago-version}.jar" />
+			</classpath>
+		</javadoc>
+		-->
+	</target>
+
+	
+	<target name="dist-all" depends="init,make-main,make-jason-bridge" >			
+	</target>
+
+	<target name="dist-all-with-doc" depends="init,make-main,make-jason-bridge,makedoc" >			
+	</target>
+
+	
+</project>

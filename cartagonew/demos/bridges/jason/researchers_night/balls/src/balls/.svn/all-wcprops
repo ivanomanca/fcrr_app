@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/cartago/!svn/ver/561/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/balls
+END
+Ball.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/cartago/!svn/ver/549/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/balls/Ball.java
+END
+BallInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/cartago/!svn/ver/549/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/balls/BallInfo.java
+END
+BallScreen.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/cartago/!svn/ver/559/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/balls/BallScreen.java
+END
+Boundary.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/cartago/!svn/ver/498/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/balls/Boundary.java
+END
+FakeBallSceneState.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/cartago/!svn/ver/549/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/balls/FakeBallSceneState.java
+END
+FakeBallSceneStateA.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/cartago/!svn/ver/559/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/balls/FakeBallSceneStateA.java
+END
+BallOutOfRightBound.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/cartago/!svn/ver/498/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/balls/BallOutOfRightBound.java
+END
+BallScreenA.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/cartago/!svn/ver/561/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/balls/BallScreenA.java
+END
+BallScreenFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/cartago/!svn/ver/549/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/balls/BallScreenFrame.java
+END
+Calculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/cartago/!svn/ver/559/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/balls/Calculator.java
+END
+BallOutOfLeftBound.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/cartago/!svn/ver/498/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/balls/BallOutOfLeftBound.java
+END

@@ -1,0 +1,40 @@
+10
+
+dir
+155
+https://jaca-android.svn.sourceforge.net/svnroot/jaca-android/jaca-android/trunk/JaCa-Android-Library/doc
+https://jaca-android.svn.sourceforge.net/svnroot/jaca-android
+
+
+
+2011-04-14T22:00:59.086544Z
+110
+asanti
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6cd15396-154c-4b75-860a-45c885aa85c5
+
+Getting started
+dir
+
+JaCa-Android by examples
+dir
+
+[html]JaCa-Android by examples
+dir
+
+api
+dir
+

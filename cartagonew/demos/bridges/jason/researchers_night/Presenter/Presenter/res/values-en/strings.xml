@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Presenter</string>
+    
+    <!-- Researchers night mas2j  -->
+	<string name="researchers_night_presenter">Researchers night presenter</string>
+	<string name="researchers_night_presenter_mas2j">/researchers_night/presenter/project.mas2j</string>
+	
+	<string name="btnStart">Start</string>
+	<string name="participants">N° Participants</string>
+	<string name="btnYes">Yes</string>
+	<string name="btnNo">No</string>
+	<string name="confirm_message">Are you sure you want to start event?</string>
+	<string name="new_event_message">New event created from the EventRegistry</string>
+	
+	
+	<string name="reset_address">Reset Address</string>
+	<string name="btnOk">Ok</string>
+	<string name="btnCancel">Cancel</string>
+	<string name="lblAddress">Type here (address:port)</string>
+	<string name="ckbRemember">Remember</string>
+	
+    
+</resources>

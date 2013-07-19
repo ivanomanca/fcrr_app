@@ -1,0 +1,111 @@
+<p style="text-align: justify;">Before going in the details of this first example we provide a basic description of the <strong>GUIArtifact</strong>, the basic artifact used for managing an Android GUI in <strong>JaCa-Android</strong>.</p>
+
+
+<h2>The GUIArtifact</h2>
+<p style="text-align: justify;">The <strong>GUIArtifact</strong> is the basic artifact used for managing an Android GUI in <strong>JaCa-Android</strong>. This artifact wraps a real Android GUI using a <strong>IJaCaActivity</strong> -- which is an interface part of our middleware representing a <strong>JaCa-Android</strong> extension of an Android GUI base class  -- for providing developers a connection between the concrete GUI and the artifact that manages it. Thanks to the <strong>IJaCaActivity</strong> it is hence possible to manipulate the Android GUI directly from the artifact---e.g. see what we have done in the <a href="http://jaca-android.sourceforge.net/?page_id=257">getting started example</a> where inside the <strong>addSMSToList</strong> operation of the <strong>ViewerArtifact</strong> we added a new SMS to a list displayed in the smart-phone screen.</p>
+
+<p style="text-align: justify;">
+This artifact has only one observable property (<strong>state</strong>) representing the current state of the GUI, and provides a set of built-in mechanisms (i.e. protected methods <strong>linkOnStartEventToOp</strong>, <strong>linkOnTouchEventToOp</strong>, etc.) for linking each kind of GUI-related Android event to the artifact operation responsible of the managing of such event. In the artifact initialisation -- once the linking between events and operations has been made -- is executed an internal operation (<strong>execInternalOp("fetchGUIEvents");</strong>) that manages the notification of Android GUI events. This operation is meant to \textit{cyclically</strong>: <i>(i)</i> wait for new events and <i>(ii)</i> call the appropriate artifact operation (using the primitive <strong>execInternalOp</strong>).
+</p>
+<p style="text-align: justify;">
+The <strong>GUIArtifact</strong> cannot be directly used for realising a GUI in <strong>JaCa-Android</strong>. For concretely realise an artifact-based GUI we need to specialise the <strong>GUIArtifact</strong> (like in the case of the <strong>ViewerArtifact</strong> in the getting started): <i>(i)</i> explicitly defining the links between events and operations we are interested in, <i>(ii)</i> wrapping the specific <strong>IJaCaActivity</strong> -- i.e. the GUI -- we want to manage.</p>
+
+<h2>The sample</h2>
+
+<p style="text-align: justify;">
+In this first example we will show how to work with GUI in <strong>JaCa-Android</strong> through the classic hello world example. You can find the source code of this example in the folder <strong>/jaca/android/tests/gui</strong> placed inside the main <strong>tests</strong> folder. The GUI used in this example is composed of three different tabs (wrapped in three different artifacts), each one of them contains a <strong>print</strong> button that once clicked will produce in standard output the following message: <strong>Hello World from X</strong>, where <strong>X</strong> is the identifier of the Artifact used to discriminate the tab the user was in when he pressed the <strong>print</strong> button.
+</p>
+
+<p style="text-align: justify;">
+In this example we will use three instance of the <strong>HelloWorldGUIArtifact</strong>, each one representing one tab of our sample, extending the base <strong>GUIArtifact</strong> class. Below is reported a source code snippet of the <strong>HelloWorldGUIArtifact</strong>.
+</p>
+<p style="text-align: center;">
+<pre  class="srccode">
+public class HelloWorldGUIArtifact extends GUIArtifact{
+
+  protected void init(JaCaActivity activity, Bundle savedInstanceState) {
+    super.init(activity, savedInstanceState);
+    linkOnStartEventToOp("onStart");
+    linkOnStopEventToOp("onStop");
+    Button btnInc = (Button) activity.findViewById(R.id.btnPrint);
+    linkOnClickEventToOp(btnInc, "onClick");
+  }
+	
+  @OPERATION void print() {
+    System.out.println("Hello World from: "+getId().getName());
+  }
+	
+  @INTERNAL_OPERATION void onClick(View view) {
+    signal(getId().getName());
+  }
+	
+  @INTERNAL_OPERATION void onStart() {
+    signal("onStart");
+  }
+    
+  @INTERNAL_OPERATION void onStop() {
+    signal("onStop");
+  }
+  ...
+}
+</pre>
+</p>
+
+<p style="text-align: justify;">
+<strong>HelloWorldGUIArtifact</strong> highlights:</p>
+<ul>
+<li> <p style="text-align: justify;">In the artifact initialisation the protected methods <strong>linkOnXXXEventToOp</strong> are used for linking the execution of artifact's internal operations: <i>(i)</i> to the occurrence of Android events, and <i>(ii)</i> to the corresponding actions that the user can do on the GUI (<strong>linkOnClickEventToOp(btnInc,"onClick")</strong> for linking the execution of the <strong>onClick</strong> internal operation to clicks on the print buttons).</p></li>
+<li> <p style="text-align: justify;">In the <strong>onClick</strong> internal operation the <strong>HelloWorldGUIArtifact</strong> emits a signal (perceivable by agents that are observing the artifact) containing the name of the artifact identifying the tab. The name of the artifact is retrieved by the <strong>getId()</strong> method inherited from the <strong>Artifact</strong> base class.</p></li>
+<li> The other internal operations generate signals indicating the occurrence of particular Android events (<strong>onStart</strong>, <strong>onStop</strong>, etc.).</p></li>
+</ul>
+<br/>
+
+
+Below is reported the source code of the agent used in this first example.
+
+<p style="text-align: center;">
+<pre  class="srccode">
++!init 
+  <-  lookupArtifact("workspace", Id);
+		  focus(Id);
+		  println("init done").
+
++state(State) [artifact_name(_,X)]
+  <-  println("state  ", X, " :", State).
+
++onStart [artifact_name(_,X)]
+  <-  println("onStart ", X).
+
++onStop [artifact_name(_,X)]
+  <-  println("onStop ", X).
+
+  ...
+
++artifact("first_activity", _, Id)
+  <-  println("first activity created"); 
+      focus(Id).
+
++artifact("second_activity", _, Id)
+  <-  println("second activity created"); 
+      focus(Id).
+  ...	
+  
++first_activity
+  <-  print [artifact_name("first_activity")].
+	
++second_activity
+  <-  print [artifact_name("second_activity")].
+	
++third_activity
+  <-  print [artifact_name("third_activity")].
+</pre>
+</p>
+Agent highlights:
+<ul>
+<li><p style="text-align: justify;">The agent has a <strong>init</strong> plan where it lookups and focuses the workspace artifact. In this way, each time a new artifact is created in the workspace the agent is able to receive the <strong>+artifact(Name, Template, Id)</strong> event.</p></li>
+<li><p style="text-align: justify;">The <strong>+artifact(Name, Template, Id)</strong> event is handled by a set of reactive plans that the agent uses for starting focusing each <strong>HelloWorldGUIArtifact</strong> as soon as it is created.</p></li>
+<li><p style="text-align: justify;">When a click on the GUI buttons is performed by the user the corresponding <strong>HelloWorldGUIArtifact</strong> generates a signal that is handled by a proper reactive plan of the agent (<strong>+first_activity</strong> in case of signal coming from the first <strong>HelloWorldGUIArtifact</strong>, <strong>+second_activity</strong> in case of signal coming from the second <strong>HelloWorldGUIArtifact</strong>, etc.) where the <strong>print</strong> operation of the <strong>HelloWorldGUIArtifact</strong> is used for printing in the <strong>console</strong> the Hello World message.</p></li>
+</ul>
+
+<p style="text-align: justify;">
+We know that at first glance the dynamic just described could seems a bit tricky. Actually it is, but we realised this example in order to show you: <i>(i)</i> the linking of artifacts' operations to both GUI and Android events and <i>(ii)</i> the possibility to notify to agents the occurrence of events performed by the user on the GUI. In a real world application, you can imagine to update the GUI directly inside the artifact internal operation (the <strong>onClick</strong> in the example) that handles a particular event without generating a signal for delegating the update task to the agent (unless you do not want to do this on purpose, e.g. for notifying to the agent the click, as in the case of this sample).</p>

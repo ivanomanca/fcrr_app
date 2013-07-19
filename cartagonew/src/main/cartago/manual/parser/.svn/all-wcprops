@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/cartago/!svn/ver/634/cartago/trunk/src/main/cartago/manual/parser
+END
+calculator.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/cartago/!svn/ver/174/cartago/trunk/src/main/cartago/manual/parser/calculator.txt
+END
+ParseException.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/cartago/!svn/ver/174/cartago/trunk/src/main/cartago/manual/parser/ParseException.java
+END
+test.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/cartago/!svn/ver/174/cartago/trunk/src/main/cartago/manual/parser/test.txt
+END
+ArtifactManualParserTokenManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/cartago/!svn/ver/174/cartago/trunk/src/main/cartago/manual/parser/ArtifactManualParserTokenManager.java
+END
+Token.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/cartago/!svn/ver/174/cartago/trunk/src/main/cartago/manual/parser/Token.java
+END
+TokenMgrError.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/cartago/!svn/ver/174/cartago/trunk/src/main/cartago/manual/parser/TokenMgrError.java
+END
+SimpleCharStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/cartago/!svn/ver/174/cartago/trunk/src/main/cartago/manual/parser/SimpleCharStream.java
+END
+ArtifactManualParserConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/cartago/!svn/ver/174/cartago/trunk/src/main/cartago/manual/parser/ArtifactManualParserConstants.java
+END
+ArtifactManualParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/634/cartago/trunk/src/main/cartago/manual/parser/ArtifactManualParser.java
+END
+ar_man_grammar.jj
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/cartago/!svn/ver/174/cartago/trunk/src/main/cartago/manual/parser/ar_man_grammar.jj
+END

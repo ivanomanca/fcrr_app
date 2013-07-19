@@ -1,0 +1,51 @@
+<p style="text-align: justify;">Operations can have output parameters,  i.e. parameters whose value is meant to be computed by the operation execution. On the agent side such parameters are managed as <strong>action feedbacks</strong>. At the API level, output parameters are represented by the class <code>OpWithFeedbackParam&lt;ParamType&gt;</code>, where <code>ParamType</code> must be the specific type of the output parameter.</p>
+<p style="text-align: justify;">The class provides then a <code>set</code> method to set the output parameter value. In the following example, an agent creates and uses a <code>Calc</code> artifact, by executing operations with output parameters:</p>
+
+<blockquote style="text-align: justify;">
+<pre>MAS example03_output_param {
+
+  environment:
+  c4jason.CartagoEnvironment
+
+  agents:
+  calc_user agentArchClass c4jason.CAgentArch;
+
+  classpath: "../../../lib/cartago.jar";"../../../lib/c4jason.jar";
+}</pre>
+</blockquote>
+<p style="text-align: justify;">The <code>Calc</code> used by the agents has the following code:</p>
+
+<blockquote style="text-align: justify;">
+<pre>public class Calc extends Artifact {
+
+  @OPERATION
+  void sum(double a, double b, OpFeedbackParam sum){
+    sum.set(a+b);
+  }
+
+  @OPERATION
+  void sumAndSub(double a, double b, OpFeedbackParam sum,
+                                     OpFeedbackParam sub){
+    sum.set(a+b);
+    sub.set(a-b);
+  }
+}</pre>
+</blockquote>
+<p style="text-align: justify;">The source code of the agent follows:</p>
+
+<blockquote style="text-align: justify;">
+<pre>!use_calc.
+
++!use_calc
+  &lt;- makeArtifact("myCalc","c4jexamples.Calc",[]);
+     sum(4,5,Sum);
+     println("The sum is ",Sum);
+     sumAndSub(0.5, 1.5, NewSum, Sub);
+     println("The new sum is ",NewSum," and the sub is ",Sub).</pre>
+</blockquote>
+<p style="text-align: justify;"><strong>Highlights:</strong></p>
+
+<ul style="text-align: justify;">
+	<li> On the agent side output parameters are denoted by bound variables, which are bound with operation execution.</li>
+	<li> An operation can have any number of  output parameters.</li>
+</ul>

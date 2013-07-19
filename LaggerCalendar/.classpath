@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="lib" path="/JaCa-Android-Library/lib/c4jason.jar"/>
+	<classpathentry kind="lib" path="/JaCa-Android-Library/lib/cartago-jaca-android.jar"/>
+	<classpathentry kind="lib" path="/JaCa-Android-Library/lib/jason.jar"/>
+	<classpathentry kind="lib" path="/JaCa-Android-Library/lib/lipermi-0.4.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

@@ -1,0 +1,75 @@
+<p style="text-align: justify;">Since CArtAgO data model is based on Java object (POJO), a set of internal actions is provided on the agent side to create/manipulate Java objects. In particular:</p>
+
+<ul style="text-align: justify;">
+	<li> <code>cartago.new_obj(ClassName,ParamList,?ObjRef)</code>: instantiate a new object of the specified class, retrieving its reference</li>
+	<li> <code>cartago.invoke_obj{ObjRef,MethodName{(Params)},RetValue}</code>: call a method, possibly getting the return value</li>
+	<li> <code>cartago.invoke_obj{ClassName,MethodName{(Params)},RetValue}</code>: call a static method, possibly getting the return value</li>
+</ul>
+<p style="text-align: justify;">It follows a simple example:</p>
+
+<blockquote style="text-align: justify;">
+<pre>MAS example09_java_data_binding {
+
+  environment:
+  c4jason.CartagoEnvironment
+
+  agents:
+  java_data_binding_tester agentArchClass c4jason.CAgentArch;
+
+  classpath: "../../../lib/cartago.jar";"../../../lib/c4jason.jar";
+}</pre>
+</blockquote>
+<p style="text-align: justify;">The agent source code:</p>
+
+<blockquote style="text-align: justify;">
+<pre>!test_java_api.
+
++!test_java_api
+  &lt;- cartago.new_obj("c4jexamples.FlatCountObject",[10],Id);
+     cartago.invoke_obj(Id,inc);
+     cartago.invoke_obj(Id,getValue,Res);
+     println(Res);
+     cartago.invoke_obj("java.lang.System",currentTimeMillis,T);
+     println(T);
+     cartago.invoke_obj("java.lang.Class",
+                   forName("c4jexamples.FlatCountObject"),Class);
+     println(Class).</pre>
+</blockquote>
+<p style="text-align: justify;">Where the class <code>FlatCountObject</code> is defined as follows:</p>
+
+<blockquote style="text-align: justify;">
+<pre>package c4jexamples;
+
+public class FlatCountObject {
+
+  private int count;
+
+  public FlatCountObject(int v){
+    count = v;
+  }
+
+  public FlatCountObject(){
+    count = 0;
+  }
+
+  public void inc(){
+    count++;
+  }
+
+  public void inc(int dv){
+    count+=dv;
+  }
+
+  public int getValue(){
+    return count;
+  }
+
+}</pre>
+</blockquote>
+<p style="text-align: justify;"><strong>Highlights:</strong></p>
+
+<ul style="text-align: justify;">
+	<li> <strong>No sharing:</strong> Java objects are not meant to be shared, each agent has its own Java library, managing its own Java objects</li>
+	<li> <strong>Object references:</strong> Object references are kept track by means of atoms with a specific signature. When used outside the Java related internal actions, they are treated as normal atoms. When used in Java related internal actions, they refer to objects.</li>
+	<li> <strong>Null value:</strong> Underscore (<code>_</code>) is used to represent the null value.</li>
+</ul>

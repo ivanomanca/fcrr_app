@@ -1,0 +1,11 @@
+<resources>
+
+    <string-array name="contacts">
+        <item>Alessandro Ricci</item>
+        <item>Andrea Santi</item>
+        <item>Andrea Zagnoli</item>
+        <item>Marco Santarelli</item>
+        <item>Montalti Alessandro</item>
+    </string-array>
+   
+</resources>

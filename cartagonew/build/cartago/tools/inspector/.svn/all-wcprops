@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/tools/inspector
+END
+Updater$1.class
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/Updater$1.class
+END
+Updater$2.class
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/Updater$2.class
+END
+ArtifactDisposed.class
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/ArtifactDisposed.class
+END
+Updater$3.class
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/Updater$3.class
+END
+Updater$4.class
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/Updater$4.class
+END
+Updater$5.class
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/Updater$5.class
+END
+Updater$6.class
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/Updater$6.class
+END
+OpInfo$OpState.class
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/OpInfo$OpState.class
+END
+Updater$7.class
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/Updater$7.class
+END
+Updater$8.class
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/Updater$8.class
+END
+AgentMarker.class
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/AgentMarker.class
+END
+OpStarted.class
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/OpStarted.class
+END
+P2d.class
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/P2d.class
+END
+InspectorLogger.class
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/tools/inspector/InspectorLogger.class
+END
+V2d.class
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/V2d.class
+END
+LoggerEvent.class
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/LoggerEvent.class
+END
+OpCompleted.class
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/OpCompleted.class
+END
+ArtifactMarker.class
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/ArtifactMarker.class
+END
+AgentJoined.class
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/AgentJoined.class
+END
+OpInfo.class
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/OpInfo.class
+END
+AgentQuit.class
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/AgentQuit.class
+END
+ArtifactCreated.class
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/ArtifactCreated.class
+END
+Inspector.class
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/Inspector.class
+END
+WorkspaceScene.class
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/tools/inspector/WorkspaceScene.class
+END
+Marker.class
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/tools/inspector/Marker.class
+END
+FocussedArtifactInfo.class
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/FocussedArtifactInfo.class
+END
+InspectorView.class
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/InspectorView.class
+END
+OpFailed.class
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/OpFailed.class
+END
+Renderer.class
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/Renderer.class
+END
+Updater.class
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/Updater.class
+END
+OpRequested.class
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/OpRequested.class
+END
+InspectorPanel.class
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/cartago/!svn/ver/476/cartago/trunk/build/cartago/tools/inspector/InspectorPanel.class
+END
+Updater$Command.class
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/tools/inspector/Updater$Command.class
+END

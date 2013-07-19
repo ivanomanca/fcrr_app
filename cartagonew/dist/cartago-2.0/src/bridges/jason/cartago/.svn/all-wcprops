@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/src/bridges/jason/cartago
+END
+invoke_obj.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/src/bridges/jason/cartago/invoke_obj.java
+END
+current_wsp.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/src/bridges/jason/cartago/current_wsp.java
+END
+array_to_list.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/src/bridges/jason/cartago/array_to_list.java
+END
+tuple_to_term.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/src/bridges/jason/cartago/tuple_to_term.java
+END
+new_obj.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/src/bridges/jason/cartago/new_obj.java
+END
+term_to_tuple.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/src/bridges/jason/cartago/term_to_tuple.java
+END
+set_current_wsp.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/src/bridges/jason/cartago/set_current_wsp.java
+END

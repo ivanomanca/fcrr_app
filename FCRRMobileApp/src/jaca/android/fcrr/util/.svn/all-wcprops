@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/jaca-android/!svn/ver/159/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/util
+END
+Url.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/util/Url.java
+END
+ReqHttpJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/util/ReqHttpJson.java
+END
+GeoDegree.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/util/GeoDegree.java
+END
+HttpRequestLinkedOperations.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/util/HttpRequestLinkedOperations.java
+END
+HelloItemizedOverlay.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/util/HelloItemizedOverlay.java
+END
+JsonParam.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/util/JsonParam.java
+END
+MapPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/util/MapPoint.java
+END

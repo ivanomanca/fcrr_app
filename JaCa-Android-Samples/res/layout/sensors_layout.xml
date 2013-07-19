@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+	
+		<TextView  
+			android:id="@+id/acc_txt"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/acc_values"
+		    />
+	</LinearLayout>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+
+		<TextView  
+			android:id="@+id/acc_txt_x_values"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    />
+		    
+		<TextView  
+			android:id="@+id/acc_txt_y_values"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    />
+		<TextView  
+			android:id="@+id/acc_txt_z_values"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    />
+	</LinearLayout>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+	
+		<TextView  
+			android:id="@+id/geomag_txt"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/geomag_values"
+		    />
+		
+	</LinearLayout>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+	
+		<TextView  
+			android:id="@+id/geomag_txt_x_values"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    />
+		    
+		<TextView  
+			android:id="@+id/geomag_txt_y_values"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    />
+		<TextView  
+			android:id="@+id/geomag_txt_z_values"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    />
+	</LinearLayout>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+	
+		<TextView  
+			android:id="@+id/orientation_txt"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/orientation_values"
+		    />
+	</LinearLayout>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+
+
+		<TextView  
+			android:id="@+id/orientation_txt_azimuth_values"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    />
+		    
+		<TextView  
+			android:id="@+id/orientation_txt_pitch_values"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    />
+		<TextView  
+			android:id="@+id/orientation_txt_roll_values"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    />
+	</LinearLayout>
+
+</LinearLayout>

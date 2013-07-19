@@ -1,0 +1,284 @@
+package jaca.android.middlewaremanager;
+
+import jaca.android.JaCaService;
+import jaca.android.dev.JaCaPreferenceActivity;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.content.ServiceConnection;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.IBinder;
+import android.preference.Preference;
+import android.preference.PreferenceManager;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+import android.widget.Toast;
+import cartago.ArtifactId;
+import cartago.CartagoException;
+import cartago.Op;
+import cartago.util.agent.CartagoBasicContext;
+
+public class MiddlewareManagerActivity extends JaCaPreferenceActivity{
+
+	private String mName;
+	private MyViewWithPreferences mView;
+	private Handler mHandler;
+	private boolean isMiddlewareRunning;
+	private String mTemplate;
+	private ArtifactId mArtifactId;
+	private boolean mBinded;
+	private Bundle mSavedInstanceState;
+	private CartagoBasicContext mCtx;
+
+	/** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        isMiddlewareRunning = MiddlewarePreferenceManager.getLaunchTypeBackgroundPreference(this);
+
+        /*
+         * If the middleware is not started yet (i.e. it is in background)
+         * we start it
+         */
+        if(!isMiddlewareRunning){
+        	runJaCaServiceMiddleware(R.string.middleware_manager_mas2j);
+        }
+
+        MiddlewarePreferenceManager.setLaunchTypeBackgroundPreference(this, false);
+        //Creating the middleware GUIArtifact
+        createArtifact("middleware-manager-gui", MiddlewareManagerGUIArtifact.class.getCanonicalName());
+
+        mView = new MyViewWithPreferences(this);
+        mHandler = new Handler();    
+        addPreferencesFromResource(R.xml.preference_screen);
+        mView.setSelectable(false);
+        mView.setOrder(0);
+        getPreferenceScreen().addPreference(mView);
+    }
+
+    /**
+     * Override of the behaviour for the back button for keeping 
+     * the middleware always running on the device 
+     */
+    @Override
+    public void onBackPressed() {
+    }
+    
+	private class MyViewWithPreferences extends Preference{
+		private View mView;
+		private Button mBtnStart;
+		private Button mBtnStop;
+		private ProgressBar mProgressBar;
+		private ImageView mImageView;
+		private TextView mStatusTxt;
+		public MyViewWithPreferences(Context context){
+			super(context);
+		}
+		
+		@Override
+		public View getView(View convertView, ViewGroup parent) {
+            if (mView == null) {
+                mView = getLayoutInflater().inflate(R.layout.main, parent, false);
+
+                mBtnStart = (Button) mView.findViewById(R.id.btn_start_middleware);
+                mBtnStop = (Button) mView.findViewById(R.id.btn_stop_middleware);
+                mProgressBar = (ProgressBar) mView.findViewById(R.id.progress_bar);
+                mImageView = (ImageView) mView.findViewById(R.id.img_status);
+                mStatusTxt = (TextView) mView.findViewById(R.id.txt_status_val);
+                /*
+                 * The JaCa-Service has already started in background, so
+                 * we update accordingly the GUI
+                 */
+                if(isMiddlewareRunning){
+                	disableButton("start");
+                	setPreferenceEditable(false);
+                	mProgressBar.setProgress(mProgressBar.getMax());
+                }
+            }
+            return mView;
+		}
+
+		public Button getBtnStart() {
+			return mBtnStart;
+		}
+
+		public Button getBtnStop() {
+			return mBtnStop;
+		}
+
+		public ProgressBar getProgressBar() {
+			return mProgressBar;
+		}
+
+		public ImageView getImageView() {
+			return mImageView;
+		}
+
+		public TextView getStatusTxt() {
+			return mStatusTxt;
+		}
+	}
+	
+	public void disableButton(String btn){
+		changeButtonState(btn, false);
+	}
+	
+	public void enableButton(String btn){
+		changeButtonState(btn, true);
+	}
+
+	private void changeButtonState(String btn, final boolean state){
+		if(btn.equals("start")){
+			mHandler.post(new Runnable() {
+				@Override
+				public void run() {
+					mView.getBtnStart().setEnabled(state);
+				}
+			});
+		}
+		else if(btn.equals("stop")){
+			mHandler.post(new Runnable() {
+				@Override
+				public void run() {
+					mView.getBtnStop().setEnabled(state);
+				}
+			});
+		}
+	}
+
+	public void incrementProgressBar(){
+		this.updateProgressBar(mView.getProgressBar().getProgress()+1);
+	}
+	
+	public void decrementProgressBar(){
+		this.updateProgressBar(mView.getProgressBar().getProgress()-1);
+	}
+	private void updateProgressBar(final int value){
+		mHandler.post(new Runnable() {
+			@Override
+			public void run() {
+				mView.getProgressBar().setProgress(value);
+			}
+		});
+	}
+
+	public void updateStatusIcon(final int iconId){
+		mHandler.post(new Runnable() {
+			@Override
+			public void run() {
+				mView.getImageView().setImageResource(iconId);
+			}
+		});
+	}
+
+	public void updateStatusTxt(final int strId){
+		mHandler.post(new Runnable() {
+			
+			@Override
+			public void run() {
+				mView.getStatusTxt().setText(strId);
+			}
+		});
+	}
+
+	public void notifyStartupError(){
+		mHandler.post(new Runnable() {
+			@Override
+			public void run() {
+				Toast.makeText(getApplicationContext(), R.string.error_startup, Toast.LENGTH_LONG).show();
+			}
+		});
+	}
+	
+	public void setPreferenceEditable(final boolean value){
+		mHandler.post(new Runnable() {
+			@Override
+			public void run() {
+		    	PreferenceManager prefManager = getPreferenceManager();
+		    	Preference pref = prefManager.findPreference(getApplicationContext().getResources().getString(R.string.preference_screen_key));
+		    	pref.setEnabled(value);
+			}
+		});
+	}
+	public Button getBtnStart() {
+		return mView.getBtnStart();
+	}
+
+	public Button getBtnStop() {
+		return mView.getBtnStop();
+	}
+	
+	public ProgressBar getProgressBar(){
+		return mView.getProgressBar();
+	}
+
+	public TextView getStatusTxt(){
+		return mView.getStatusTxt();
+	}
+
+	/* Utility methods for working with the JaCaServiceMiddleware */
+	
+	public void runJaCaServiceMiddleware(int mas2j){
+		Intent service = new Intent(this, JaCaMiddlewareService.class);
+		service.putExtra(JaCaService.MAS2J, mas2j);
+		getApplicationContext().startService(service);
+	}
+	
+	protected void createArtifact(String name, String template){
+		mName = name;
+		mTemplate = template;
+		Intent service = new Intent(this, JaCaMiddlewareService.class);
+		getApplicationContext().bindService(service, mConnection, Context.BIND_AUTO_CREATE);
+	}
+
+	private ServiceConnection mConnection = new ServiceConnection() {
+		@Override
+		public void onServiceDisconnected(ComponentName name) {
+			mBinded = false;
+		}
+		
+		@Override
+		public void onServiceConnected(ComponentName name, IBinder service) {
+			if(mName != null && mTemplate != null){
+				mArtifactId = _makeArtifact();
+			}
+			mBinded = true;
+		}
+	};
+
+	private ArtifactId _makeArtifact(){
+		try {
+			mCtx = new CartagoBasicContext(mName, JaCaMiddlewareService.MIDDLEWARE_WSP_NAME);
+			mArtifactId = mCtx.makeArtifact(mName, mTemplate, new Object[]{this, mSavedInstanceState});
+			return mArtifactId;
+		} catch (CartagoException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
+	@Override
+	protected void onDestroy() {
+		if (mBinded) getApplicationContext().unbindService(mConnection);
+		_disposeArtifact();
+		super.onDestroy();
+	}
+
+	private void _disposeArtifact(){
+		try{
+			if (mCtx!=null) {
+				if (mArtifactId!=null) mCtx.disposeArtifact(mArtifactId);
+				Op op = new Op("quitWorkspace");
+				mCtx.doAction(op);
+			}
+		} catch (CartagoException e) {
+			e.printStackTrace();
+		}
+	}
+}

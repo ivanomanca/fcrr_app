@@ -1,0 +1,132 @@
+Example 11 - Working in Remote Workspaces
+
+Agents can join workspaces that are hosted on remote nodes, by means of a 
+<code>joinRemoteWorkspace</code> action (provided by the <code>NodeArtifact</code>.
+As soon as the join succeed, the interaction within remote workspaces is the same as local workspace.
+In the following example, a Jason agent joins the default workspace of a CArtAgO node running on localhost.
+The following Java program installs a  CArtAgO node on localhost, to make it reachable (also) by remote agents:
+
+<blockquote>
+<pre>
+package examples;
+
+import cartago.*;
+import cartago.util.BasicLogger;
+
+public class Ex00a_HelloRemoteWorld {
+	
+  public static void main(String[] args) throws Exception {			
+    CartagoService.startNode();
+    CartagoService.installInfrastructureLayer("default");
+    CartagoService.startInfrastructureService("default");
+    CartagoService.registerLogger("default",new BasicLogger());  
+    System.out.println("CArtAgO Node Ready.");
+  }
+}
+</pre>
+</blockquote>
+<strong>Highlights:</strong>
+%
+<ul>
+	<li> <strong>Starting a CArtAgO Node:</strong> to execute CArtAgO artifact-based environment, first of all a CArtAgO node must be started. 
+	This is done by the <code>startNode</code> service of <code>CartagoService</code>.
+	The node functions as virtual machine for running workspaces and artifacts, it does 
+	not include any infrastructural (network) support.</li>
+
+<li> <strong>Installing infrastructure layers:</strong> in order to allow agents working in the 
+local node to interact also with remote nodes - or to allow linking with remote artifacts - 
+a proper infrastructural layer must be installed by means of <code>installInfrastructureLayer</code>, 
+specifying the protocol(s) to be used (<code>default</code> means the default protocol of 
+the platform, which is RMI in the case of Java SE desktop environments).</li>
+
+<li> <strong>Intalling infrastructure services:</strong> in order to make the node reachable 
+from remote agents, then infrastructure services must be started by means of 
+<code>startInfrastructureService</code>, again specifying the protocol.</li>
+</ul>
+
+Then, it follows the Jason program which creates a standalone CArtAgO node with a single agent:
+<blockquote>
+<pre>
+MAS example11_remote {
+
+  environment: 
+  c4jason.CartagoEnvironment
+
+  agents:  
+  voyager agentArchClass c4jason.CAgentArch;
+
+  classpath: "../../../lib/cartago.jar";"../../../lib/c4jason.jar";    
+}
+</pre>
+</blockquote>
+
+The <code>voyager</code> agent boots in the standalone node, then it joins a remote 
+workspace, where he creates and uses an artifact. 
+<blockquote>
+<pre>
+!test_remote.
+
++!test_remote 
+  <- ?current_wsp(Id,_,_);
+     +default_wsp(Id);
+     println("testing remote..");
+     joinRemoteWorkspace("default","localhost",WspID2);
+     ?current_wsp(_,WName,_);
+     println("hello there ",WName);
+     !use_remote;
+     quitWorkspace.
+      
++!use_remote 
+  <- makeArtifact("c0","examples.Counter",[],Id);
+     focus(Id);
+     inc;
+     inc.
+
++count(V) 
+  <- ?default_wsp(Id);
+     println("count changed: ",V)[wsp_id(Id)].
+  
+-!use_remote [makeArtifactFailure("artifact_already_present",_)]
+  <- ?default_wsp(WId);
+     println("artifact already created ")[wsp_id(WId)];
+     lookupArtifact("c0",Id);
+     focus(Id);
+     inc.   
+</pre>
+</blockquote>
+<strong>Highlights:</strong>
+
+<ul>
+<li> <strong>Infrastructure options:</strong> By default, Jason programs using CArtAgO environment 
+create a standalone CArtAgO node, i.e. not accessible through the network, 
+and install the default infrastructure layer (RMI) for joining remote workspaces. 
+Besides the default CArtAgO installation, Jason programs have the possibility to work 
+with CArtAgO environment technology in four different ways specifying a set 
+of parameters in the <code>c4jason.CartagoEnvironment</code> definition inside the 
+Jason <code>mas2j</code> file:
+
+
+<ul><li> <code>c4jason.CartagoEnvironment("standalone", protocol(ProtName), ...)</code>: analogous 
+to the default installation except for the declaration of one (or more) 
+infrastructure layers that specify the protocols used for working with remote 
+workspaces (ex: <code>c4jason.CartagoEnvironment("standalone",protocol(lipermi))</code>.</li>
+
+
+<li> <code>c4jason.CartagoEnvironment("infrastructure",protocol(ProtName), ..., service(ServName))</code>: 
+installs a CArtAgO node accessible through the network. The default service protocol 
+supported by the node is RMI, other service protocols can be installed specifying one 
+or more <code>service</code> attributes. RMI is installed as the default protocol 
+for joining remote workspaces but other protocols can be installed as well 
+using the <code>protocol</code> attribute 
+(ex: <code>c4jason.CartagoEnvironment("infrastructure", service("lipermi"), protocol("lipermi"))</code>).</li>
+
+
+<li> <code>{c4jason.CartagoEnvironment("remote", WspName, WspAddress, protocol(ProtName, Address), ...)</code>: does not install any node - agents directly join the specified remote workspace. 
+As usual RMI is installed  by default and further protocols can be specified using the <code>protocol</code> attribute 
+(ex: <code>c4jason.CartagoEnvironment("remote", "myWsp", "localhost", protocol("lipermi"))</code>).</li>
+
+<li> <code>c4jason.CartagoEnvironment("local",WspName)</code> does not install any node -- agents directly join the specified local workspace (or the default workspace if no workspace name is specified) (ex: c4jason.CartagoEnvironment("local", "WspName")).
+</li>
+</ul>
+</li>
+</ul>

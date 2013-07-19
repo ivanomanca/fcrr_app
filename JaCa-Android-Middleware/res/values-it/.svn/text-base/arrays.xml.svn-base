@@ -1,0 +1,6 @@
+<resources>
+	<string-array name="auto_start">
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+</resources>

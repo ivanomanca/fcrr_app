@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/jaca-android/!svn/ver/105/jaca-android/trunk/JaCa-Android-Samples/src/tests/jaca/android/tests/service
+END
+agent.asl
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/jaca-android/!svn/ver/105/jaca-android/trunk/JaCa-Android-Samples/src/tests/jaca/android/tests/service/agent.asl
+END
+project.mas2j
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/jaca-android/!svn/ver/105/jaca-android/trunk/JaCa-Android-Samples/src/tests/jaca/android/tests/service/project.mas2j
+END
+TestCounterService.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/jaca-android/!svn/ver/105/jaca-android/trunk/JaCa-Android-Samples/src/tests/jaca/android/tests/service/TestCounterService.java
+END
+MainActivityArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/jaca-android/!svn/ver/105/jaca-android/trunk/JaCa-Android-Samples/src/tests/jaca/android/tests/service/MainActivityArtifact.java
+END
+MainActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/jaca-android/!svn/ver/105/jaca-android/trunk/JaCa-Android-Samples/src/tests/jaca/android/tests/service/MainActivity.java
+END
+ITestCounter.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/jaca-android/!svn/ver/105/jaca-android/trunk/JaCa-Android-Samples/src/tests/jaca/android/tests/service/ITestCounter.aidl
+END

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- System strings -->
+    <string name="app_name">FCRR System</string>
+    <string name="fcrr_mas2j">/jaca/android/fcrr/project.mas2j</string>
+    
+    <!-- MainGUI objects -->
+	<string name="init_trip">Indica il profilo di accesso</string>
+    <string name="driver_button">Driver</string>
+    <string name="rider_button">Rider</string>
+
+    <!-- driver_triplist objects -->
+	<string name="saved_trips">Viaggi programmati</string>
+	<string name="no_trips">Nessun viaggio programmato</string>
+    
+	<!-- rider_tripsearch objects -->
+	<string name="search_trips">Cerca viaggio</string>
+</resources>

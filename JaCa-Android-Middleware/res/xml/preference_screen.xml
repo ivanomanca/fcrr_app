@@ -1,0 +1,22 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="@string/preference_screen_key">
+	<PreferenceCategory android:title="@string/jaca_services_config">
+		
+		<PreferenceScreen android:key="jaca_services_pref" android:summary="@string/jaca_services_config_descr" android:title="@string/jaca_services_config">
+			<PreferenceCategory android:title="JaCa-Service Artifacts">
+				<CheckBoxPreference android:title="@string/pref_gps_manager" android:key="pref_gps_manager" android:summary="@string/only_device_support"/>
+				<CheckBoxPreference android:title="@string/pref_calendar_manager" android:key="pref_calendar_manager" android:summary="@string/calendar_support"/>
+				<CheckBoxPreference android:title="@string/pref_acc_manager" android:key="pref_acc_manager" android:summary="@string/only_device_support"/>
+				<CheckBoxPreference android:title="@string/pref_geomag_manager" android:key="pref_geomag_manager" android:summary="@string/only_device_support"/>
+				<CheckBoxPreference android:title="@string/pref_orientation_manager" android:key="pref_orientation_manager" android:summary="@string/only_device_support"/>
+				<CheckBoxPreference android:title="@string/pref_all_sensors_manager" android:key="pref_all_sensors_manager" android:summary="@string/only_device_support"/>
+				<CheckBoxPreference android:title="@string/pref_connectivity_manager" android:key="pref_connectivity_manager" android:summary="@string/device_and_emulator_support"/>
+				<CheckBoxPreference android:title="@string/pref_phone_settings_manager" android:key="pref_phone_settings_manager" android:summary="@string/device_and_emulator_support"/>
+				<CheckBoxPreference android:title="@string/pref_call_manager" android:key="pref_call_manager" android:summary="@string/only_android_version_lower_than_2_1"/>
+				<CheckBoxPreference android:title="@string/pref_battery_manager" android:key="pref_battery_manager" android:summary="@string/device_and_emulator_support"/>
+				<CheckBoxPreference android:title="@string/pref_contacts_manager" android:key="pref_contacts_manager" android:summary="@string/only_device_support"/>
+				<CheckBoxPreference android:title="@string/pref_sms_manager" android:key="pref_sms_manager" android:summary="@string/device_and_emulator_support"/>
+			</PreferenceCategory>
+		</PreferenceScreen>
+		<ListPreference android:key="pref_auto_start" android:summary="@string/auto_start_descr" android:title="@string/auto_start_lbl" android:entryValues="@array/auto_start" android:entries="@array/auto_start" android:dialogTitle="@string/auto_start_descr_dialog_msg"></ListPreference>
+	</PreferenceCategory>
+</PreferenceScreen>

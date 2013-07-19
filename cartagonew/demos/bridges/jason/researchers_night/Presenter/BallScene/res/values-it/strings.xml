@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="ball_scene_mas2j">/ball/scene/project.mas2j</string>
+	
+    <string name="ball_scene_commander">Ball scene console di comando</string>
+	<string name="btnBallOn">Attiva palle</string>
+	<string name="btnBallOff">Disattiva palle</string>
+	
+	<string name="txtButtonCommander">Console</string>
+	<string name="btnUp">Su</string>
+	<string name="btnDown">Giu</string>
+	<string name="btnLeft">Sinistra</string>
+	<string name="btnRight">Destra</string>
+	
+	<string name="ckbSensor">Abilita controllo da sensori</string>
+	
+	<string name="reset_address">Resetta indirizzo</string>
+	<string name="btnOk">Ok</string>
+	<string name="btnCancel">Annulla</string>
+	<string name="lblAddress">Inserire qui (indirizzo:porta)</string>
+	<string name="ckbRemember">Ricorda</string>
+</resources>

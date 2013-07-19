@@ -1,0 +1,13 @@
+MAS gameTest {
+   
+    environment: c4jason.CartagoEnvironment("local")
+    
+    agents:
+      
+    pippo player.asl [beliefs="mybridge(env0)"] agentArchClass c4jason.CAgentArch ;
+    pluto player.asl [beliefs="mybridge(env1)"] agentArchClass c4jason.CAgentArch ;
+
+    classpath: "../../../lib/cartago.jar";"../../../lib/c4jason.jar";    
+    aslSourcePath: "src/test/extgame";
+
+}

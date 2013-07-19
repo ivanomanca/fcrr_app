@@ -1,0 +1,41 @@
+!start.
+
++!start
+	<-	!init;
+		!do_job.
+
+/* init plan */
++!init 
+	<-  +join_attempts(0);
+		lookupArtifact("console", ConsoleID);
+		+art_id(console,ConsoleID);
+		println("Hello World!!.");
+		focusWhenAvailable("event-mngr");
+		makeArtifact("gps-manager", "jaca.android.tools.GPSManager",[] , GPSID);
+		focus(GPSID);
+		println("GPSManager created and focussed")[artifact_id(ConsoleID)];
+		makeArtifact("addressbook", "jaca.laggercalendar.artifacts.AddressBookService",[] , AddressBookID);
+		focus(AddressBookID);
+		makeArtifact("directions", "jaca.laggercalendar.artifacts.DirectionsService",[] , DirectionsID);
+		focus(DirectionsID);
+		makeArtifact("calendar", "jaca.laggercalendar.artifacts.CalendarService",[] , CalendarID);
+		focus(CalendarID).
+
+/* main plan */
++!do_job : true
+	<-	
+		startMonitoring[artifact_id(ConsoleID)];
+		aOp;
+		println("aOp done.");
+		cOp;
+		println("cOp done.");
+		dOp;
+		println("dOp done.").
+		
+		
+		
++latitude(Latitude) : art_id(console,ConsoleID)
+	<-	println("Latitude: ", Latitude)[artifact_id(ConsoleID)].
+  
++longitude(Longitude) : art_id(console,ConsoleID)
+	<- 	println("Longitude: ", Longitude)[artifact_id(ConsoleID)].

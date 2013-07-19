@@ -1,0 +1,78 @@
+<p style="text-align: justify;">When defining an operation, a <strong>guard</strong> can be specified as a condition that must be verified to start operation execution, otherwise such execution is suspended. This can be done by including a <code>guard</code> attribute in the <code>@OPERATION</code> annotation, specifying the name of the boolean method (guard method) - annotated with <code>@GUARD</code>, representing the condition to be tested. Guard methods are called passing the same parameters of the guarded operation (so they must declare the same parameters). Typically guard methods do checks on the value of internal and observable state of the artifact, without changing it. Operations with guards are useful to realise artifacts with synchronisation functionalities. In the following example, guards are used to implement a <strong>bounded buffer</strong> artifact in a producers-consumers architecture.</p>
+
+<blockquote style="text-align: justify;">
+<pre>MAS example04_prodcons {
+
+    environment:
+    c4jason.CartagoEnvironment
+
+    agents:
+    producer agentArchClass c4jason.CAgentArch #10;
+    consumer agentArchClass c4jason.CAgentArch #10;
+
+    classpath: "../../../lib/cartago.jar";"../../../lib/c4jason.jar";
+}</pre>
+</blockquote>
+<p style="text-align: justify;">Ten producers agents and ten consumers agents exchange information items by exploiting the bounded buffer. Guarded operations allow for realising a simple coordinated behaviour, such that consumers' get action is suspended if the buffer is empty, and producers' put action is suspended if the buffer is full. Bounded buffer code:</p>
+
+<blockquote style="text-align: justify;">
+<pre>public class BoundedBuffer extends Artifact {
+
+  private LinkedList<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="100" height="100" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><embed type="application/x-shockwave-flash" width="100" height="100"></embed></object></pre>
+</blockquote>
+<p style="text-align: justify;">Producers code:</p>
+
+<blockquote style="text-align: justify;">
+<pre>item_to_produce(0).
+
+!produce.
+
++!produce: true &lt;-
+  !setupTools(Buffer);
+  !produceItems.
+
++!produceItems : true &lt;-
+  ?nextItemToProduce(Item);
+  put(Item);
+  !!produceItems.
+
++?nextItemToProduce(N) : true
+ &lt;- -item_to_produce(N);
+    +item_to_produce(N+1).
+
++!setupTools(Buffer) : true &lt;-
+  makeArtifact("myBuffer","c4jexamples.BoundedBuffer",[10],Buffer).
+
+-!setupTools(Buffer) : true &lt;-
+  lookupArtifact("myBuffer",Buffer).</pre>
+</blockquote>
+<p style="text-align: justify;">Consumers code:</p>
+
+<blockquote style="text-align: justify;">
+<pre>!consume.
+
++!consume: true
+  &lt;- ?bufferReady;
+     !consumeItems.
+
++!consumeItems: true
+  &lt;- get(Item);
+     !consumeItem(Item);
+     !!consumeItems.
+
++!consumeItem(Item) : true
+  &lt;- .my_name(Me);
+     println(Me,": ",Item).
+
++?bufferReady : true
+  &lt;- lookupArtifact("myBuffer",_).
+-?bufferReady : true
+  &lt;-.wait(50);
+     ?bufferReady.</pre>
+</blockquote>
+<p style="text-align: justify;"><strong>Highlights:</strong></p>
+
+<ul style="text-align: justify;">
+	<li> <strong>Operation execution resume:</strong> When an agent executes a guarded operation whose guard is false, the operation execution is suspended until the guard is evaluated to true.</li>
+	<li> <strong>Mutual exclusion:</strong> Mutual exclusion and atomicity are enforce, anyway a suspended guarded operation is  reactivated and executed only if (when) no operations are in execution.</li>
+</ul>

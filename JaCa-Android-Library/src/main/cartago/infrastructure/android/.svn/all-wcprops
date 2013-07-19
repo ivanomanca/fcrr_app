@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/cartago/infrastructure/android
+END
+CartagoCallbackProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/cartago/infrastructure/android/CartagoCallbackProxy.java
+END
+GarbageBodyCollectorAgent.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/cartago/infrastructure/android/GarbageBodyCollectorAgent.java
+END
+AndroidAgentBodyProxyWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/cartago/infrastructure/android/AndroidAgentBodyProxyWrapper.java
+END
+AgentBodyRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/cartago/infrastructure/android/AgentBodyRemote.java
+END
+ICartagoCallbackRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/cartago/infrastructure/android/ICartagoCallbackRemote.java
+END
+JoinWspConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/cartago/infrastructure/android/JoinWspConnection.java
+END
+KeepRemoteBodyAliveManagerAgent.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/cartago/infrastructure/android/KeepRemoteBodyAliveManagerAgent.java
+END
+ICartagoNodeRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/cartago/infrastructure/android/ICartagoNodeRemote.java
+END
+AgentBodyProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/cartago/infrastructure/android/AgentBodyProxy.java
+END
+CartagoInfrastructureLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/cartago/infrastructure/android/CartagoInfrastructureLayer.java
+END
+IAgentBodyRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/cartago/infrastructure/android/IAgentBodyRemote.java
+END
+CartagoCallbackRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/cartago/infrastructure/android/CartagoCallbackRemote.java
+END
+CartagoNodeRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/jaca-android/!svn/ver/116/jaca-android/trunk/JaCa-Android-Library/src/main/cartago/infrastructure/android/CartagoNodeRemote.java
+END

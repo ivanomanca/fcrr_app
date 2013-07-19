@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/src/main/cartago/infrastructure
+END
+ICartagoInfrastructureLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/src/main/cartago/infrastructure/ICartagoInfrastructureLayer.java
+END
+CartagoInfrastructureLayerException.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0/src/main/cartago/infrastructure/CartagoInfrastructureLayerException.java
+END

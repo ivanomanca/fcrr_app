@@ -1,0 +1,13 @@
+MAS  capture_the_flag {
+
+    environment: c4jason.CartagoEnvironment
+
+    agents:  
+   	jgomas_controller agentArchClass c4jason.CAgentArch;
+   	jgomas_soldier agentArchClass c4jason.CAgentArch;
+   	jgomas_soldier2 agentArchClass c4jason.CAgentArch;
+   	jgomas_medic agentArchClass c4jason.CAgentArch;
+   	jgomas_fieldops agentArchClass c4jason.CAgentArch;
+
+    classpath: "../../../lib/cartago.jar";"../../../lib/c4jason.jar";    
+}

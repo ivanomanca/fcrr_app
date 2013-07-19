@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/cartago/!svn/ver/444/cartago/trunk/build/cartago/events
+END
+CartagoActionEvent.class
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/events/CartagoActionEvent.class
+END
+QuitWSPSucceededEvent.class
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/events/QuitWSPSucceededEvent.class
+END
+TupleListFilter.class
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/events/TupleListFilter.class
+END
+RegExFilter.class
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/events/RegExFilter.class
+END
+SignalFilter.class
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/events/SignalFilter.class
+END
+TupleFilter.class
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/events/TupleFilter.class
+END
+JoinWSPSucceededEvent.class
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/events/JoinWSPSucceededEvent.class
+END
+ActionFailedEvent.class
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/events/ActionFailedEvent.class
+END
+FocussedArtifactDisposedEvent.class
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/444/cartago/trunk/build/cartago/events/FocussedArtifactDisposedEvent.class
+END
+ArtifactObsEvent.class
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/events/ArtifactObsEvent.class
+END
+StringTupleListFilter.class
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/events/StringTupleListFilter.class
+END
+ObsPropertyFilter.class
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/events/ObsPropertyFilter.class
+END
+GenericFilter.class
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/events/GenericFilter.class
+END
+ActionSucceededEvent.class
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/events/ActionSucceededEvent.class
+END
+StringTupleFilter.class
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/events/StringTupleFilter.class
+END
+StopFocusSucceededEvent.class
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/events/StopFocusSucceededEvent.class
+END
+FocusSucceededEvent.class
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build/cartago/events/FocusSucceededEvent.class
+END

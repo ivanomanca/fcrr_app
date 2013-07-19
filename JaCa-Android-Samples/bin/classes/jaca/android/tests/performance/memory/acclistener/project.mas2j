@@ -1,0 +1,11 @@
+MAS test {
+	
+	infrastructure: Centralised
+
+    environment: c4jason.CartagoEnvironment
+
+    agents:  
+   		listener agentArchClass c4jason.CAgentArch;
+
+    aslSourcePath: "jaca/android/tests/performance/memory/acclistener";
+}

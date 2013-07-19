@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JaCa-Android Middleware</string>
+	<string name="middleware_manager_mas2j">/jaca/android/middlewaremanager/middleware_manager.mas2j</string>
+    <string name="status_bar_text">Seleziona per gestire il middleware</string>
+        
+	<string name="jaca_services_config">JaCa-Services configuration</string>
+	<string name="jaca_services_config_descr">Artefatti di default forniti dal middleware</string>
+
+	<string name="device_and_emulator_support">Utilizzabile nei device e nell\' emulatore</string>
+	<string name="only_device_support">Non supportato nell\'emulatore</string>
+	<string name="calendar_support">Utilizzabile solo su device con versioni di Android &lt;= 2.1</string>
+	<string name="only_android_version_lower_than_2_1">Utilizzabile solo con versioni di Android &lt;= 2.1</string>
+	<string name="only_android_version_lower_than_2_2">Utilizzabile solo con versioni di Android &lt;= 2.2</string>
+
+	<string name="pref_gps_manager">GPSManager</string>
+	<string name="pref_acc_manager">AcceleromenterSensorManager</string>
+	<string name="pref_geomag_manager">GeomagSensorManager</string>
+	<string name="pref_orientation_manager">OrientationSensorManager</string>
+	<string name="pref_all_sensors_manager">AllSensorsManager</string>
+	<string name="pref_connectivity_manager">ConnectivityManager</string>
+	<string name="pref_phone_settings_manager">PhoneSettingsManager</string>
+	<string name="pref_call_manager">CallManager</string>
+	<string name="pref_battery_manager">BatteryManager</string>
+	<string name="pref_contacts_manager">ContactsManager</string>
+	<string name="pref_sms_manager">SMSManager</string>
+	<string name="pref_calendar_manager">CalendarManager</string>
+
+    <string name="auto_start_lbl">Avvio automatico</string>
+    <string name="auto_start_descr">Gestione dell\'avvio automatico di JaCa-Android al boot</string>
+    <string name="auto_start_descr_dialog_msg">Avviare JaCa-Android al boot del device?</string>
+	
+	<string name="btn_start">Avvia</string>
+	<string name="btn_end">Termina</string>
+	
+	<string name="lbl_progress_bar">Avanzamento:</string>
+	<string name="lbl_status">Status:</string>
+	<string name="lbl_status_creating">In avvio</string>
+	<string name="lbl_status_disposing">In chiusura</string>
+	<string name="lbl_status_created">Avviato</string>
+	<string name="lbl_status_waiting">In attesa</string>
+	<string name="lbl_status_error">Errore</string>
+	<string name="preference_screen_key">main_pref_screen</string>
+	
+	<string name="error_startup">
+		Errore durante l\'inizializzazione del JaCa-Services workspace.
+		Controllare di avere scelto artefatti compatibili con il rutime a disposizione.
+	</string>
+</resources>

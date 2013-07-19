@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/jaca-android/!svn/ver/157/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr
+END
+project.mas2j
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/project.mas2j
+END
+FCRRServiceArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/FCRRServiceArtifact.java
+END
+MainActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/MainActivity.java
+END
+RiderTripSearch.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/jaca-android/!svn/ver/159/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/RiderTripSearch.java
+END
+RiderTripSearchGUIArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svnroot/jaca-android/!svn/ver/159/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/RiderTripSearchGUIArtifact.java
+END
+DTripInfoActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/DTripInfoActivity.java
+END
+DTripInfoGUI.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/DTripInfoGUI.java
+END
+DTripMapActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/DTripMapActivity.java
+END
+MainGUI.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/MainGUI.java
+END
+simulator.asl
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/simulator.asl
+END
+agent.asl
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/agent.asl
+END
+UserSessionArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/UserSessionArtifact.java
+END
+DTripMapGUIArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/DTripMapGUIArtifact.java
+END
+HttpManagerArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/HttpManagerArtifact.java
+END
+DTripListActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/DTripListActivity.java
+END
+JaCaMapActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/JaCaMapActivity.java
+END
+DTripListGUI.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/jaca-android/!svn/ver/171/jaca-android/trunk/Fixed%20Cost%20Real-Time%20Ridesharing/src/jaca/android/fcrr/DTripListGUI.java
+END

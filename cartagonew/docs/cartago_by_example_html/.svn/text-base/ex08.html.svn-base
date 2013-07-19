@@ -1,0 +1,139 @@
+Example 08 - Linkability
+
+Linkability is the mechanism that makes it possible to create interactions among artifacts, i.e. execute inter-artifacts operations. Besides 
+the usage interface, an artifact can expose operations - to be tagged with <code>@LINK</code>. These operations are meant to be called 
+by other artifacts. In order to allow an artifact A to execute operations over an artifact B, two options are provided:
+
+<ul>
+	<li> the artifact A must be explicitly <strong>linked</strong> to the artifact B by an agent, executing <code>linkArtifacts</code> action, 
+	specifying the name of an <strong>output</strong> port that the artifact A must expose. Then, operations of artifact A can 
+	execute operations of the linked artifact B by using the <code>execLinkedOp</code> primitive, specifying the <strong>output</strong>
+	port where the linked artifact has been linked.
+	</li> 
+
+	<li> without linking the two artifacts, an artifact A can execute operations over the artifact B by specifying in <code>execLinkedOp</code> 
+	the target identifier of the artifact B</li> 
+</ul>
+
+In the following example, an agent creates and links together two artifacts. Then, it executes some operations of one artifact, 
+the <strong>linking</strong> one, which in turns executes operations over the second one, the <strong>linked</strong> one:
+
+<blockquote>
+<pre>
+MAS example08_linkability {
+
+  environment: 
+  c4jason.CartagoEnvironment
+
+  agents:  
+  linkability_tester agentArchClass c4jason.CAgentArch;
+
+  classpath: "../../../lib/cartago.jar";"../../../lib/c4jason.jar";    
+}
+\end{verbatim}}}
+
+\noindent Source code of the linkable artifact:
+
+{\small{\begin{verbatim}
+public class LinkableArtifact extends Artifact {
+  
+  int count;
+  
+  void init(){
+    count = 0;
+  }
+      
+  @LINK void inc(){
+    log("inc invoked.");
+    count++;
+  }
+
+  @LINK void getValue(OpFeedbackParam<Integer> v){
+    log("getValue invoked");
+    v.set(count);
+  }
+}
+</pre>
+</blockquote>
+
+<strong>Highlights:</strong>
+<ul>
+<li> <strong><code>@LINK</code> operations:</strong> the semantics of linked operations is the same of normal operation.</li>
+<li> <strong>Output parameters:</strong> linked operations can contain also output parameters, as normal operations.</li>
+</ul> 
+
+Source code of the linking artifact:
+
+<blockquote>
+<pre>
+@ARTIFACT_INFO(
+  outports = {
+    @OUTPORT(name = "out-1")
+  }
+) public class LinkingArtifact extends Artifact {
+  
+  @OPERATION void test(){
+      log("executing test.");
+      try {
+        execLinkedOp("out-1","inc");
+      } catch (Exception ex){
+        ex.printStackTrace();
+      }
+  }
+
+  @OPERATION void test2(OpFeedbackParam<Integer> v){
+      log("executing test2.");
+      try {
+        execLinkedOp("out-1","getValue", v);
+        log("back: "+v.get());
+      } catch (Exception ex){
+        ex.printStackTrace();
+      }
+  }
+
+  @OPERATION void test3(){
+      log("executing test3.");
+      try {
+        ArtifactId id = makeArtifact("new_linked", 
+               "c4jexamples.LinkableArtifact", ArtifactConfig.DEFAULT_CONFIG);
+        execLinkedOp(id,"inc");
+      } catch (Exception ex){
+        ex.printStackTrace();
+      }
+  }
+}
+</pre></blockquote>
+The <code>test</code> and <code>test2</code> operations executes respectively the <code>inc</code> and <code>getValue</code> operation 
+over the artifact linked to the <code>out-1</code> port. The operation <code>test3</code> instead creates an artifact and executes a linked operation directly using artifact identifier.
+
+<strong>Highlights:</strong>
+
+<ul>
+<li> <strong>Output ports:</strong> output ports are declared in the <code>@ARTIFACT_INFO</code> annotation of the artifact class, <code>outports</code> attribute;</li>
+
+<li> <strong>Linked operation execution:</strong> the execution semantics is the same of normal operations. The <code>execOpLinked</code> 
+primitive suspend the operation execution until the operation execution on the linked artifact has completed.</li>
+</ul> 
+
+Finally, the agent source code:
+<blockquote>
+<pre>
+!test_link.
+
++!test_link
+  <- makeArtifact("myArtifact","c4jexamples.LinkingArtifact",[],Id1);
+     makeArtifact("count","c4jexamples.LinkableArtifact",[],Id2);
+     linkArtifacts(Id1,"out-1",Id2);      
+     println("artifacts linked: going to test");
+     test;
+     test2(V);
+     println("value ",V);
+     test3.
+</pre>
+</blockquote>
+
+<strong>Highlights:</strong>
+
+<ul>
+<li> <strong>Linking artifacts:</strong> <code>linkArtifact</code>'s parameters include the identifier of the linking artifact, its outport and the identifier of the linked artifact.</li>
+</ul> 

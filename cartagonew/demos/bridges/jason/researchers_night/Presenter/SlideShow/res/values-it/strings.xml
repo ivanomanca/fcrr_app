@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="slide_show">Slide show</string>
+	<string name="search_device">Cerca dispositivo</string>
+	
+	<string name="slide_show_mas2j">/slide/show/project.mas2j</string>
+	
+</resources>

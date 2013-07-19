@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/cartago/!svn/ver/708/cartago/trunk/src/main/cartago/events
+END
+GenericFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/cartago/!svn/ver/332/cartago/trunk/src/main/cartago/events/GenericFilter.java
+END
+ActionSucceededEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/cartago/!svn/ver/342/cartago/trunk/src/main/cartago/events/ActionSucceededEvent.java
+END
+StringTupleFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/cartago/!svn/ver/332/cartago/trunk/src/main/cartago/events/StringTupleFilter.java
+END
+StopFocusSucceededEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/cartago/!svn/ver/306/cartago/trunk/src/main/cartago/events/StopFocusSucceededEvent.java
+END
+StringTupleListFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/cartago/!svn/ver/332/cartago/trunk/src/main/cartago/events/StringTupleListFilter.java
+END
+ObsPropertyFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/cartago/!svn/ver/332/cartago/trunk/src/main/cartago/events/ObsPropertyFilter.java
+END
+ArtifactObsEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/cartago/!svn/ver/408/cartago/trunk/src/main/cartago/events/ArtifactObsEvent.java
+END
+ConsultManualSucceededEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/634/cartago/trunk/src/main/cartago/events/ConsultManualSucceededEvent.java
+END
+FocussedArtifactDisposedEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/439/cartago/trunk/src/main/cartago/events/FocussedArtifactDisposedEvent.java
+END
+ObsArtListChangedEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/cartago/!svn/ver/708/cartago/trunk/src/main/cartago/events/ObsArtListChangedEvent.java
+END
+ActionFailedEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/cartago/!svn/ver/365/cartago/trunk/src/main/cartago/events/ActionFailedEvent.java
+END
+JoinWSPSucceededEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/cartago/!svn/ver/306/cartago/trunk/src/main/cartago/events/JoinWSPSucceededEvent.java
+END
+TupleFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/cartago/!svn/ver/332/cartago/trunk/src/main/cartago/events/TupleFilter.java
+END
+SignalFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/cartago/!svn/ver/332/cartago/trunk/src/main/cartago/events/SignalFilter.java
+END
+RegExFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/cartago/!svn/ver/332/cartago/trunk/src/main/cartago/events/RegExFilter.java
+END
+QuitWSPSucceededEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/cartago/!svn/ver/306/cartago/trunk/src/main/cartago/events/QuitWSPSucceededEvent.java
+END
+TupleListFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/cartago/!svn/ver/332/cartago/trunk/src/main/cartago/events/TupleListFilter.java
+END
+CartagoActionEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/cartago/!svn/ver/342/cartago/trunk/src/main/cartago/events/CartagoActionEvent.java
+END
+FocusSucceededEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/cartago/!svn/ver/306/cartago/trunk/src/main/cartago/events/FocusSucceededEvent.java
+END

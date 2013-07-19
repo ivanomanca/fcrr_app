@@ -1,0 +1,10 @@
+MAS remote_wsp{
+	
+	infrastructure: Centralised
+
+    environment: c4jason.CartagoEnvironment("infrastructure", service(android,"remote.myaddress"))
+
+    agents: agent agentArchClass c4jason.CAgentArch;
+
+    aslSourcePath: "test/remote";
+}

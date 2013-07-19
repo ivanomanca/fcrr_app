@@ -1,0 +1,557 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago
+END
+OpDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/OpDescriptor.java
+END
+OUTPORT.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/OUTPORT.java
+END
+ICartagoContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ICartagoContext.java
+END
+ExtClassLoaderArtifactFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ExtClassLoaderArtifactFactory.java
+END
+CartagoWorkspace.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/CartagoWorkspace.java
+END
+IAlignmentTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/IAlignmentTest.java
+END
+ObsStateDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ObsStateDescription.java
+END
+OperationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/OperationException.java
+END
+AgentBody.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/AgentBody.java
+END
+BasicAlignmentTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/BasicAlignmentTest.java
+END
+CartagoException.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/CartagoException.java
+END
+ArtifactObsProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ArtifactObsProperty.java
+END
+IObsPropMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/IObsPropMap.java
+END
+CartagoNodeNotActiveException.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/CartagoNodeNotActiveException.java
+END
+ArtifactInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ArtifactInfo.java
+END
+OpResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/OpResult.java
+END
+NodeId.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/NodeId.java
+END
+CartagoNodeAlreadyActiveException.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/CartagoNodeAlreadyActiveException.java
+END
+IBlockingCmd.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/IBlockingCmd.java
+END
+NoArtifactException.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/NoArtifactException.java
+END
+UnknownArtifactStateException.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/UnknownArtifactStateException.java
+END
+ArtifactAlreadyPresentException.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ArtifactAlreadyPresentException.java
+END
+LINK.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/LINK.java
+END
+PendingOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/PendingOp.java
+END
+ArtifactFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ArtifactFactory.java
+END
+ObsProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ObsProperty.java
+END
+CartagoLoggerManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/CartagoLoggerManager.java
+END
+ICartagoListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ICartagoListener.java
+END
+ArtifactOpMethod.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ArtifactOpMethod.java
+END
+InterArtifactCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/InterArtifactCallback.java
+END
+UnknownArtifactException.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/UnknownArtifactException.java
+END
+Artifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/Artifact.java
+END
+CartagoEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/CartagoEvent.java
+END
+CartagoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/CartagoService.java
+END
+Tuple.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/Tuple.java
+END
+OpFeedbackParam.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/OpFeedbackParam.java
+END
+Manual.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/Manual.java
+END
+INTERNAL_OPERATION.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/INTERNAL_OPERATION.java
+END
+ICartagoCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ICartagoCallback.java
+END
+ArtifactStateNotAlignedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ArtifactStateNotAlignedException.java
+END
+ICartagoController.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ICartagoController.java
+END
+AbstractArtifactAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/AbstractArtifactAdapter.java
+END
+ARTIFACT_INFO.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ARTIFACT_INFO.java
+END
+ManualAlreadyRegisteredException.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ManualAlreadyRegisteredException.java
+END
+UsageProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/UsageProtocol.java
+END
+UnknownArtifactTemplateException.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/UnknownArtifactTemplateException.java
+END
+IEventHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/IEventHandler.java
+END
+DefaultArtifactFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/DefaultArtifactFactory.java
+END
+CartagoLoggerAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/CartagoLoggerAdapter.java
+END
+NodeArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/NodeArtifact.java
+END
+IArtifactAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/IArtifactAdapter.java
+END
+ArtifactGuardMethod.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ArtifactGuardMethod.java
+END
+ManualNotAvailableException.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ManualNotAvailableException.java
+END
+InvalidManualException.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/InvalidManualException.java
+END
+ICartagoLogger.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ICartagoLogger.java
+END
+ArtifactConfigurationFailedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ArtifactConfigurationFailedException.java
+END
+ArtifactId.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ArtifactId.java
+END
+CartagoNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/CartagoNode.java
+END
+IEventFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/IEventFilter.java
+END
+ArtifactNotAvailableException.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ArtifactNotAvailableException.java
+END
+WorkspaceArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/WorkspaceArtifact.java
+END
+OperationUnavailableException.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/OperationUnavailableException.java
+END
+SessionNotAvailableException.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/SessionNotAvailableException.java
+END
+CARTAGO_VERSION.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/CARTAGO_VERSION.java
+END
+FeatureNotSupportedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/FeatureNotSupportedException.java
+END
+OperationExecutionException.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/OperationExecutionException.java
+END
+BoundedBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/BoundedBuffer.java
+END
+ArtifactOutPort.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ArtifactOutPort.java
+END
+OpId.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/OpId.java
+END
+IArtifactOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/IArtifactOp.java
+END
+EventRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/EventRegistry.java
+END
+OperationInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/OperationInfo.java
+END
+WorkspaceId.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/WorkspaceId.java
+END
+Workspace.man
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/Workspace.man
+END
+CartagoSession.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/CartagoSession.java
+END
+OperationFailedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/OperationFailedException.java
+END
+IArtifactGuard.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/IArtifactGuard.java
+END
+URLArtifactFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/URLArtifactFactory.java
+END
+ArtifactObserver.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ArtifactObserver.java
+END
+OPERATION.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/OPERATION.java
+END
+GUARD.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/GUARD.java
+END
+Op.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/Op.java
+END
+ArtifactDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ArtifactDescriptor.java
+END
+AgentId.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/AgentId.java
+END
+ICartagoLoggerManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ICartagoLoggerManager.java
+END
+OpRequestTimeoutException.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/OpRequestTimeoutException.java
+END
+ObsPropMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ObsPropMap.java
+END
+ManualArtifact.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ManualArtifact.java
+END
+OpExecutionFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/OpExecutionFrame.java
+END
+ICartagoSession.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ICartagoSession.java
+END
+ArtifactConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/ArtifactConfig.java
+END
+WorkspaceKernel.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/WorkspaceKernel.java
+END

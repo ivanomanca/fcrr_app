@@ -1,0 +1,16 @@
+MAS presenter {
+	
+	infrastructure: Centralised
+
+    environment: c4jason.CartagoEnvironment("standalone", protocol(lipermi))
+
+    agents:  
+   		mainAgent agentArchClass c4jason.CAgentArch;
+   		ballSceneAgent agentArchClass c4jason.CAgentArch;
+   		slideShowAgent agentArchClass c4jason.CAgentArch;
+
+    aslSourcePath: 
+    	"researchers_night/presenter";
+    	"researchers_night/presenter/ball_scene";
+    	"researchers_night/presenter/slide_show";
+}

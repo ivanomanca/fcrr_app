@@ -1,0 +1,57 @@
+<p style="text-align: justify;">In this example we will show how it is possible to realise a <strong>JaCa-Android</strong> application that works also in a remote <strong>JaCa</strong>workspace (so a workspace related to another <strong>JaCa</strong> application). You can find the source code of this example in the folder <strong>/jaca/android/tests/remotewsp/lipermi</strong> placed inside the main <strong>tests</strong> folder.</p>
+
+<p style="text-align: justify;">Before running this test you need to launch the JaCa application contained inside the <strong>utils-projects/[JaCa]RemoteWsp</strong> folder. Once inside that folder you will find the <strong>mas2j</strong> for launching the application inside the <strong>src/test/remote</strong> folder. The <strong>[JaCa]RemoteWsp</strong> application is a JaCa version of exactly the same application used in the previous test (so an application composed by a <strong>Calculator</strong> artifact and a simple agent using it). Note that <strong>JaCa-Android</strong> applications can communicate with remote <strong>JaCa</strong> ones thanks to a <strong>CArtAgO</strong> infrastructure protocol that is <strong>lipermi-based</strong>. <a href="http://lipermi.sourceforge.net/">lipermi</a> is a library for managing remote method invocation in Java on top the TCP/IP protocol. Therefore for being able to run this sample you must run the <strong>[JaCa]RemoteWsp</strong> application from an IP node reachable from the Android device.</p>
+<p style="text-align: justify;">A JaCa application reachable from others ones using the <strong>lipermi</strong> infrastructure protocol can be realised simply configuring the <strong>mas2j</strong> file as follow (for further details see the <strong>CArtAgO</strong> <a href="http://cartago.sourceforge.net/?page_id=139">website</a>):</p>
+
+<p style="text-align: center;">
+<pre  class="srccode">
+MAS remote_wsp{
+	
+	infrastructure: Centralised
+
+    environment: c4jason.CartagoEnvironment("infrastructure", service(lipermi))
+
+    agents: agent agentArchClass c4jason.CAgentArch;
+    
+    classpath : "../../../lib/*.jar";
+}
+</pre>
+</p>
+<br/>
+<p style="text-align: justify;">This <strong>mas2j</strong> configuration differ from the previous one just for the <strong>service</strong> parameter. In this case the infrastructure protocol that we use for joining and working with the remote workspace is the <strong>lipermi</strong> protocol. In the previous case we used the Android protocol but here we can not use it as our infrastructure protocol since the remote application in this case is not Android-based. Moreover we are not specifying an explicit address for the application, indeed in this case the remote address will be defined by the IP address of the machine where we will run the remote application followed by the default port for the <strong>CArtAgO</strong> <strong>lipermi</strong> infrastructure protocol (<strong>20101</strong>). In this test, like the previous one, we use a simple agent that join the default workspace of the <strong>[JaCa]RemoteWsp</strong> application and then start to use the <strong>Calculator</strong> artifact contained in it printing the obtained results in the local console and in the remote one.</p>
+<br/>
+<p style="text-align: justify;">For making our test application able to reach the remote workspaces its <strong>mas2j</strong> file must be configured as follow:</p>
+
+<p style="text-align: center;">
+<pre  class="srccode">
+MAS test {
+	
+	infrastructure: Centralised
+
+    environment: c4jason.CartagoEnvironment("standalone", protocol(lipermi)) 
+
+    agents:  
+   		agent agentArchClass c4jason.CAgentArch;
+
+    aslSourcePath: "jaca/android/tests/remotewsp/lipermi";
+}
+</pre>
+</p>
+<br/>
+<p style="text-align: justify;">The configuration for the <strong>CartagoEnvironment</strong> specify that this application will not be reachable from the outside (<strong>standalone</strong> parameter) but that it will be able to join remote workspace through the lipermi infrastructure protocol (<strong>protocol(lipermi)</strong> parameter).</p>
+<p style="text-align: justify;">Agent Highlights:</p>
+
+
+<ul>
+<li><p style="text-align: justify;">The source code of the agent is exactly the same as the one used in the previous test (and for this reason we are not reporting it here). Is the underlying <strong>CArtAgO</strong> infrastructure that manages the interaction with the remote application accordingly with the protocol specified in the <strong>mas2j</strong> configuration.</p></li>
+
+<li><p style="text-align: justify;">Our <strong>JaCa-Android</strong> application differ from the one used in the previous test only in the configuration of the <strong>mas2j</strong> file. Indeed the only thing we need to change is the protocol to use for joining the remote workspace.</p></li>
+
+<li><p style="text-align: justify;">It is quite simple to realise <strong>JaCa-Android</strong> application that can interact with other JaCa ones distributed in other network nodes. The same procedure can be used for joining remote applications running inside LANs or remote internet nodes.</p></li>
+
+</ul>
+
+<br/>
+<p style="text-align: center;">
+<img src="http://jaca-android.sourceforge.net/wp-content/uploads/2011/04/test_remote2_gui.png" alt="" class="aligncenter size-full wp-image-534" width="650" height="450"/>
+<p style="text-align: center;">A screenshot of the running example.</p>

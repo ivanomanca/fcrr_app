@@ -1,0 +1,72 @@
+\relax 
+\citation{bhw07}
+\citation{jason06}
+\citation{cartago:jaamas08}
+\citation{cartago09map}
+\citation{cartago-e4masIII}
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{2}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Tests}{4}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces The GUI structure of the examples considered in this chapter.}}{4}}
+\newlabel{fig:gui-samples}{{2.1}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Example 01 - Working with GUI}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}The \textsf  {GUIArtifact}}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}The sample}{6}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Source code snippet of the \textsf  {HelloWorldGUIArtifact}.}}{6}}
+\newlabel{tb:HelloWorldGUIArtifact}{{2.1}{6}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.2}{\ignorespaces Source code snippet of the \unhbox \voidb@x \hbox {\sf  {\emph  {{Jason}}}}{} agent used in this test.}}{8}}
+\newlabel{tb:test0agent}{{2.2}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces A screenshot of the described sample.}}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Example 01 - Working with Sensors}{9}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.3}{\ignorespaces Source code snippet of the \textsf  {AllSensorsManager}.}}{10}}
+\newlabel{tb:AllSensorsArtifact}{{2.3}{10}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.4}{\ignorespaces Source code snippet of the \unhbox \voidb@x \hbox {\sf  {\emph  {{Jason}}}}{} agent used in this test.}}{11}}
+\newlabel{tb:test1agent}{{2.4}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces A screenshot of the described sample.}}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Example 02 - Working with the GPS}{13}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.5}{\ignorespaces Source code snippet of the \textsf  {GPSManager}.}}{14}}
+\newlabel{tb:GPSManager}{{2.5}{14}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.6}{\ignorespaces Source code snippet of the \unhbox \voidb@x \hbox {\sf  {\emph  {{Jason}}}}{} agent used in this test.}}{15}}
+\newlabel{tb:test2agent}{{2.6}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces A screenshot of the GPS sample in action.}}{16}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Example 03 - Reading the battery status}{16}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.7}{\ignorespaces Source code snippet of the \textsf  {BatteryArtifact}.}}{17}}
+\newlabel{tb:BatteryArtifact}{{2.7}{17}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.8}{\ignorespaces Source code snippet of the \unhbox \voidb@x \hbox {\sf  {\emph  {{Jason}}}}{} agent used in this test.}}{18}}
+\newlabel{tb:test3agent}{{2.8}{18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces A screenshot of the described sample.}}{20}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Example 04 - Working with the device connectivity}{21}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.9}{\ignorespaces Source code snippet of the \textsf  {ConnectivityManager}.}}{22}}
+\newlabel{tb:ConnectivityManager}{{2.9}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces A screenshot of the described sample.}}{23}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.10}{\ignorespaces Source code snippet of the \unhbox \voidb@x \hbox {\sf  {\emph  {{Jason}}}}{} agent used in this test.}}{24}}
+\newlabel{tb:test4agent}{{2.10}{24}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Example 05 - Working in remote \textsf  {JaCa-Android}{} workspaces}{25}}
+\newlabel{sec:remotewsp-android}{{2.6}{25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces A screenshot of the described sample with in evidence the prints produced in both the local and remote application.}}{27}}
+\newlabel{fig:remote1}{{2.7}{27}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.11}{\ignorespaces Source code snippet of the \unhbox \voidb@x \hbox {\sf  {\emph  {{Jason}}}}{} agent used in this test.}}{28}}
+\newlabel{tb:remote-agent1}{{2.11}{28}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.7}Example 06 - Working with standard \unhbox \voidb@x \hbox {\sf  {JaCa}}{} remote workspace}{29}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.12}{\ignorespaces \textsf  {mas2j} configuration for a \unhbox \voidb@x \hbox {\sf  {JaCa}}{} application reachable from remote ones through the {\unhbox \voidb@x \hbox {\texttt  {{lipermi}}}} infrastructure protocol.}}{29}}
+\newlabel{tb:remote-app21}{{2.12}{29}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.13}{\ignorespaces \textsf  {mas2j} configuration for a \textsf  {JaCa-Android}{} application able to reach remote \unhbox \voidb@x \hbox {\sf  {JaCa}}{} ones -- even \textsf  {JaCa-Android}{} ones -- through the {\unhbox \voidb@x \hbox {\texttt  {{lipermi}}}} infrastructure protocol.}}{30}}
+\newlabel{tb:remote-join2}{{2.13}{30}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces A screenshot of the described sample with in evidence the prints produced in both the local and remote application.}}{31}}
+\newlabel{fig:remote2}{{2.8}{31}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Examples}{32}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Context-aware SMS notifier}{32}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}JaCa-Locale}{32}}
+\bibdata{bib}
+\bibstyle{abbrv}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Performance tests}{33}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Reactivity test}{33}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Memory occupation test}{33}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Heavy computation test}{33}}

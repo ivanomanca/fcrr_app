@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/cartago/!svn/ver/643/cartago/trunk/src/main/cartago/infrastructure/lipermi
+END
+CartagoCallbackProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/cartago/!svn/ver/434/cartago/trunk/src/main/cartago/infrastructure/lipermi/CartagoCallbackProxy.java
+END
+GarbageBodyCollectorAgent.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/cartago/!svn/ver/496/cartago/trunk/src/main/cartago/infrastructure/lipermi/GarbageBodyCollectorAgent.java
+END
+AgentBodyRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/cartago/!svn/ver/496/cartago/trunk/src/main/cartago/infrastructure/lipermi/AgentBodyRemote.java
+END
+ICartagoCallbackRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/cartago/!svn/ver/434/cartago/trunk/src/main/cartago/infrastructure/lipermi/ICartagoCallbackRemote.java
+END
+KeepRemoteBodyAliveManagerAgent.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/cartago/!svn/ver/496/cartago/trunk/src/main/cartago/infrastructure/lipermi/KeepRemoteBodyAliveManagerAgent.java
+END
+ICartagoNodeRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/cartago/!svn/ver/434/cartago/trunk/src/main/cartago/infrastructure/lipermi/ICartagoNodeRemote.java
+END
+AgentBodyProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/cartago/!svn/ver/496/cartago/trunk/src/main/cartago/infrastructure/lipermi/AgentBodyProxy.java
+END
+CartagoInfrastructureLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/cartago/!svn/ver/643/cartago/trunk/src/main/cartago/infrastructure/lipermi/CartagoInfrastructureLayer.java
+END
+IAgentBodyRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/cartago/!svn/ver/434/cartago/trunk/src/main/cartago/infrastructure/lipermi/IAgentBodyRemote.java
+END
+CartagoCallbackRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/cartago/!svn/ver/496/cartago/trunk/src/main/cartago/infrastructure/lipermi/CartagoCallbackRemote.java
+END
+CartagoNodeRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/cartago/!svn/ver/496/cartago/trunk/src/main/cartago/infrastructure/lipermi/CartagoNodeRemote.java
+END

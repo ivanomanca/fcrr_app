@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/jaca-android/!svn/ver/113/jaca-android/trunk/JaCa-Android-Middleware
+END
+default.properties
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/jaca-android/!svn/ver/113/jaca-android/trunk/JaCa-Android-Middleware/default.properties
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/jaca-android/!svn/ver/104/jaca-android/trunk/JaCa-Android-Middleware/AndroidManifest.xml
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/jaca-android/!svn/ver/113/jaca-android/trunk/JaCa-Android-Middleware/.project
+END
+proguard.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/jaca-android/!svn/ver/104/jaca-android/trunk/JaCa-Android-Middleware/proguard.cfg
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/jaca-android/!svn/ver/113/jaca-android/trunk/JaCa-Android-Middleware/.classpath
+END

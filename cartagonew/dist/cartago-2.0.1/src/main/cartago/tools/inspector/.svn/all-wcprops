@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector
+END
+OpInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/OpInfo.java
+END
+AgentJoined.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/AgentJoined.java
+END
+OpRequested.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/OpRequested.java
+END
+ArtifactMarker.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/ArtifactMarker.java
+END
+OpCompleted.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/OpCompleted.java
+END
+LoggerEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/LoggerEvent.java
+END
+Updater.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/Updater.java
+END
+V2d.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/V2d.java
+END
+InspectorLogger.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/InspectorLogger.java
+END
+Renderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/Renderer.java
+END
+P2d.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/P2d.java
+END
+OpStarted.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/OpStarted.java
+END
+AgentMarker.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/AgentMarker.java
+END
+OpFailed.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/OpFailed.java
+END
+InspectorView.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/InspectorView.java
+END
+FocussedArtifactInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/FocussedArtifactInfo.java
+END
+Marker.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/Marker.java
+END
+Inspector.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/Inspector.java
+END
+WorkspaceScene.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/WorkspaceScene.java
+END
+ArtifactDisposed.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/ArtifactDisposed.java
+END
+ArtifactCreated.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/ArtifactCreated.java
+END
+AgentQuit.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/tools/inspector/AgentQuit.java
+END

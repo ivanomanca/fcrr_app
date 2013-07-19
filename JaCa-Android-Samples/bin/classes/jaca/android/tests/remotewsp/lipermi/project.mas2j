@@ -1,0 +1,11 @@
+MAS activity_test {
+	
+	infrastructure: Centralised
+
+    environment: c4jason.CartagoEnvironment("standalone", protocol(lipermi)) 
+
+    agents:  
+   		agent agentArchClass c4jason.CAgentArch;
+
+    aslSourcePath: "jaca/android/tests/remotewsp/lipermi";
+}

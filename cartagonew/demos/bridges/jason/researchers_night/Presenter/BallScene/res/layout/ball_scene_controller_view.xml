@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:padding="10dip">
+	
+	<ToggleButton 
+		android:id="@+id/btnTogglePresenter"
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:textOn="@string/btnBallOn"
+	    android:textOff="@string/btnBallOff" />
+	  
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/txtButtonCommander" />
+	  
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1"
+	    android:gravity="center"
+	    android:stretchColumns="1">
+	    <TableRow>
+	    	<TextView />
+	         
+	        <Button 
+				android:id="@+id/btnUp"
+				android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/btnUp" />
+	            
+	        <TextView />
+	    </TableRow>
+	
+		<TableRow>
+	    	<Button 
+				android:id="@+id/btnLeft"
+				android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/btnLeft" />
+	    	
+	    	<TextView />
+	        
+	        <Button 
+				android:id="@+id/btnRight"
+				android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/btnRight" />
+	            
+	    </TableRow>
+	
+	    <TableRow>
+	    	<TextView />
+	        
+	        <Button 
+				android:id="@+id/btnDown"
+				android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/btnDown" />
+	            
+	        <TextView />
+	    </TableRow>
+    </TableLayout>
+    <CheckBox
+     	android:id="@+id/ckbSensor"
+     	android:layout_width="fill_parent"
+     	android:layout_height="wrap_content"
+     	android:text="@string/ckbSensor" />
+</LinearLayout>

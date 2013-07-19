@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout13"
+                android:layout_width="320dp"
+                android:layout_height="65dp" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.57"
+                    android:gravity="center_vertical" >
+
+                    <Button
+                        android:id="@+id/add_event"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Add event" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout15"
+                    android:layout_width="150dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.12"
+                    android:gravity="center_vertical" >
+
+                    <Button
+                        android:id="@+id/modify_event"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Modify event" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout03"
+                android:layout_width="320dp"
+                android:layout_height="65dp" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.57"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout01"
+                    android:layout_width="167dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.60"
+                    android:gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/event_descr"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/descr"
+                android:layout_width="320dp"
+                android:layout_height="152dp" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.57"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical" >
+
+                    <DatePicker
+                        android:id="@+id/event_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.69" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout16"
+                android:layout_width="320dp"
+                android:layout_height="152dp" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.57"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start time" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.57"
+                    android:gravity="center_vertical" >
+
+                    <TimePicker
+                        android:id="@+id/event_start_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout06"
+                android:layout_width="320dp"
+                android:layout_height="152dp" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.57"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="End time" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical" >
+
+                    <TimePicker
+                        android:id="@+id/event_end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout07"
+                android:layout_width="320dp"
+                android:layout_height="65dp" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.57"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout09"
+                    android:layout_width="167dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.60"
+                    android:gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/address"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout10"
+                android:layout_width="320dp"
+                android:layout_height="65dp" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.38"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Responsible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout12"
+                    android:layout_width="167dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.74"
+                    android:gravity="center_vertical" >
+
+                    <Spinner
+                        android:id="@+id/responsible"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawSelectorOnTop="true"
+                        android:layout_weight="1.27"
+                        android:prompt="@string/contacts_promt" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

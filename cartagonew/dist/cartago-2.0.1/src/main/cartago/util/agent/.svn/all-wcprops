@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/util/agent
+END
+ActionFeedback.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/util/agent/ActionFeedback.java
+END
+CartagoBasicContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/util/agent/CartagoBasicContext.java
+END
+ObsPropMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/util/agent/ObsPropMap.java
+END
+NoPerceptionException.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/util/agent/NoPerceptionException.java
+END
+ObsEventQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/util/agent/ObsEventQueue.java
+END
+ActionFeedbackQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/util/agent/ActionFeedbackQueue.java
+END
+Agent.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/util/agent/Agent.java
+END
+ObsProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/util/agent/ObsProperties.java
+END
+Percept.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/util/agent/Percept.java
+END
+ArtifactObsProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/util/agent/ArtifactObsProperty.java
+END
+ActionNotCompletedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/cartago/!svn/ver/438/cartago/trunk/dist/cartago-2.0.1/src/main/cartago/util/agent/ActionNotCompletedException.java
+END

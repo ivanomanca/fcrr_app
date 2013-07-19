@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/cartago/!svn/ver/570/cartago/trunk/demos/bridges/jason/researchers_night/balls/src
+END
+boot_1.asl
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/549/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/boot_1.asl
+END
+boot_2.asl
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/cartago/!svn/ver/559/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/boot_2.asl
+END
+ball_agent.asl
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/cartago/!svn/ver/549/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/ball_agent.asl
+END
+ball_agent_0.asl
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/cartago/!svn/ver/549/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/ball_agent_0.asl
+END
+ball_agent_1.asl
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/cartago/!svn/ver/549/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/ball_agent_1.asl
+END
+config_agent.asl
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/cartago/!svn/ver/559/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/config_agent.asl
+END
+ball_agent_2.asl
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/cartago/!svn/ver/559/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/ball_agent_2.asl
+END
+config_agent_0.asl
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/cartago/!svn/ver/559/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/config_agent_0.asl
+END
+config_agent_0_dist.asl
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/cartago/!svn/ver/570/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/config_agent_0_dist.asl
+END
+boot.asl
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/cartago/!svn/ver/549/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/boot.asl
+END
+controller_agent_0_dist.asl
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/cartago/!svn/ver/568/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/controller_agent_0_dist.asl
+END
+controller_agent_0.asl
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/cartago/!svn/ver/559/cartago/trunk/demos/bridges/jason/researchers_night/balls/src/controller_agent_0.asl
+END

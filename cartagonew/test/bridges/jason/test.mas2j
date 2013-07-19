@@ -1,0 +1,9 @@
+MAS fulltest {
+
+    environment: c4jason.CartagoEnvironment
+
+    agents:  
+   	test_user agentArchClass c4jason.CAgentArch;
+
+    classpath: "../../../lib/cartago.jar";"../../../lib/c4jason.jar";    
+}

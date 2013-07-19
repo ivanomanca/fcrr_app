@@ -1,0 +1,774 @@
+% This file was created with JabRef 2.3.1.
+% Encoding: MacRoman
+
+@article{soham93,
+  author = {Shoham, Y.},
+  title = {Agent-oriented programming},
+  journal = {Artificial Intelligence},
+  volume = {60},
+  number = {1}, 
+  pages =  {51--92},
+  year = {1993}
+}
+
+@INPROCEEDINGS{aamas08:integr,
+  author = {Ricci, Alessandro and Piunti, Michele and Acay, Lemi Daghan and Bordini,
+	Rafael and H\"ubner, Jomi and Dastani, Mehdi },
+  title = {Integrating Artifact-Based Environments with Heterogeneous Agent-Programming
+	Platforms},
+  booktitle = {Proceedings of 7th International Conference on Agents and Multi Agents
+	Systems (AAMAS08)},
+  year = {2008},
+  date-added = {2008-08-20 09:53:53 +0200},
+  date-modified = {2008-08-21 16:17:08 +0200},
+  owner = {Michele Piunti},
+  timestamp = {2008.03.21}
+}
+
+
+@inproceedings{237953,
+ author = {Rao, Anand S.},
+ title = {AgentSpeak(L): BDI agents speak out in a logical computable language},
+ booktitle = {MAAMAW '96: Proceedings of the 7th European workshop on Modelling autonomous agents in a multi-agent world : agents breaking away},
+ year = {1996},
+ isbn = {3-540-60852-4},
+ pages = {42--55},
+ location = {Einhoven, The Netherlands},
+ publisher = {Springer-Verlag New York, Inc.},
+ address = {Secaucus, NJ, USA},
+ }
+ 
+ @INPROCEEDINGS{artifacts-promas07,
+  author = {Ricci, Alessandro and Viroli, Mirko and Omicini, Andrea},
+  title = {The {\AandA} Programming Model \& Technology for Developing Agent
+	Environments in {MAS}},
+  booktitle = {Programming Multi-Agent Systems},
+  year = {2007},
+  editor = {Dastani, Mehdi and El Fallah Seghrouchni, Amal and Ricci, Alessandro
+	and Winikoff, Michael},
+  volume = {4908},
+  series = {LNAI},
+  pages = {91--109},
+  publisher = {Springer Berlin / Heidelberg},
+}
+
+ @ARTICLE{cartago:jaamas08,
+  author = {Ricci, Alessandro AND Punti, Michele AND Viroli, Mirko},
+  title = {Environment Programming in Multi-Agent Systems - An Artifact-Based Perspective},
+  journal = {Autonomous Agents and Multi-Agent Systems},
+  year = {2010},
+  note = {To appear}
+}
+
+
+@ARTICLE{huhns05,
+  author = {N. Huhns, Michael AND Singh, Munindar P. AND Burstein, Mark et al.},
+  title = {Research Directions for Service-Oriented Multiagent Systems},
+  journal = {IEEE Internet Computing},
+  year = {2005},
+  volume = {9},
+  pages = {69--70},
+  number = {6},
+  month = nov,
+  date-added = {2008-08-20 09:53:53 +0200},
+  date-modified = {2008-08-20 09:53:54 +0200}
+}
+
+@ARTICLE{artifacts:jaamas08,
+  author = {Omicini, Andrea AND Ricci, Alessandro AND Viroli, Mirko},
+  title = {Artifacts in the {\AandA} meta-model for multi-agent systems},
+  journal = {Autonomous Agents and Multi-Agent Systems},
+  year = {2008},
+  volume = {17 (3)},
+  month = dec,
+  date-added = {2008-08-20 09:51:08 +0200},
+  date-modified = {2008-08-21 17:31:51 +0200}
+}
+
+
+@inproceedings{mallow09,
+  author = {Piunti, M. and Santi, A. and Ricci, A.},
+  title = {Programming {SOA/WS} Systems with {BDI} Agents and Artifact-Based Environments},
+  booktitle = {Proceedings of MALLOW-AWESOME Joint Workshop on Agents, Web Services and Ontologies, Integrated Methodologies.},
+  year = {2009},
+ }
+   
+@article{mags:cartagows,
+  author = {Ricci, A. and Denti, E. and Piunti, M.},
+  title = {A Platform for Developing {SOA/WS} Applications as Open and Heterogenous Multi-Agent Systems},
+  journal = {Multi-Agent and Grid Systems},
+  year = {2010},
+  note = {To Appear.}
+ }
+ 
+
+
+@INPROCEEDINGS{DBLP:conf/ecoop/Lieberman06,
+  author = {Henry Lieberman},
+  title = {The Continuing Quest for Abstraction.},
+  booktitle = {ECOOP 2006 ? Object-Oriented Programming},
+  year = {2006},
+  pages = {192-197},
+  volume = {4067/2006},
+  serie = {Lecture Notes in Computer Science},
+  publisher = {Springer Berlin / Heidelberg},
+}
+
+@article{155335,
+ author = {Agha, Gul and Callsen, Christian J.},
+ title = {ActorSpace: an open distributed programming paradigm},
+ journal = {SIGPLAN Not.},
+ volume = {28},
+ number = {7},
+ year = {1993},
+ issn = {0362-1340},
+ pages = {23--32},
+ doi = {http://doi.acm.org/10.1145/173284.155335},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+ 
+@inproceedings{705744,
+ author = {Frolund, Svend and Agha, Gul},
+ title = {Abstracting Interactions Based on Message Sets},
+ booktitle = {ECOOP '94: Selected papers from the ECOOP'94 Workshop on Models and Languages for Coordination of Parallelism and Distribution, Object-Based Models and Languages for Concurrent Systems},
+ year = {1995},
+ isbn = {3-540-59450-7},
+ pages = {107--124},
+ publisher = {Springer-Verlag},
+ address = {London, UK},
+ }
+
+
+@Article{LAMP-ARTICLE-2008-003,
+   abstract    = {There is an impedance mismatch between message-passing
+                 concurrency and virtual machines, such as the JVM. VMs
+                 usually map their threads to heavyweight OS processes.
+                 Without a lightweight process abstraction, users are
+                 often forced to write parts of concurrent applications in
+                 an event-driven style which obscures control flow, and
+                 increases the burden on the programmer. In this paper we
+                 show how thread-based and event-based programming can be
+                 unified under a single actor abstraction. Using advanced
+                 abstraction mechanisms of the Scala programming language,
+                 we implement our approach on unmodified JVMs. Our
+                 programming model integrates well with the threading
+                 model of the underlying VM.},
+   affiliation = {EPFL},
+   author      = {Haller, Philipp and Odersky, Martin},
+   details     = {http://infoscience.epfl.ch/record/128406},
+   documenturl = {http://infoscience.epfl.ch/getfile.py?recid=128406&mode=best},
+   doi         = {NA},
+   journal     = {Theoretical {C}omputer {S}cience},
+   keywords    = {Concurrent Programming; Actors; Threads; Events},
+   oai-id      = {oai:infoscience.epfl.ch:128406},
+   oai-set     = {article; fulltext; fulltext-public},
+   review      = {REVIEWED},
+   status      = {ACCEPTED},
+   title       = {Scala actors: {U}nifying thread-based and event-based programming},
+   unit        = {LAMP},
+   url         = {http://www.sciencedirect.com/science/article/B6V1G-4TG9J07-4/2/6d025aa3d5748c89ad1e3dc1c1400bc3},
+   year        = 2008
+}
+
+@incollection{my93,
+author = {Matsuoka, Satoshi  and Yonezawa, Akinori},
+title = {Analysis of Inheritance Anomaly in Object-Oriented Concurrent Programming Languages.},
+editor = {Agha, G. AND Yonezawa, A. and Wegner, P.},
+booktitle = {Research Directions in Concurrent Object-Oriented Programming.},
+publisher = {The {MIT} Press},
+year = {1993}}
+
+
+@ARTICLE{292470,
+  author = {Jean-Pierre Briot and Rachid Guerraoui and Klaus-Peter Lohr},
+  title = {Concurrency and distribution in object-oriented programming},
+  journal = {ACM Comput. Surv.},
+  year = {1998},
+  volume = {30},
+  pages = {291--329},
+  number = {3},
+  address = {New York, NY, USA},
+  date-added = {2008-08-20 09:53:53 +0200},
+  date-modified = {2008-08-20 09:53:53 +0200},
+  doi = {http://doi.acm.org/10.1145/292469.292470},
+  issn = {0360-0300},
+  publisher = {ACM Press}
+}
+
+@inproceedings{280781,
+ author = {Kendall, Elizabeth A. and Krishna, P. V. Murali and Pathak, Chirag V. and Suresh, C. B.},
+ title = {Patterns of intelligent and mobile agents},
+ booktitle = {AGENTS '98: Proceedings of the second international conference on Autonomous agents},
+ year = {1998},
+ isbn = {0-89791-983-1},
+ pages = {92--99},
+ location = {Minneapolis, Minnesota, United States},
+ doi = {http://doi.acm.org/10.1145/280765.280781},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+ 
+@INPROCEEDINGS{pppj07,
+  author = {Ricci, Alessandro AND Viroli, Mirko},
+  title = {{\simpa}: An Agent-Oriented Approach for Prototyping Concurrent Applications
+	on Top of Java},
+  booktitle = {Proceedings of the ACM Int. Conference on Principle and
+	Practice of Programming in Java (PPPJ'07)},
+  year = {2007},
+  address = {Lisboa, Portugal},
+  month = Sep,
+  publisher = {ACM},
+  date-added = {2008-08-20 09:53:53 +0200},
+  date-modified = {2008-08-20 09:53:54 +0200}
+}
+
+
+@INCOLLECTION{jadex05,
+  author = {Pokahr, Alexander and Braubach, Lars and Lamersdorf, Winfried},
+  title = {Jadex: A {BDI} Reasoning Engine},
+  booktitle = {Multi-Agent Programming},
+  publisher = {Kluwer},
+  year = {2005},
+  editor = {Bordini, Rafael and Dastani, Mendi and Dix, Jurgen and Seghrouchni,
+	Amal El Fallah},
+  date-added = {2008-08-23 09:26:16 +0200},
+  date-modified = {2008-08-23 09:38:54 +0200}
+}
+
+
+@BOOK{jade07:book,
+  title = {Developing Multi-Agent Systems with {JADE}},
+  publisher = {Wiley},
+  year = {2007},
+  author = {Fabio Luigi Bellifemine and Giovanni Caire and Dominic Greenwood},
+  date-added = {2008-08-23 09:37:18 +0200},
+  date-modified = {2008-08-23 09:38:01 +0200}
+}
+
+@article{1449811,
+ author = {Simpkins, Christopher and Bhat, Sooraj and Isbell,Jr., Charles and Mateas, Michael},
+ title = {Towards adaptive programming: integrating reinforcement learning into a programming language},
+ journal = {SIGPLAN Not.},
+ volume = {43},
+ number = {10},
+ year = {2008},
+ issn = {0362-1340},
+ pages = {603--614},
+ doi = {http://doi.acm.org/10.1145/1449955.1449811},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+ 
+ @BOOK{AI:RusselNorvig03,
+  title = {Artificial Intelligence, A Modern Approach (second edition)},
+  publisher = {{P}rentice {H}all},
+  year = {2003},
+  author = {Russell, Stuart and Norvig, Peter},
+  date-modified = {2008-08-25 13:19:51 +0200},
+  owner = {michelepiunti},
+  timestamp = {2007.10.02}
+}
+
+@Article{Sutter:2005:SCR,
+  author =       "Herb Sutter and James Larus",
+  title =        "Software and the concurrency revolution",
+  journal =      "ACM Queue: Tomorrow's Computing Today",
+  volume =       "3",
+  number =       "7",
+  pages =        "54--62",
+  month =        sep,
+  year =         "2005",
+  CODEN =        "AQCUAE",
+  ISSN =         "1542-7730",
+  bibsource =    "http://portal.acm.org/",
+}
+
+@article{soham93,
+  author = {Soham, Y.},
+  title = {Agent-oriented programming},
+  journal = {Artificial Intelligence},
+  volume = {60},
+  number = {1}, 
+  pages =  {51--92},
+  year = {1993}
+}
+
+
+@INCOLLECTION{jason06,
+  author = {Bordini, Rafael and H{\"u}bner, Jomi},
+  title = {{BDI} Agent Programming in {AgentSpeak} Using {Jason}},
+  booktitle = {CLIMA VI},
+  publisher = {Springer},
+  year = {2006},
+  editor = {Toni, Francesca and Torroni, Paolo},
+  volume = {3900},
+  series = {LNAI},
+  pages = {143--164},
+  month = mar,
+  date-added = {2008-08-20 09:53:53 +0200},
+  date-modified = {2008-08-20 09:53:53 +0200}
+}
+
+@BOOK{bhw07,
+  title = {Programming Multi-Agent Systems in AgentSpeak Using Jason},
+  publisher = {John Wiley \& Sons, Ltd},
+  year = {2007},
+  author = {Bordini, Rafael AND H{\"u}bner, Jomi AND Wooldridge, Mike},
+  date-added = {2008-08-20 09:53:53 +0200},
+  date-modified = {2008-08-20 09:53:53 +0200}
+}
+
+@inproceedings{promas10,
+  title = {Action and Perception in Multi-Agent Programming Languages: From Exogenous to Endogenous Environments},
+  author = {Ricci, Alessandro AND Santi, Andrea and Piunti, Michele},
+  booktitle = {Proceedings of the Int. Workshop on Programming Multi-Agent Systems (ProMAS'10)},
+  address = {Toronto, Canada},
+  year = {2010}
+}
+  
+  
+@inproceedings{cartago09map,
+  title = {Environment Programming in {\cartago}},
+  author = {Ricci, Alessandro AND Piunti, Michele AND Viroli, Mirko AND Omicini, Andrea},
+  booktitle = {Multi-Agent Programming: Languages, Platforms and Applications, Vol. 2},
+  editor = {Bordini, Rafael H. AND Dastani, Mehdi AND Dix, J\:urgen AND El Fallah-Seghrouchni, Amal},
+  publisher = {Springer},
+  year = {2009},
+  pages = {259--288},
+}
+
+@INCOLLECTION{cartago-e4masIII,
+  author = {Ricci, Alessandro and Viroli, Mirko and Omicini, Andrea},
+  title = {{{\sf CArtAgO}}: A Framework for Prototyping Artifact-Based Environments
+	in {MAS}},
+  booktitle = {Environments for MultiAgent Systems III},
+  publisher = {Springer},
+  year = {2007},
+  editor = {Weyns, Danny and Parunak, H. Van Dyke and Michel, Fabien},
+  volume = {4389},
+  series = {LNAI},
+  pages = {67--86},
+  month = feb,
+  note = {3rd International Workshop (E4MAS 2006), Hakodate, Japan, 8~} # may
+	# {~2006. Selected Revised and Invited Papers},
+  date-added = {2008-08-20 09:49:32 +0200},
+  date-modified = {2008-08-20 09:49:32 +0200},
+  doi = {10.1007/978-3-540-71103-2_4},
+  isbn = {978-3-540-71102-5},
+  issn = {0302-9743},
+  open-url = {http://www.springerlink.com/openurl.asp?genre=article&issn=0302-9743&volume=4389&spage=67},
+  url = {http://www.springerlink.com/content/d1047836893j14q6/}
+}
+
+@inproceedings{201219,
+ author = {Thomas, S. Rebecca},
+ title = {The PLACA agent programming language},
+ booktitle = {ECAI-94: Proceedings of the workshop on agent theories, architectures, and languages on Intelligent agents},
+ year = {1995},
+ isbn = {3-540-58855-8},
+ pages = {355--370},
+ location = {Amsterdam, The Netherlands},
+ publisher = {Springer-Verlag New York, Inc.},
+ address = {New York, NY, USA},
+ }
+ 
+@proceedings{mapbook1,
+  title = {Multi-Agent Programming Languages, Platforms and Applications - Volume 1},
+  editor = {Bordini, R.H. AND Dastani, M. AND Dix, J. AND El Fallah Seghrouchni, A. },
+  series = {Multiagent Systems, Artificial Societies, and Simulated Organizations},
+  volume = {15},
+  year = 2005,
+  publisher = {Springer},
+}
+
+@proceedings{mapbook2,
+  title = {Multi-Agent Programming Languages, Platforms and Applications - Volume 2},
+  editor = {Bordini, R.H. AND Dastani, M. AND Dix, J. AND El Fallah Seghrouchni, A. },
+  series = {Multiagent Systems, Artificial Societies, and Simulated Organizations},
+  year = 2009,
+  publisher = {Springer},
+} 
+
+@inproceedings{SurveyMAS,
+  author = {Bordini, Rafael},
+  title = {A Survey of Programming Languages and Platforms for Multi-Agent Systems},
+  booktitle = {Informatica 30},
+  year = {2006},
+  pages = {33-44},
+  date-added = {2008-08-20 09:53:53 +0200},
+  date-modified = {2008-08-20 09:53:53 +0200}
+}
+
+
+@ARTICLE{jennings01cacm,
+  author = {Nicholas R. Jennings},
+  title = {An agent-based approach for building complex software systems},
+  journal = {Commun. ACM},
+  year = {2001},
+  volume = {44},
+  pages = {35--41},
+  number = {4},
+  date-added = {2008-09-11 00:00:13 +0200},
+  date-modified = {2008-09-11 00:02:02 +0200}
+}
+
+@BOOK{woo02,
+  title = {An Introduction to Multi-Agent Systems},
+  publisher = {John Wiley \& Sons, Ltd},
+  year = {2002},
+  author = {Wooldridge, Mike},
+  date-added = {2008-08-20 09:53:53 +0200},
+  date-modified = {2008-08-20 09:53:53 +0200}
+}
+
+@ARTICLE{Wooldridge95intelligentagents,
+    author = {Michael Wooldridge and Nicholas R. Jennings},
+    title = {Intelligent Agents: Theory and Practice},
+    journal = {Knowledge Engineering Review},
+    year = {1995},
+    volume = {10},
+    pages = {115--152}
+}
+
+
+@BOOK{Bratman87Intention,
+  title = {{Intention, Plans, and Practical Reason}},
+  publisher = {Harvard University Press},
+  year = {1987},
+  author = {M. Bratman}
+}
+
+@inproceedings{237953,
+ author = {Rao, Anand S.},
+ title = {{A}gent{S}peak(L): {BDI} agents speak out in a logical computable language},
+ booktitle = {{MAAMAW} '96: Proceedings of the 7th European workshop on Modelling autonomous agents in a multi-agent world : agents breaking away},
+ year = {1996},
+ isbn = {3-540-60852-4},
+ pages = {42--55},
+ location = {Einhoven, The Netherlands},
+ publisher = {Springer-Verlag New York},
+ address = {Secaucus, NJ, USA},
+ }
+
+@ARTICLE{2apl08,
+  author = {Dastani, Mehdi},
+  title = {2APL: a Practical Agent Programming Language},
+  journal = {Autonomous Agents and Multi-Agent Systems},
+  year = {2008},
+  volume = {16},
+  pages = {214--248},
+  number = {3},
+  address = {Hingham, MA, USA},
+  doi = {http://dx.doi.org/10.1007/s10458-008-9036-y},
+  issn = {1387-2532},
+  publisher = {Kluwer Academic Publishers}
+}
+
+@INPROCEEDINGS{hin09goal,
+  author = {Koen V. Hindriks},
+  title = {Programming Rational Agents in {GOAL}},
+  booktitle = {Multi-Agent Programming: Languages, Platforms and Applications (2nd volume)},
+  year = {2009},
+  editor = {Bordini, R. H. AND Dastani, M. AND Dix, J. AND El Fallah Seghrouchni,
+	A.},
+  pages = {3--37},
+  publisher = {Springer-Verlag},
+}
+
+@ARTICLE{env-jaamas14,
+  author = {Weyns, Danny and Omicini, Andrea and Odell, James J.},
+  title = {Environment as a First-class Abstraction in Multi-Agent Systems},
+  journal = {Autonomous Agents and Multi-Agent Systems},
+  year = {2007},
+  volume = {14},
+  pages = {5--30},
+  number = {1},
+  month = feb,
+  note = {Special Issue on Environments for Multi-agent Systems},
+  doi = {10.1007/s10458-006-0012-0},
+  doi-url = {http://doi.dx.org/10.1007/s10458-006-0012-0},
+  editor = {Weyns, Danny and Parunak, H. Van Dyke},
+  issn = {1387-2532},
+  publisher = {Springer Netherlands},
+  url = {http://springerlink.metapress.com/content/w571550106301124/}
+}
+
+@article{odell,
+ author = {James J. Odell},
+ title = {Objects and Agents Compared},
+ journal = {Journal of Object Technology},
+ volume ={1},
+ number = {1},
+ year = {2002},
+ pages = {41-53},
+}
+ 
+@misc{hew1,
+  author = {Smith, B. C. and Hewitt, C.},
+  year =  1975,
+  title = {A PLASMA Primier},
+  note = {MIT Artificial Intelligence Laboratory},
+}
+
+@misc{hew2,
+  author = {Kornfeld, W. A. and Hewitt, C.},
+  year =  1981,
+  title = {The Scientific Community Metaphor},
+  note = {MIT Artificial Intelligence Laboratory},
+}
+
+
+@book{traversphd,
+  title = {Programming with Agents: New metaphors for thinking about computation},
+  author = {Michael David Travers},
+  year = {1996},
+  publisher = {Massachusetts Institute of Technology},
+}
+
+@book{resnick,
+	Author = {Resnick, Mitchel},
+	Publisher = {{MIT} Press},
+	Title = {Turtles, Termites and Traffic Jams. Explorations in Massively Parallel Microworlds},
+	Year = {1994}}
+	
+
+ @book{7929,
+ author = {Gul Agha},
+ title = {Actors: a model of concurrent computation in distributed systems},
+ year = {1986},
+ isbn = {0-262-01092-5},
+ publisher = {MIT Press},
+ address = {Cambridge, MA, USA},
+ }
+ 
+ @INPROCEEDINGS{BDI:rao95,
+  author = {Rao, A. S. and Georgeff, M. P.},
+  title = {{BDI Agents: From Theory to Practice}},
+  booktitle = {First International Conference on Multi Agent Systems (ICMAS95)},
+  year = {1995},
+  owner = {Michele Piunti},
+  timestamp = {2008.04.23}
+}
+
+@article{352782,
+ author = {de Giacomo, Giuseppe and Lesp\'{e}rance, Yves and Levesque, Hector J.},
+ title = {ConGolog, a concurrent programming language based on the situation calculus},
+ journal = {Artif. Intell.},
+ volume = {121},
+ number = {1-2},
+ year = {2000},
+ issn = {0004-3702},
+ pages = {109--169},
+ doi = {http://dx.doi.org/10.1016/S0004-3702(00)00031-X},
+ publisher = {Elsevier Science Publishers Ltd.},
+ address = {Essex, UK},
+ }
+
+@article{311130,
+ author = {Kotz, David and Gray, Robert S.},
+ title = {Mobile agents and the future of the internet},
+ journal = {SIGOPS Oper. Syst. Rev.},
+ volume = {33},
+ number = {3},
+ year = {1999},
+ issn = {0163-5980},
+ pages = {7--13},
+ doi = {http://doi.acm.org/10.1145/311124.311130},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+ 
+ @article{1467263,
+ author = {Larson, Jim},
+ title = {Erlang for concurrent programming},
+ journal = {Commun. ACM},
+ volume = {52},
+ number = {3},
+ year = {2009},
+ issn = {0001-0782},
+ pages = {48--56},
+ doi = {http://doi.acm.org/10.1145/1467247.1467263},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+
+@inproceedings{collier06af-micro,
+  author    = {Conor Muldoon and
+               Gregory M. P. O'Hare and
+               Rem W. Collier and
+               Michael J. O'Grady},
+  title     = {Agent Factory Micro Edition: A Framework for Ambient Applications},
+  booktitle = {Int. Conference on Computational Science (3)},
+  year      = {2006},
+  pages     = {727-734},
+  ee        = {http://dx.doi.org/10.1007/11758532_95},
+  crossref  = {DBLP:conf/iccS/2006-3},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@conference{jade-mobile,
+  title={{Porting distributed agent-middleware to small mobile devices}},
+  author={Berger, M. and Rusitschka, S. and Toropov, D. and Watzke, M. and Schlichte, M.},
+  booktitle={AAMAS Workshop on Ubiquitous Agents on Embedded, Wearable and Mobile Devices}
+}
+
+@inproceedings{3apl-m,
+  author    = {Fernando Koch and
+               John-Jules Ch. Meyer and
+               Frank Dignum and
+               Iyad Rahwan},
+  title     = {Programming Deliberative Agents for Mobile Services: The
+               3APL-M Platform},
+  booktitle = {PROMAS},
+  year      = {2005},
+  pages     = {222-235},
+  ee        = {http://dx.doi.org/10.1007/11678823_14},
+  crossref  = {DBLP:conf/promas/2005},
+}
+
+@incollection{madden09,
+	Author = {Madden, Neil and  Logan, Brian},
+	title = {Modularity and compositionality in {Jason}},
+	booktitle = {Proceedings of Int. Workshop Programming Multi-Agent Systems (ProMAS 2009)},
+	Year = 2009}
+
+
+@incollection{collier05,
+	Author = {Collier, Rem AND Ross, Robert Ross AND  O'Hare, Gregory M.P. },
+	title = {Realising Reusable Agent Behaviours with {ALPHA}},
+	Publisher = {Springer},
+	Series = {LNCS},
+	booktitle = {Multiagent System Technologies},
+	Volume = 3550,
+	pages = {210--215},
+	Year = 2005}
+
+@article{Konig-Ries09,
+  author    = {Birgitta K{\"o}nig-Ries},
+  title     = {Challenges in Mobile Application Development},
+  journal   = {it - Information Technology},
+  volume    = {51},
+  number    = {2},
+  year      = {2009},
+  pages     = {69-71},
+  ee        = {http://dx.doi.org/10.1524/itit.2009.9055},
+}
+
+@incollection{hindriks08,
+	Author = {Koen Hindriks},
+	title = {Modules as Policy-Based Intentions: Modular Agent Programming in {GOAL}},
+	Publisher = {Springer},
+	Series = {LNCS},
+	booktitle = {Programming Multi-Agent Systems},
+	Volume = 5357,
+	pages = {156--171},
+	Year = 2008}
+
+	
+ @book{map-vol-1,
+  title = {Multi-Agent Programming: Languages, Platforms and Applications  (vol. 1)},
+  publisher = {Springer},
+  year = {2005},
+  editor = {Bordini, Rafael and Dastani, Mendi and Dix, Jurgen and Seghrouchni,
+	Amal El Fallah},
+}
+
+@book{map-vol-2,
+  title = {Multi-Agent Programming: Languages, Platforms and Applications (vol. 2)},
+  year = {2009},
+  editor = {Bordini, R. H. AND Dastani, M. AND Dix, J. AND El Fallah Seghrouchni,
+	A.},
+  publisher = {Springer Berlin / Heidelberg},
+}
+
+
+@incollection{dastani08,
+	Author = {Dastani, M. AND Mol, C.P. AND Steunebrink, B.R.},
+	title = {Modularity in agent programming languages: An illustration in extended {2APL}},
+	Publisher = {Springer},
+	Series = {LNCS},
+	booktitle = {Proceedings of the 11th Pacific Rim Int. Conference on Multi-Agent Systems (PRIMA 2008)},
+	Volume = 5357,
+	pages = {139--152},
+	Year = 2008}
+
+@incollection{brau05,
+	Author = {Braubach, L. AND Pokahr, A. AND Lamersdorf, W.},
+	title = {Extending the capability concept for flexible {BDI} agent modularization},
+	Publisher = {Springer},
+	Series = {LNAI},
+	booktitle = {Programming Multi-Agent Systems},
+	Volume = 3862,
+	pages = {139--155},
+	Year = 2005}
+	
+@INPROCEEDINGS{4394846, 
+	author={Battestini, A. and Del Rosso, C. and Flanagan, A. and Miettinen, M.}, 
+	booktitle={EEE 18th Int. Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC), 2007}, 
+	title={Creating Next Generation Applications and Services for Mobile Devices: Challenges and Opportunities}, 
+	year={2007}, 
+	month={3-7}, 
+	volume={}, 
+	number={}, 
+	pages={1 -4}, 
+	keywords={context-awareness application;context-recognition techniques;mobile device;mobile domain;next generation application;next generation service;data privacy;mobile computing;security of data;}, 
+	doi={10.1109/PIMRC.2007.4394846}, 
+ISSN={},}
+
+@conference{omicini2005coordination,
+  title={{Coordination artifacts: Environment-based coordination for intelligent agents}},
+  author={Omicini, A. and Ricci, A. and Viroli, M. and Castelfranchi, C. and Tummolini, L.},
+  booktitle={Autonomous Agents and Multiagent Systems, 2004. AAMAS 2004. Proceedings of the Third International Joint Conference on},
+  pages={286--293},
+  isbn={1581138644},
+  year={2005},
+  organization={IEEE}
+}
+
+@article{_haller2009scala,
+  title={{Scala actors: Unifying thread-based and event-based programming}},
+  author={Haller, P. and Odersky, M.},
+  journal={Theoretical Computer Science},
+  volume={410},
+  number={2-3},
+  pages={202--220},
+  issn={0304-3975 begin_of_the_skype_highlighting              0304-3975      end_of_the_skype_highlighting},
+  year={2009},
+  publisher={Elsevier}
+}
+
+@article{_haller2006event,
+  title={{Event-based programming without inversion of control}},
+  author={Haller, P. and Odersky, M.},
+  journal={Modular Programming Languages},
+  pages={4--22},
+  year={2006},
+  publisher={Springer}
+}
+ 
+@conference{carabelea2003multi,
+  title={{Multi-agent platforms on smart devices: Dream or reality?}},
+  author={Carabelea, C. and Boissier, O.},
+  booktitle={Proceedings of the Smart Objects Conference (SOC03), Grenoble, France},
+  pages={126--129},
+  year={2003},
+}
+
+@conference{aguero2009does,
+  title={{Does Android Dream with Intelligent Agents?}},
+  author={Ag\"{u}ero, J. and Rebollo, M. and Carrascosa, C. and Juli{\'a}n, V.},
+  booktitle={International Symposium on Distributed Computing and Artificial Intelligence 2008 (DCAI 2008)},
+  pages={194--204},
+  year={2009},
+  organization={Springer}
+}
+
+@conference{ughetti2008development,
+  title={{Development of agent-based, peer-to-peer mobile applications on ANDROID with JADE}},
+  author={Ughetti, M. and Trucco, T. and Gotta, D.},
+  booktitle={Mobile Ubiquitous Computing, Systems, Services and Technologies, 2008. UBICOMM'08. The Second International Conference on},
+  pages={287--294},
+  year={2008},
+  organization={IEEE}
+}

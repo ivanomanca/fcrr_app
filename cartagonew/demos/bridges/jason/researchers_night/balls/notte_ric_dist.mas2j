@@ -1,0 +1,15 @@
+MAS notte_ric {
+
+   environment: c4jason.CartagoEnvironment
+
+   agents:
+   
+   boot_0  agentArchClass c4jason.CAgentArch; 
+   ag_0 ball_agent_0  agentArchClass c4jason.CAgentArch; 
+   ag_1 ball_agent_0  agentArchClass c4jason.CAgentArch; 
+   ag_2 ball_agent_0  agentArchClass c4jason.CAgentArch; 
+       
+   classpath: "../../../../../lib/cartago.jar";"../../../../../lib/c4jason.jar";    
+
+   aslSourcePath: "src"; 
+}

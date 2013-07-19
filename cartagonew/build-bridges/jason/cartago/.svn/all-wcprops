@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build-bridges/jason/cartago
+END
+term_to_tuple.class
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build-bridges/jason/cartago/term_to_tuple.class
+END
+new_obj.class
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build-bridges/jason/cartago/new_obj.class
+END
+tuple_to_term.class
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build-bridges/jason/cartago/tuple_to_term.class
+END
+new_array.class
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build-bridges/jason/cartago/new_array.class
+END
+array_to_list.class
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build-bridges/jason/cartago/array_to_list.class
+END
+current_wsp.class
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build-bridges/jason/cartago/current_wsp.class
+END
+invoke_obj.class
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build-bridges/jason/cartago/invoke_obj.class
+END
+set_current_wsp.class
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/cartago/!svn/ver/438/cartago/trunk/build-bridges/jason/cartago/set_current_wsp.class
+END

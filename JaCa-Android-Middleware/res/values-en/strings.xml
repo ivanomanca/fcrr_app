@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JaCa-Android Middleware</string>
+	<string name="middleware_manager_mas2j">/jaca/android/middlewaremanager/middleware_manager.mas2j</string>
+	
+    <string name="status_bar_text">Click for managing the middleware</string>
+        
+	<string name="jaca_services_config">JaCa-Services configuration</string>
+	<string name="jaca_services_config_descr">Default artifacts provided by the middleware</string>
+
+	<string name="device_and_emulator_support">Can be used in devices and in the emulator</string>
+	<string name="only_device_support">Not supported by the emulator</string>
+	<string name="calendar_support">Supported only in devices with Android version &lt;= 2.1</string>
+	<string name="only_android_version_lower_than_2_1">Support Android version &lt;= 2.1</string>
+	<string name="only_android_version_lower_than_2_2">Support Android version &lt;= 2.2</string>
+
+	<string name="pref_gps_manager">GPSManager</string>
+	<string name="pref_acc_manager">AcceleromenterSensorManager</string>
+	<string name="pref_geomag_manager">GeomagSensorManager</string>
+	<string name="pref_orientation_manager">OrientationSensorManager</string>
+	<string name="pref_all_sensors_manager">AllSensorsManager</string>
+	<string name="pref_connectivity_manager">ConnectivityManager</string>
+	<string name="pref_phone_settings_manager">PhoneSettingsManager</string>
+	<string name="pref_call_manager">CallManager</string>
+	<string name="pref_battery_manager">BatteryManager</string>
+	<string name="pref_contacts_manager">ContactsManager</string>
+	<string name="pref_sms_manager">SMSManager</string>
+	<string name="pref_calendar_manager">CalendarManager</string>
+
+    <string name="auto_start_lbl">Start-up on boot</string>
+    <string name="auto_start_descr">Change the middleware auto-start policy</string>
+    <string name="auto_start_descr_dialog_msg">Launch JaCa-Android on boot?</string>
+	
+	<string name="btn_start">Start</string>
+	<string name="btn_end">Stop</string>
+	
+	<string name="lbl_progress_bar">Progress:</string>
+	<string name="lbl_status">Status:</string>
+	<string name="lbl_status_creating">Starting</string>
+	<string name="lbl_status_disposing">Teminating</string>
+	<string name="lbl_status_created">Running</string>
+	<string name="lbl_status_waiting">Waiting</string>
+	<string name="lbl_status_error">Error</string>
+	<string name="preference_screen_key">main_pref_screen</string>
+	
+	<string name="error_startup">
+		Error during middleware initialis	ation.
+		Be sure to have selected artifatcs compatible with you runtime in the preference screen.
+	</string>
+</resources>
